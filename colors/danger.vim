@@ -63,11 +63,11 @@ exe 'hi Conditional guifg='s:keyword
 exe 'hi Constant guifg='s:const
 exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword
-exe 'hi Error gui=undercurl guibg=NONE guifg='s:warning
-exe 'hi DiffAdd guifg=#fafafa guibg=#123d0f gui=bold'
-exe 'hi DiffDelete guibg='s:bg2
-exe 'hi DiffChange  guibg=#151b3c guifg=#fafafa'
-exe 'hi DiffText guifg=#ffffff guibg=#ff0000 gui=bold'
+exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
+exe 'hi DiffAdd guifg='s:fg' guibg='s:builtin' gui=bold'
+exe 'hi DiffDelete guibg='s:bg2''
+exe 'hi DiffChange  guibg='s:str' guifg='s:fg''
+exe 'hi DiffText guifg='s:fg' guibg='s:warning' gui=bold'
 exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const

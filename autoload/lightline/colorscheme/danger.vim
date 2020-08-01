@@ -8,11 +8,11 @@
 let s:black = [ '#161925', 235 ]
 let s:gray = [ '#262B40', 236 ]
 let s:white = [ '#dcdcd9', 250 ]
-let s:blue = [ '#dbbfed' , 67 ] 
+let s:blue = [ '#acc6d7' , 67 ] 
 let s:green = [ '#2d9f73', 71 ] 
-let s:purple = [ '#acc6d7', 104 ]
+let s:purple = [ '#dbbfed', 104 ]
 let s:red = [ '#d8a3aa', 204 ]
-let s:yellow = [ '#f8a5b1', 222 ]
+let s:yellow = [ '#dfca53', 222 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left = [ [ s:black, s:purple ], [ s:purple, s:gray ] ]
