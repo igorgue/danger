@@ -2,6 +2,8 @@
 
 I've been using this color scheme for 15 years. It includes some goodies for Python. There's still some changes for Ruby and other languages that I have not yet ported to this new structure. Will do later.
 
+![Python Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/python.png)
+
 ## install
 
 Add `colorscheme danger` to your `~/.vimrc` (Use `~/.config/.nvim/init.vim` for nvim).
