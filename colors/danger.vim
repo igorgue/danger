@@ -29,6 +29,7 @@ let s:warning="#d8a3aa"
 let s:fg2="#b6b6af"
 let s:fg3="#d6d6d6"
 let s:fg4="#9d9d95"
+let s:fg5="#42423D"
 let s:bg2="#262B40"
 let s:bg3="#454555"
 let s:bg4="#394160"
@@ -40,11 +41,11 @@ exe 'hi Normal guifg='s:fg' guibg='s:bg
 exe 'hi Visual guibg='s:bg4
 exe 'hi Cursor guibg='s:type
 exe 'hi CursorLine guibg='s:bg2
-exe 'hi CursorLineNr guifg='s:str' guibg='s:bg
+exe 'hi CursorLineNr guifg='s:warning' guibg='s:bg2
 exe 'hi CursorColumn guibg='s:bg2
 exe 'hi ColorColumn guibg='s:bg2
-exe 'hi LineNr guifg='s:fg2' guibg='s:bg2
-exe 'hi VertSplit guifg='s:bg' guibg='s:fg4
+exe 'hi LineNr guifg='s:fg5' guibg='s:bg
+exe 'hi VertSplit guifg='s:bg' guibg='s:fg5
 exe 'hi MatchParen guifg='s:type2' guibg='s:bg2' gui=bold'
 exe 'hi StatusLine guifg='s:fg4' guibg='s:bg3' gui=bold'
 exe 'hi StatusLineNC guifg='s:bg' guibg='s:fg2' gui=bold'
@@ -55,6 +56,11 @@ exe 'hi Search guifg='s:warning2' guibg='s:bg' gui=bold'
 exe 'hi Directory guifg='s:const
 exe 'hi Folded guifg='s:fg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' guibg='s:bg
+exe 'hi TabLine guifg='s:fg' guibg='s:bg
+exe 'hi Quote guifg='s:fg' guibg='s:bg
+exe 'hi Folded guifg='s:fg' guibg='s:bg
+exe 'hi FoldColumn guifg='s:fg' guibg='s:bg
+exe 'hi SignColumn guifg='s:fg' guibg='s:bg
 
 exe 'hi Boolean guifg='s:const
 exe 'hi Character guifg='s:const
@@ -125,6 +131,11 @@ exe 'hi rubyClass guifg='s:keyword' gui=bold'
 exe 'hi rubyNumber guifg='s:const
 
 " Python Highlighting
+if has("autocmd")
+    au BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
+    au BufRead,BufNewFile *.py syn match dangerPythonParens /[(){}\[\]]/
+    au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
+endif
 
 exe 'hi pythonBuiltinFunc guifg='s:builtin
 exe 'hi pythonImport guifg='s:warning
@@ -138,10 +149,7 @@ exe 'hi pythonDottedName guifg='s:builtin
 exe 'hi pythonDecorator guifg='s:fg4
 exe 'hi pythonException guifg='s:keyword
 exe 'hi pythonExClass guifg='s:keyword' gui=bold'
-
-autocmd BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
-autocmd BufRead,BufNewFile *.py syn match dangerPythonParens /[(){}\[\]]/
-autocmd BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
+exe 'hi pythonRun guifg='s:comment' gui=italic'
 
 exe 'hi dangerPythonDefClass guifg='s:keyword2' gui=bold'
 exe 'hi dangerPythonParens guifg='s:keyword2' gui=bold'
