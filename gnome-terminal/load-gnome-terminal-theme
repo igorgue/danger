@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dconf load /org/gnome/terminal/legacy/profiles:/:33afafdb-dd58-4c3a-a620-a61a4f31fae1/ < danger.profile

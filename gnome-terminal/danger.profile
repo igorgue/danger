@@ -1,0 +1,19 @@
+[/]
+background-color='rgb(22,25,37)'
+bold-color-same-as-fg=true
+bold-is-bright=false
+cursor-background-color='rgb(219,191,237)'
+cursor-foreground-color='rgb(22,25,37)'
+default-size-columns=120
+default-size-rows=28
+foreground-color='rgb(220,220,217)'
+highlight-background-color='rgb(57,65,96)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(220,220,217)'
+login-shell=false
+palette=['rgb(57,65,96)', 'rgb(248,165,177)', 'rgb(45,159,115)', 'rgb(223,202,83)', 'rgb(219,191,237)', 'rgb(140,149,207)', 'rgb(172,198,215)', 'rgb(220,220,217)', 'rgb(79,90,131)', 'rgb(216,163,170)', 'rgb(66,239,172)', 'rgb(249,226,98)', 'rgb(230,199,249)', 'rgb(161,172,240)', 'rgb(193,224,245)', 'rgb(247,247,242)']
+scroll-on-output=true
+use-system-font=true
+use-theme-colors=false
+use-theme-transparency=true
+visible-name='Danger'

@@ -28,3 +28,11 @@ Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
     cd ~/.vim/colors
     git clone git://github.com/igorgue/danger.git danger
     cp danger/colors/danger.vim .
+
+### lightline
+
+    let g:lightline = { 'colorscheme': 'danger' }
+
+### gnome-terminal
+
+    cd gnome-terminal && ./load-gnome-terminal-theme
