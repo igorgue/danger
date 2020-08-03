@@ -46,7 +46,7 @@ exe 'hi CursorColumn guibg='s:bg2
 exe 'hi ColorColumn guibg='s:bg2
 exe 'hi LineNr guifg='s:fg5' guibg='s:bg
 exe 'hi VertSplit guifg='s:bg' guibg='s:fg5
-exe 'hi MatchParen guifg='s:type2' guibg='s:bg2' gui=bold'
+exe 'hi MatchParen guifg='s:type2' guibg='s:bg' gui=bold'
 exe 'hi StatusLine guifg='s:fg4' guibg='s:bg3' gui=bold'
 exe 'hi StatusLineNC guifg='s:bg' guibg='s:fg2' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
@@ -78,7 +78,7 @@ exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:type'  gui=italic'
+exe 'hi Identifier guifg='s:fg
 exe 'hi Keyword guifg='s:keyword'  gui=bold'
 exe 'hi Label guifg='s:var
 exe 'hi NonText guifg='s:bg4' guibg='s:bg
@@ -189,10 +189,17 @@ exe 'hi htmlSpecialTagName guifg='s:keyword
 exe 'hi mkdCode guifg='s:builtin
 
 " Csharp Highlighting
-exe 'hi dangerCsParens guifg='s:var
-
-if has("autocmd")
-    au BufRead,BufNewFile *.cs syn match dangerCsParens /[(){}\[\]]/
-endif
-
+exe 'hi csBraces guifg='s:var
+exe 'hi csParens guifg='s:keyword2
 exe 'hi csOpSymbols guifg='s:warning2
+exe 'hi csModifier guifg='s:keyword2' gui=italic'
+exe 'hi csType guifg='s:type' gui=bold'
+exe 'hi csClassType guifg='s:type2
+exe 'hi csQuote guifg='s:warning
+exe 'hi csString guifg='s:str
+exe 'hi csUnspecifiedStatement guifg='s:warning
+exe 'hi csClassName guifg='s:type
+
+" C Highlighting
+exe 'hi cParen guifg='s:var
+exe 'hi cCustomParen guifg='s:var
