@@ -141,7 +141,7 @@ if has("autocmd")
 endif
 
 exe 'hi dangerPythonDefClass guifg='s:keyword2' gui=bold'
-exe 'hi dangerPythonParens guifg='s:keyword2' gui=bold'
+exe 'hi dangerPythonParens guifg='s:keyword2
 exe 'hi dangerPythonArg guifg='s:var
 
 " Ruby Highlighting
@@ -187,3 +187,12 @@ exe 'hi htmlSpecialTagName guifg='s:keyword
 
 " Markdown Highlighting
 exe 'hi mkdCode guifg='s:builtin
+
+" Csharp Highlighting
+exe 'hi dangerCsParens guifg='s:var
+
+if has("autocmd")
+    au BufRead,BufNewFile *.cs syn match dangerCsParens /[(){}\[\]]/
+endif
+
+exe 'hi csOpSymbols guifg='s:warning2
