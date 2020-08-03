@@ -70,9 +70,9 @@ exe 'hi Constant guifg='s:const
 exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword
 exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
-exe 'hi DiffAdd guifg='s:fg' guibg='s:builtin' gui=bold'
-exe 'hi DiffDelete guibg='s:bg2''
-exe 'hi DiffChange  guibg='s:str' guifg='s:fg''
+exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin
+exe 'hi DiffDelete guifg='s:bg' guibg='s:warning2
+exe 'hi DiffChange guifg='s:bg' guibg='s:const
 exe 'hi DiffText guifg='s:fg' guibg='s:warning' gui=bold'
 exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
@@ -96,10 +96,10 @@ exe 'hi Todo guifg='s:fg2' gui=inverse,bold'
 exe 'hi Type guifg='s:type
 exe 'hi Underlined gui=underline'
 
-exe 'hi SpellBad guifg=NONE guibg=NONE gui=undercurl ctermfg=white ctermbg=blue cterm=NONE guisp='s:warning' " undercurl color'
-exe 'hi SpellCap guifg=NONE guibg=NONE gui=undercurl ctermfg=white ctermbg=blue cterm=NONE guisp='s:warning' " undercurl color'
-exe 'hi SpellLocal guifg=NONE guibg=NONE gui=undercurl ctermfg=white ctermbg=blue cterm=NONE guisp='s:warning' " undercurl color'
-exe 'hi SpellRare guifg=NONE guibg=NONE gui=undercurl ctermfg=white ctermbg=blue cterm=NONE guisp='s:warning' " undercurl color'
+exe 'hi SpellBad guifg='s:fg' guibg='s:warning2' guisp='s:warning' " undercurl color'
+exe 'hi SpellCap guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
+exe 'hi SpellLocal guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
+exe 'hi SpellRare guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
 
 " Neovim Terminal Mode
 let g:terminal_color_0 = s:bg
@@ -119,24 +119,7 @@ let g:terminal_color_13 = s:const
 let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
-" Ruby Highlighting
-exe 'hi rubyAttribute guifg='s:builtin
-exe 'hi rubyLocalVariableOrMethod guifg='s:var
-exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
-exe 'hi rubyInstanceVariable guifg='s:var
-exe 'hi rubyKeyword guifg='s:keyword
-exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
-exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
-exe 'hi rubyClass guifg='s:keyword' gui=bold'
-exe 'hi rubyNumber guifg='s:const
-
 " Python Highlighting
-if has("autocmd")
-    au BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
-    au BufRead,BufNewFile *.py syn match dangerPythonParens /[(){}\[\]]/
-    au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
-endif
-
 exe 'hi pythonBuiltinFunc guifg='s:builtin
 exe 'hi pythonImport guifg='s:warning
 exe 'hi pythonStatement guifg='s:warning
@@ -151,9 +134,26 @@ exe 'hi pythonException guifg='s:keyword
 exe 'hi pythonExClass guifg='s:keyword' gui=bold'
 exe 'hi pythonRun guifg='s:comment' gui=italic'
 
+if has("autocmd")
+    au BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
+    au BufRead,BufNewFile *.py syn match dangerPythonParens /[(){}\[\]]/
+    au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
+endif
+
 exe 'hi dangerPythonDefClass guifg='s:keyword2' gui=bold'
 exe 'hi dangerPythonParens guifg='s:keyword2' gui=bold'
 exe 'hi dangerPythonArg guifg='s:var
+
+" Ruby Highlighting
+exe 'hi rubyAttribute guifg='s:builtin
+exe 'hi rubyLocalVariableOrMethod guifg='s:var
+exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
+exe 'hi rubyInstanceVariable guifg='s:var
+exe 'hi rubyKeyword guifg='s:keyword
+exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
+exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
+exe 'hi rubyClass guifg='s:keyword' gui=bold'
+exe 'hi rubyNumber guifg='s:const
 
 " Go Highlighting
 exe 'hi goBuiltins guifg='s:builtin
