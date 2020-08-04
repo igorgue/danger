@@ -193,12 +193,23 @@ exe 'hi csBraces guifg='s:var
 exe 'hi csParens guifg='s:keyword2
 exe 'hi csOpSymbols guifg='s:warning2
 exe 'hi csModifier guifg='s:keyword2' gui=italic'
-exe 'hi csType guifg='s:type' gui=bold'
+exe 'hi csType guifg='s:type
+exe 'hi csConstant guifg='s:const
+exe 'hi csStorage guifg='s:type2
+exe 'hi csClass guifg='s:type2
 exe 'hi csClassType guifg='s:type2
 exe 'hi csQuote guifg='s:warning
 exe 'hi csString guifg='s:str
 exe 'hi csUnspecifiedStatement guifg='s:warning
 exe 'hi csClassName guifg='s:type
+exe 'hi csGenericBraces guifg='s:warning2
+exe 'hi csConditional guifg='s:keyword
+exe 'hi csNew guifg='s:keyword
+exe 'hi csNewType guifg='s:keyword
+exe 'hi csRepeat guifg='s:keyword
+exe 'hi csException guifg='s:keyword
+exe 'hi csIsType guifg='s:type
+exe 'hi csIsAs guifg='s:keyword2
 
 " C Highlighting
 exe 'hi cParen guifg='s:var
