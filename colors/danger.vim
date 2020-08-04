@@ -43,7 +43,7 @@ exe 'hi Visual guibg='s:bg4
 exe 'hi Cursor guibg='s:type
 exe 'hi CursorLine guibg='s:bg2
 exe 'hi CursorLineNr guifg='s:warning' guibg='s:bg2
-exe 'hi CursorColumn guibg='s:bg2
+exe 'hi CursorColumn guibg='s:bg2' guifg='s:type' gui=bold'
 exe 'hi ColorColumn guibg='s:bg2
 exe 'hi LineNr guifg='s:fg5' guibg='s:bg
 exe 'hi VertSplit guifg='s:bg' guibg='s:fg5
@@ -211,7 +211,12 @@ exe 'hi csRepeat guifg='s:keyword
 exe 'hi csException guifg='s:keyword
 exe 'hi csIsType guifg='s:type
 exe 'hi csIsAs guifg='s:keyword2
+exe 'hi csContextualStatement guifg='s:keyword2
+exe 'hi csUnsupportedStatement guifg='s:keyword2
 
 " C Highlighting
 exe 'hi cParen guifg='s:var
 exe 'hi cCustomParen guifg='s:var
+
+" CtrlP Highlighting
+exe 'hi CtrlPMatch guifg='s:type' gui=italic,bold'
