@@ -110,7 +110,6 @@ exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2'
 exe 'hi Pmenu guifg='s:fg' ctermfg='s:tfg' guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi PmenuSel guibg='s:bg3' ctermbg='s:tbg3
 exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkeyword' gui=bold cterm=bold'
-exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg=none ctermbg=none gui=bold cterm=bold'
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
@@ -119,6 +118,10 @@ exe 'hi Quote guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
+
+if (has('nvim'))
+    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold cterm=bold'
+endif
 
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
 exe 'hi Character guifg='s:const' ctermfg='s:tconst
