@@ -13,6 +13,8 @@ endif
 
 let g:colors_name = "danger"
 
+set t_Co=255
+
 " Define reusable colorvariables.
 
 " Gui colorslet
@@ -73,70 +75,6 @@ let s:tfunc="230"
 let s:tstr="153"
 let s:tvar="151"
 
-exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
-exe 'hi Visual guibg='s:bg4
-exe 'hi Cursor guibg='s:type
-exe 'hi CursorLine guibg='s:bg2
-exe 'hi CursorLineNr guifg='s:warning' guibg='s:bg2
-exe 'hi CursorColumn guibg='s:bg2' guifg='s:type' gui=bold'
-exe 'hi ColorColumn guibg='s:bg2
-exe 'hi LineNr guifg='s:fg5' guibg='s:bg
-exe 'hi VertSplit guifg='s:bg' guibg='s:fg5
-exe 'hi MatchParen guifg='s:type2' guibg='s:bg' gui=bold'
-exe 'hi StatusLine guifg='s:fg4' guibg='s:bg3' gui=bold'
-exe 'hi StatusLineNC guifg='s:bg' guibg='s:fg2' gui=bold'
-exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
-exe 'hi PmenuSel guibg='s:bg3
-exe 'hi IncSearch guifg='s:bg' guibg='s:keyword' gui=bold'
-exe 'hi Search guifg='s:warning2' guibg='s:bg' gui=bold'
-exe 'hi Directory guifg='s:const
-exe 'hi Folded guifg='s:fg4' guibg='s:bg
-exe 'hi WildMenu guifg='s:str' guibg='s:bg
-exe 'hi TabLine guifg='s:fg' guibg='s:bg
-exe 'hi Quote guifg='s:fg' guibg='s:bg
-exe 'hi Folded guifg='s:fg' guibg='s:bg
-exe 'hi FoldColumn guifg='s:fg' guibg='s:bg
-exe 'hi SignColumn guifg='s:fg' guibg='s:bg
-
-exe 'hi Boolean guifg='s:const
-exe 'hi Character guifg='s:const
-exe 'hi Comment guifg='s:comment
-exe 'hi Conditional guifg='s:keyword
-exe 'hi Constant guifg='s:const
-exe 'hi Todo guibg='s:bg
-exe 'hi Define guifg='s:keyword
-exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
-exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin' ctermbg='s:tbuiltin
-exe 'hi DiffDelete guifg='s:bg' guibg='s:warning2
-exe 'hi DiffChange guifg='s:bg' guibg='s:const
-exe 'hi DiffText guifg='s:fg' guibg='s:warning' gui=bold'
-exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
-exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
-exe 'hi Float guifg='s:const
-exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:fg
-exe 'hi Keyword guifg='s:keyword'  gui=bold'
-exe 'hi Label guifg='s:var
-exe 'hi NonText guifg='s:bg4' guibg='s:bg
-exe 'hi Number guifg='s:const
-exe 'hi Operator guifg='s:keyword
-exe 'hi PreProc guifg='s:keyword
-exe 'hi Special guifg='s:fg
-exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
-exe 'hi Statement guifg='s:keyword
-exe 'hi StorageClass guifg='s:type' gui=italic'
-exe 'hi String guifg='s:str
-exe 'hi Tag guifg='s:keyword
-exe 'hi Title guifg='s:fg' gui=bold'
-exe 'hi Todo guifg='s:fg2' gui=inverse,bold'
-exe 'hi Type guifg='s:type
-exe 'hi Underlined gui=underline'
-
-exe 'hi SpellBad guifg='s:fg' guibg='s:warning2' guisp='s:warning' " undercurl color'
-exe 'hi SpellCap guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
-exe 'hi SpellLocal guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
-exe 'hi SpellRare guifg='s:fg' guibg='s:keyword' guisp='s:warning' " undercurl color'
-
 " Neovim Terminal Mode
 let g:terminal_color_0 = s:bg
 let g:terminal_color_1 = s:warning
@@ -155,20 +93,84 @@ let g:terminal_color_13 = s:const
 let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
+exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg4
+exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
+exe 'hi CursorLine guibg='s:bg2' ctermbg='s:tbg2' cterm=none'
+exe 'hi CursorLineNr guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2
+exe 'hi CursorColumn guibg='s:bg2' ctermbg='s:tbg2' guifg='s:type' ctermfg='s:ttype' gui=bold cterm=bold'
+exe 'hi ColorColumn guibg='s:bg2' ctermbg='s:tbg2
+exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
+exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg=none'
+exe 'hi MatchParen guifg='s:type2' ctermfg='s:ttype2' guibg='s:bg' gui=bold cterm=bold'
+exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg3' ctermbg='s:tbg3' gui=bold cterm=bold'
+exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
+exe 'hi Pmenu guifg='s:fg' ctermfg='s:tfg' guibg='s:bg2' ctermbg='s:tbg2
+exe 'hi PmenuSel guibg='s:bg3' ctermbg='s:tbg3
+exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' gui=bold cterm=bold'
+exe 'hi Directory guifg='s:const' ctermfg='s:tconst
+exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
+exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
+exe 'hi TabLine guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi Quote guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
+exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
+
+exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
+exe 'hi Character guifg='s:const' ctermfg='s:tconst
+exe 'hi Comment guifg='s:comment' ctermfg='s:tcomment
+exe 'hi Conditional guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi Constant guifg='s:const' ctermfg='s:tconst
+exe 'hi Todo guibg='s:bg
+exe 'hi Define guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
+exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin' ctermbg='s:tbuiltin
+exe 'hi DiffDelete guifg='s:bg' ctermfg='s:tbg' guibg='s:warning2
+exe 'hi DiffChange guifg='s:bg' guibg='s:const' ctermbg='s:tconst
+exe 'hi DiffText guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarning' gui=bold cterm=bold'
+exe 'hi ErrorMsg guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2' ctermbg='s:tbg2' gui=bold'
+exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning2' ctermbg='s:twarning2
+exe 'hi Float guifg='s:const' ctermfg='s:tconst
+exe 'hi Function guifg='s:func' ctermfg='s:tfunc
+exe 'hi Identifier guifg='s:fg' ctermfg='s:tfg
+exe 'hi Keyword guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
+exe 'hi Label guifg='s:var' ctermfg='s:tvar
+exe 'hi NonText guifg='s:bg4' ctermfg='s:tbg4' guibg='s:bg' ctermbg='s:tbg
+exe 'hi Number guifg='s:const' ctermfg='s:tconst
+exe 'hi Operator guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi PreProc guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi Special guifg='s:fg' ctermfg='s:tfg
+exe 'hi SpecialKey guifg='s:fg2' ctermfg='s:tfg2' guibg='s:bg2' ctermbg='s:tbg2
+exe 'hi Statement guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi StorageClass guifg='s:type' ctermfg='s:ttype' gui=italic'
+exe 'hi String guifg='s:str' ctermfg='s:tstr
+exe 'hi Tag guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi Title guifg='s:fg' ctermfg='s:tfg' gui=bold cterm=bold'
+exe 'hi Todo guifg='s:fg2' ctermfg='s:tfg2' gui=inverse,bold cterm=inverse,bold'
+exe 'hi Type guifg='s:type' ctermfg='s:ttype
+exe 'hi Underlined gui=underline'
+
+exe 'hi SpellBad guifg='s:fg' ctermfg='s:tfg' guibg='s:warning2' ctermbg='s:twarning2' guisp='s:warning' " undercurl color'
+exe 'hi SpellCap guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
+exe 'hi SpellLocal guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
+exe 'hi SpellRare guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
+
 " Python Highlighting
 exe 'hi pythonBuiltinFunc guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi pythonImport guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStatement guifg='s:warning' ctermfg='s:twarning
-exe 'hi pythonStrFormat guifg='s:var
-exe 'hi pythonClassVar guifg='s:var
+exe 'hi pythonStrFormat guifg='s:var' ctermfg='s:tvar
+exe 'hi pythonClassVar guifg='s:var' ctermfg='s:tvar
 exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
-exe 'hi pythonStrInterpRegion guifg='s:var
+exe 'hi pythonStrInterpRegion guifg='s:var' ctermfg='s:tvar
 exe 'hi pythonDottedName guifg='s:builtin' ctermfg='s:tbuiltin
-exe 'hi pythonDecorator guifg='s:fg4
-exe 'hi pythonException guifg='s:keyword
-exe 'hi pythonExClass guifg='s:keyword' gui=bold'
-exe 'hi pythonRun guifg='s:comment' gui=italic'
+exe 'hi pythonDecorator guifg='s:fg4' ctermfg='s:tfg4
+exe 'hi pythonException guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi pythonExClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic'
 
 if has("autocmd")
     au BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
@@ -176,20 +178,20 @@ if has("autocmd")
     au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
 endif
 
-exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg=62 gui=bold'
-exe 'hi dangerPythonParens guifg='s:keyword2' ctermfg=62'
-exe 'hi dangerPythonArg guifg='s:var
+exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2' gui=bold'
+exe 'hi dangerPythonParens guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi dangerPythonArg guifg='s:var' ctermfg='s:tvar
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
-exe 'hi rubyLocalVariableOrMethod guifg='s:var
-exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
-exe 'hi rubyInstanceVariable guifg='s:var
-exe 'hi rubyKeyword guifg='s:keyword
-exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
-exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
-exe 'hi rubyClass guifg='s:keyword' gui=bold'
-exe 'hi rubyNumber guifg='s:const
+exe 'hi rubyLocalVariableOrMethod guifg='s:var' ctermfg='s:tvar
+exe 'hi rubyGlobalVariable guifg='s:var' ctermfg='s:tvar' gui=italic'
+exe 'hi rubyInstanceVariable guifg='s:var' ctermfg='s:tvar
+exe 'hi rubyKeyword guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi rubyKeywordAsMethod guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi rubyClassDeclaration guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi rubyClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
+exe 'hi rubyNumber guifg='s:const' ctermfg='s:tconst
 
 " Go Highlighting
 exe 'hi goBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
@@ -212,46 +214,46 @@ let g:go_highlight_variable_declarations  = 1
 
 " Javascript Highlighting
 exe 'hi jsBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
-exe 'hi jsFunction guifg='s:keyword' gui=bold'
-exe 'hi jsGlobalObjects guifg='s:type
-exe 'hi jsAssignmentExps guifg='s:var
+exe 'hi jsFunction guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi jsGlobalObjects guifg='s:type' ctermfg='s:ttype
+exe 'hi jsAssignmentExps guifg='s:var' ctermfg='s:tvar
 
 " Html Highlighting
-exe 'hi htmlLink guifg='s:var' gui=underline'
-exe 'hi htmlStatement guifg='s:keyword
-exe 'hi htmlSpecialTagName guifg='s:keyword
+exe 'hi htmlLink guifg='s:var' ctermfg='s:tvar' gui=underline'
+exe 'hi htmlStatement guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi htmlSpecialTagName guifg='s:keyword' ctermfg='s:tkeyword
 
 " Markdown Highlighting
 exe 'hi mkdCode guifg='s:builtin' ctermfg='s:tbuiltin
 
 " Csharp Highlighting
-exe 'hi csBraces guifg='s:var
-exe 'hi csParens guifg='s:keyword2
-exe 'hi csOpSymbols guifg='s:warning2
-exe 'hi csModifier guifg='s:keyword2' gui=italic'
-exe 'hi csType guifg='s:type
-exe 'hi csConstant guifg='s:const
-exe 'hi csStorage guifg='s:type2
-exe 'hi csClass guifg='s:type2
-exe 'hi csClassType guifg='s:type2
+exe 'hi csBraces guifg='s:var' ctermfg='s:tvar
+exe 'hi csParens guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi csOpSymbols guifg='s:warning2' ctermfg='s:twarning2
+exe 'hi csModifier guifg='s:keyword2' ctermfg='s:tkeyword2' gui=italic cterm=italic'
+exe 'hi csType guifg='s:type' ctermfg='s:ttype
+exe 'hi csConstant guifg='s:const' ctermfg='s:tconst
+exe 'hi csStorage guifg='s:type2' ctermfg='s:ttype2
+exe 'hi csClass guifg='s:type2' ctermfg='s:ttype2
+exe 'hi csClassType guifg='s:type2' ctermfg='s:ttype2
 exe 'hi csQuote guifg='s:warning' ctermfg='s:twarning
-exe 'hi csString guifg='s:str
+exe 'hi csString guifg='s:str' ctermfg='s:tstr
 exe 'hi csUnspecifiedStatement guifg='s:warning' ctermfg='s:twarning
-exe 'hi csClassName guifg='s:type
-exe 'hi csGenericBraces guifg='s:warning2
-exe 'hi csConditional guifg='s:keyword
-exe 'hi csNew guifg='s:keyword
-exe 'hi csNewType guifg='s:keyword
-exe 'hi csRepeat guifg='s:keyword
-exe 'hi csException guifg='s:keyword
-exe 'hi csIsType guifg='s:type
-exe 'hi csIsAs guifg='s:keyword2
-exe 'hi csContextualStatement guifg='s:keyword2
-exe 'hi csUnsupportedStatement guifg='s:keyword2
+exe 'hi csClassName guifg='s:type' ctermfg='s:ttype
+exe 'hi csGenericBraces guifg='s:warning2' ctermfg='s:twarning2
+exe 'hi csConditional guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csNew guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csNewType guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csRepeat guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csException guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csIsType guifg='s:type' ctermfg='s:ttype
+exe 'hi csIsAs guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi csContextualStatement guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi csUnsupportedStatement guifg='s:keyword2' ctermfg='s:tkeyword2
 
 " C Highlighting
-exe 'hi cParen guifg='s:var
-exe 'hi cCustomParen guifg='s:var
+exe 'hi cParen guifg='s:var' ctermfg='s:tvar
+exe 'hi cCustomParen guifg='s:var' ctermfg='s:tvar
 
 " CtrlP Highlighting
-exe 'hi CtrlPMatch guifg='s:type' gui=italic,bold'
+exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
