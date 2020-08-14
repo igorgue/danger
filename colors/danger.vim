@@ -33,7 +33,7 @@ let s:bg4="#394160"
 let s:bg5="#344055"
 
 let s:keyword="#8787d7"
-let s:keyword2="#8787ff"
+let s:keyword2="#875fff"
 
 let s:warning="#ff8787"
 let s:warning2="#ff5f00"
@@ -62,7 +62,7 @@ let s:tbg4="242"
 let s:tbg5="246"
 
 let s:tkeyword="104"
-let s:tkeyword2="105"
+let s:tkeyword2="99"
 
 let s:twarning="210"
 let s:twarning2="202"
@@ -110,7 +110,7 @@ exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2'
 exe 'hi Pmenu guifg='s:fg' ctermfg='s:tfg' guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi PmenuSel guibg='s:bg3' ctermbg='s:tbg3
 exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkeyword' gui=bold cterm=bold'
-exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' gui=bold cterm=bold'
+exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg=none ctermbg=none gui=bold cterm=bold'
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
