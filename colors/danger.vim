@@ -94,14 +94,14 @@ let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
 exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
-exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg4
+exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg3
 exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
 exe 'hi CursorLine guibg='s:bg2' ctermbg='s:tbg2' cterm=none'
 exe 'hi CursorLineNr guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2
 exe 'hi CursorColumn guibg='s:bg2' ctermbg='s:tbg2' guifg='s:type' ctermfg='s:ttype' gui=bold cterm=bold'
 exe 'hi ColorColumn guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
-exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg=none'
+exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg='s:tbg2
 exe 'hi MatchParen guifg='s:type2' ctermfg='s:ttype2' guibg='s:bg' gui=bold cterm=bold'
 exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg3' ctermbg='s:tbg3' gui=bold cterm=bold'
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
