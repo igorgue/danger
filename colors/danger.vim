@@ -137,7 +137,7 @@ exe 'hi Function guifg='s:func' ctermfg='s:tfunc
 exe 'hi Identifier guifg='s:fg' ctermfg='s:tfg
 exe 'hi Keyword guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
 exe 'hi Label guifg='s:var' ctermfg='s:tvar
-exe 'hi NonText guifg='s:bg4' ctermfg='s:tbg4' guibg='s:bg' ctermbg='s:tbg
+exe 'hi NonText guifg='s:bg4' ctermfg='s:tbg4' guibg='s:bg' ctermbg=none'
 exe 'hi Number guifg='s:const' ctermfg='s:tconst
 exe 'hi Operator guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi PreProc guifg='s:keyword' ctermfg='s:tkeyword
