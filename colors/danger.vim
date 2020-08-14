@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.9.0
+" Version:      1.9.1
 
 " Distributable under the same terms as Vim itself (see :help license)
 
@@ -24,6 +24,8 @@ let s:fg3="#9e9e9e"
 let s:fg4="#808080"
 let s:fg5="#626262"
 
+" TODO Backgrounds don't match cterm colors,
+" defaults I couldn't find a gray that I like or turned bluish
 let s:bg="#161925"
 let s:bg2="#262B40"
 let s:bg3="#454555"
