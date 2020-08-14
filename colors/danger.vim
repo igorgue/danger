@@ -14,31 +14,66 @@ endif
 let g:colors_name = "danger"
 
 " Define reusable colorvariables.
-let s:fg="#dcdcd9"
-let s:bg="#161925"
-let s:keyword="#a3aad8"
-let s:builtin="#2d9f73"
-let s:const= "#dfca53"
-let s:comment="#66667A"
-let s:func="#eddbbf"
-let s:str="#acc6d7"
-let s:type="#dbbfed"
-let s:var="#c6d7ac"
-let s:warning="#d8a3aa"
 
-let s:fg2="#b6b6af"
-let s:fg3="#d6d6d6"
-let s:fg4="#9d9d95"
-let s:fg5="#42423D"
+" Gui colorslet
+let s:fg="#dadada"
+let s:fg2="#bcbcbc"
+let s:fg3="#9e9e9e"
+let s:fg4="#808080"
+let s:fg5="#626262"
+
+let s:bg="#161925"
 let s:bg2="#262B40"
 let s:bg3="#454555"
 let s:bg4="#394160"
 let s:bg5="#344055"
-let s:keyword2="#8c95cf"
-let s:warning2="#f8a5b1"
-let s:type2="#edbfe8"
 
-exe 'hi Normal guifg='s:fg' guibg='s:bg
+let s:keyword="#8787d7"
+let s:keyword2="#8787ff"
+
+let s:warning="#ff8787"
+let s:warning2="#ff5f00"
+
+let s:type="#ffd7ff"
+let s:type2="#ffd7d7"
+
+let s:builtin="#00af87"
+let s:const= "#ffd75f"
+let s:comment="#6c6c6c"
+let s:func="#ffffd7"
+let s:str="#afd7ff"
+let s:var="#afd7af"
+
+" Terminal colors
+let s:tfg="253"
+let s:tfg2="250"
+let s:tfg3="247"
+let s:tfg4="244"
+let s:tfg5="241"
+
+let s:tbg="232"
+let s:tbg2="235"
+let s:tbg3="239"
+let s:tbg4="242"
+let s:tbg5="246"
+
+let s:tkeyword="104"
+let s:tkeyword2="105"
+
+let s:twarning="210"
+let s:twarning2="202"
+
+let s:ttype="225"
+let s:ttype2="224"
+
+let s:tbuiltin="36"
+let s:tconst= "221"
+let s:tcomment="242"
+let s:tfunc="230"
+let s:tstr="153"
+let s:tvar="151"
+
+exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Visual guibg='s:bg4
 exe 'hi Cursor guibg='s:type
 exe 'hi CursorLine guibg='s:bg2
@@ -71,7 +106,7 @@ exe 'hi Constant guifg='s:const
 exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword
 exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
-exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin
+exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin' ctermbg='s:tbuiltin
 exe 'hi DiffDelete guifg='s:bg' guibg='s:warning2
 exe 'hi DiffChange guifg='s:bg' guibg='s:const
 exe 'hi DiffText guifg='s:fg' guibg='s:warning' gui=bold'
@@ -121,15 +156,15 @@ let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
 " Python Highlighting
-exe 'hi pythonBuiltinFunc guifg='s:builtin
-exe 'hi pythonImport guifg='s:warning
-exe 'hi pythonStatement guifg='s:warning
+exe 'hi pythonBuiltinFunc guifg='s:builtin' ctermfg='s:tbuiltin
+exe 'hi pythonImport guifg='s:warning' ctermfg='s:twarning
+exe 'hi pythonStatement guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrFormat guifg='s:var
 exe 'hi pythonClassVar guifg='s:var
-exe 'hi pythonRepeat guifg='s:warning
-exe 'hi pythonOperator guifg='s:warning
+exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
+exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrInterpRegion guifg='s:var
-exe 'hi pythonDottedName guifg='s:builtin
+exe 'hi pythonDottedName guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi pythonDecorator guifg='s:fg4
 exe 'hi pythonException guifg='s:keyword
 exe 'hi pythonExClass guifg='s:keyword' gui=bold'
@@ -141,12 +176,12 @@ if has("autocmd")
     au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
 endif
 
-exe 'hi dangerPythonDefClass guifg='s:keyword2' gui=bold'
-exe 'hi dangerPythonParens guifg='s:keyword2
+exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg=62 gui=bold'
+exe 'hi dangerPythonParens guifg='s:keyword2' ctermfg=62'
 exe 'hi dangerPythonArg guifg='s:var
 
 " Ruby Highlighting
-exe 'hi rubyAttribute guifg='s:builtin
+exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi rubyLocalVariableOrMethod guifg='s:var
 exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
 exe 'hi rubyInstanceVariable guifg='s:var
@@ -157,7 +192,7 @@ exe 'hi rubyClass guifg='s:keyword' gui=bold'
 exe 'hi rubyNumber guifg='s:const
 
 " Go Highlighting
-exe 'hi goBuiltins guifg='s:builtin
+exe 'hi goBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
 let g:go_highlight_array_whitespace_error = 1
 let g:go_highlight_build_constraints      = 1
 let g:go_highlight_chan_whitespace_error  = 1
@@ -176,7 +211,7 @@ let g:go_highlight_variable_assignments   = 1
 let g:go_highlight_variable_declarations  = 1
 
 " Javascript Highlighting
-exe 'hi jsBuiltins guifg='s:builtin
+exe 'hi jsBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi jsFunction guifg='s:keyword' gui=bold'
 exe 'hi jsGlobalObjects guifg='s:type
 exe 'hi jsAssignmentExps guifg='s:var
@@ -187,7 +222,7 @@ exe 'hi htmlStatement guifg='s:keyword
 exe 'hi htmlSpecialTagName guifg='s:keyword
 
 " Markdown Highlighting
-exe 'hi mkdCode guifg='s:builtin
+exe 'hi mkdCode guifg='s:builtin' ctermfg='s:tbuiltin
 
 " Csharp Highlighting
 exe 'hi csBraces guifg='s:var
@@ -199,9 +234,9 @@ exe 'hi csConstant guifg='s:const
 exe 'hi csStorage guifg='s:type2
 exe 'hi csClass guifg='s:type2
 exe 'hi csClassType guifg='s:type2
-exe 'hi csQuote guifg='s:warning
+exe 'hi csQuote guifg='s:warning' ctermfg='s:twarning
 exe 'hi csString guifg='s:str
-exe 'hi csUnspecifiedStatement guifg='s:warning
+exe 'hi csUnspecifiedStatement guifg='s:warning' ctermfg='s:twarning
 exe 'hi csClassName guifg='s:type
 exe 'hi csGenericBraces guifg='s:warning2
 exe 'hi csConditional guifg='s:keyword
