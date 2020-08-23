@@ -171,7 +171,7 @@ exe 'hi pythonClassVar guifg='s:var' ctermfg='s:tvar
 exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrInterpRegion guifg='s:var' ctermfg='s:tvar
-exe 'hi pythonDottedName guifg='s:builtin' ctermfg='s:tbuiltin
+exe 'hi pythonDottedName guifg='s:builtin' ctermfg='s:tbuiltin' gui=italic cterm=italic'
 exe 'hi pythonDecorator guifg='s:fg4' ctermfg='s:tfg4
 exe 'hi pythonException guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi pythonExClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
@@ -259,6 +259,9 @@ exe 'hi csUnsupportedStatement guifg='s:keyword2' ctermfg='s:tkeyword2
 " C Highlighting
 exe 'hi cParen guifg='s:var' ctermfg='s:tvar
 exe 'hi cCustomParen guifg='s:var' ctermfg='s:tvar
+
+" Nim Highlighting
+exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 
 " CtrlP Highlighting
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
