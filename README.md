@@ -53,6 +53,10 @@ Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
 
 Don't forget to add its `uuid` to the `/org/gnome/terminal/legacy/profiles:/list` d-conf value
 
+### sublime text
+
+Open `Preferences -> Browse Packages`, and make a directory called `Colorsublime-Themes` if it doesn't exits, inside that directory copy `danger.tmTheme`.
+
 ### bat
 
 ```sh
