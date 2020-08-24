@@ -11,28 +11,59 @@ Add `colorscheme danger` to your `~/.vimrc` (Use `~/.config/.nvim/init.vim` for 
 ### vundle
 Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
 
+```vim
     Plugin 'igorgue/danger'
+```
 
 ### vim-plug
 Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
 
+```vim
     Plug 'igorgue/danger'
+```
 
 ### pathogen
 
+```sh
     cd ~/.vim/bundle
     git clone https://github.com/igorgue/danger.git
+```
 
 ### manual
 
+```sh
     cd ~/.vim/colors
     git clone git://github.com/igorgue/danger.git danger
     cp danger/colors/danger.vim .
+```
+
+## extras
 
 ### lightline
 
+```vim
     let g:lightline = { 'colorscheme': 'danger' }
+```
 
 ### gnome-terminal
 
+```sh
     cd gnome-terminal && ./load-gnome-terminal-theme
+```
+
+Don't forget to add its `uuid` to the `/org/gnome/terminal/legacy/profiles:/list` d-conf value
+
+### bat
+
+```sh
+    mkdir -p "$(bat --config-dir)/themes"
+    cd "$(bat --config-dir)/themes"
+    git clone https://github.com/igorgue/danger
+    bat cache --build
+```
+
+Now add this to your shell rc file (e.g.: `~/.bashrc` or `~/.zshrc`):
+
+```sh
+    export BAT_THEME="danger"
+```
