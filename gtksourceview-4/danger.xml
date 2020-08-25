@@ -42,7 +42,10 @@
   <color name="cyan"    value="#00af87"/>
   <color name="green"   value="#afd7af"/>
 
-  <color name="base03-02-blend" value="#344055"/>
+  <color name="comment"   value="#6c6c6c"/>
+  <color name="constant"   value="#ffd75f"/>
+
+  <color name="base03-02-blend" value="#454555"/>
 
   <!-- Global Settings -->
   <style name="text"                        foreground="base1" background="base03"/>
@@ -50,22 +53,22 @@
   <style name="cursor"                      foreground="magenta"/>
   <style name="secondary-cursor"            foreground="base00"/>
   <style name="current-line"                background="base02"/>
-  <style name="line-numbers"                foreground="base01" background="base02"/>
+  <style name="line-numbers"                foreground="base01" background="base03"/>
   <style name="background-pattern"          background="base03-02-blend"/>
 
   <!-- Bracket Matching -->
-  <style name="bracket-match"               foreground="base03" background="base01"/>
-  <style name="bracket-mismatch"            foreground="red" background="base01"/>
+  <style name="bracket-match"               foreground="magenta" bold="true"/>
+  <style name="bracket-mismatch"            foreground="red" bold="true"/>
 
   <!-- Right Margin -->
   <style name="right-margin"                foreground="base2" background="base1"/>
 
   <!-- Search Matching -->
-  <style name="search-match"                foreground="base03" background="yellow"/>
+  <style name="search-match"                foreground="red" bold="true"/>
 
   <!-- Comments -->
-  <style name="def:comment"                 foreground="base01"/>
-  <style name="def:shebang"                 foreground="base01" bold="true"/>
+  <style name="def:comment"                 foreground="comment"/>
+  <style name="def:shebang"                 foreground="comment" italic="true"/>
   <style name="def:doc-comment-element"     italic="true"/>
 
   <!-- Constants -->
@@ -76,10 +79,10 @@
   <style name="def:identifier"              foreground="blue"/>
 
   <!-- Statements -->
-  <style name="def:statement"               foreground="orange"/>
+  <style name="def:statement"               foreground="blue"/>
 
   <!-- Types -->
-  <style name="def:type"                    foreground="yellow"/>
+  <style name="def:type"                    foreground="blue"/>
 
   <!-- Markup -->
   <style name="def:emphasis"                italic="true"/>
@@ -90,8 +93,8 @@
   <style name="def:link-text"               foreground="base01"/>
   <style name="def:link-symbol"             foreground="base01" bold="true"/>
   <style name="def:link-destination"        italic="true" underline="single"/>
-  <style name="def:heading"                 foreground="yellow"/>
-  <style name="def:thematic-break"          foreground="yellow"/>
+  <style name="def:heading"                 foreground="violet"/>
+  <style name="def:thematic-break"          foreground="violet"/>
   <style name="def:preformatted-section"    foreground="blue"/>
   <style name="def:list-marker"             foreground="orange"/>
 
@@ -99,7 +102,7 @@
   <style name="def:operator"                foreground="green"/>
 
   <!-- Others -->
-  <style name="def:preprocessor"            foreground="violet"/>
+  <style name="def:preprocessor"            foreground="red"/>
   <style name="def:error"                   foreground="red" bold="true"/>
   <style name="def:note"                    foreground="magenta" bold="true"/>
   <style name="def:net-address"             italic="true" underline="single"/>

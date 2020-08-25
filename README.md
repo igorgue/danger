@@ -57,6 +57,10 @@ Don't forget to add its `uuid` to the `/org/gnome/terminal/legacy/profiles:/list
 
 Open `Preferences -> Browse Packages`, and make a directory called `Colorsublime-Themes` if it doesn't exits, inside that directory copy `danger.tmTheme`.
 
+### gedit
+
+Add `gtksourceview-4/danger.xml` on `Preferences / Font & Colors` using the `+`.
+
 ### bat
 
 ```sh
