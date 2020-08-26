@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.9.1
+" Version:      1.9.2
 
 " Distributable under the same terms as Vim itself (see :help license)
 

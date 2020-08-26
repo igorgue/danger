@@ -1,0 +1,21 @@
+{
+    "name": "danger",
+    "displayName": "Danger",
+    "description": "",
+    "version": "1.9.2",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Danger",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Danger-color-theme.json"
+            }
+        ]
+    }
+}
