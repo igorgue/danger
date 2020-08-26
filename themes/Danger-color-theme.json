@@ -214,7 +214,7 @@
 		"notificationLink.foreground": "#ff5f00",
 		"extensionButton.prominentForeground": "#1e1e2e",
 		"extensionButton.prominentBackground": "#ffd75f",
-		"extensionButton.prominentHoverBackground": "#efdc3582",
+		"extensionButton.prominentHoverBackground": "#efdc35",
 		"pickerGroup.border": "#1e1e2e",
 		"pickerGroup.foreground": "#3A3A4C",
 		"terminal.background": "#262B40",
