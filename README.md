@@ -4,6 +4,8 @@ I've been using this color scheme for 15 years. It includes some goodies for Pyt
 
 ![Python Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/python.png)
 
+![All Editors Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/all.png)
+
 ## vim
 
 As usual install on Vim is different, depends on what package management you use, or if you do nvim (like myself). Here's how to install:
