@@ -1,6 +1,6 @@
 # danger
 
-I've been using this color scheme for 15 years. It includes some goodies for Python and CSharp. There's still some changes for Ruby, Nim, Go, Rust and other languages that I have not yet ported to this new structure. Will do later. Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I wan't every editor I use or stumble uppon to have the same color scheme.
+I've been using this color scheme for 15 years. It includes some goodies for Python and CSharp. There's still some changes for Ruby, Nim, Go, Rust and other languages that I have not yet ported to this new structure. Will do later. Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I want every editor I use or stumble upon to have the same color scheme.
 
 ![Python Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/python.png)
 
