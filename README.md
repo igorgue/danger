@@ -14,29 +14,29 @@ As usual install on Vim is different, depends on what package management you use
 Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
 
 ```vim
-    Plugin 'igorgue/danger'
+Plugin 'igorgue/danger'
 ```
 
 ### vim-plug
 Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
 
 ```vim
-    Plug 'igorgue/danger'
+Plug 'igorgue/danger'
 ```
 
 ### pathogen
 
 ```sh
-    cd ~/.vim/bundle
-    git clone https://github.com/igorgue/danger.git
+cd ~/.vim/bundle
+git clone https://github.com/igorgue/danger.git
 ```
 
 ### manual
 
 ```sh
-    cd ~/.vim/colors
-    git clone git://github.com/igorgue/danger.git danger
-    cp danger/colors/danger.vim .
+cd ~/.vim/colors
+git clone git://github.com/igorgue/danger.git danger
+cp danger/colors/danger.vim .
 ```
 
 Add `colorscheme danger` to your `~/.vimrc` (Use `~/.config/.nvim/init.vim` for nvim). To configure it on startup.
@@ -46,13 +46,13 @@ Add `colorscheme danger` to your `~/.vimrc` (Use `~/.config/.nvim/init.vim` for 
 ### lightline
 
 ```vim
-    let g:lightline = { 'colorscheme': 'danger' }
+let g:lightline = { 'colorscheme': 'danger' }
 ```
 
 ### gnome-terminal
 
 ```sh
-    cd gnome-terminal && ./load-gnome-terminal-theme
+cd gnome-terminal && ./load-gnome-terminal-theme
 ```
 
 Don't forget to add its `uuid` to the `/org/gnome/terminal/legacy/profiles:/list` d-conf value
@@ -70,8 +70,8 @@ I'm unsure how to install it but the color theme is based on its syntax so it's 
 Copy the root directory to `~/.vscode/extensions/`
 
 ```sh
-    mkdir -p ~/.vscode/extensions
-    cp -r danger ~/.vscode/extensions/
+mkdir -p ~/.vscode/extensions
+cp -r danger ~/.vscode/extensions/
 ```
 
 Will publish later, I do not use vscode that much
@@ -83,10 +83,10 @@ Add `gtksourceview-4/danger.xml` on `Preferences / Font & Colors` using the `+`.
 ### bat
 
 ```sh
-    mkdir -p "$(bat --config-dir)/themes"
-    cd "$(bat --config-dir)/themes"
-    git clone https://github.com/igorgue/danger
-    bat cache --build
+mkdir -p "$(bat --config-dir)/themes"
+cd "$(bat --config-dir)/themes"
+git clone https://github.com/igorgue/danger
+bat cache --build
 ```
 
 Now add this to your shell rc file (e.g.: `~/.bashrc` or `~/.zshrc`):
@@ -94,5 +94,5 @@ Now add this to your shell rc file (e.g.: `~/.bashrc` or `~/.zshrc`):
 This will also work for the `fzf` plugin on vim, just make sure your vim uses the same shell.
 
 ```sh
-    export BAT_THEME="danger"
+export BAT_THEME="danger"
 ```
