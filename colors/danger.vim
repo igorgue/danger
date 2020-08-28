@@ -236,23 +236,26 @@ exe 'hi csOpSymbols guifg='s:warning2' ctermfg='s:twarning2
 exe 'hi csModifier guifg='s:keyword2' ctermfg='s:tkeyword2' gui=italic cterm=italic'
 exe 'hi csType guifg='s:type' ctermfg='s:ttype
 exe 'hi csConstant guifg='s:const' ctermfg='s:tconst
-exe 'hi csStorage guifg='s:type2' ctermfg='s:ttype2
-exe 'hi csClass guifg='s:type2' ctermfg='s:ttype2
+exe 'hi csStorage guifg='s:keyword' ctermfg='s:tkeyword' gui=italic cterm=italic'
+exe 'hi csClass guifg='s:keyword' ctermfg='s:tkeyword' gui=italic cterm=italic'
 exe 'hi csClassType guifg='s:type2' ctermfg='s:ttype2
 exe 'hi csQuote guifg='s:warning' ctermfg='s:twarning
 exe 'hi csString guifg='s:str' ctermfg='s:tstr
-exe 'hi csUnspecifiedStatement guifg='s:warning' ctermfg='s:twarning
+exe 'hi csUnspecifiedStatement guifg='s:warning' ctermfg='s:twarning' gui=italic cterm=italic'
 exe 'hi csClassName guifg='s:type' ctermfg='s:ttype
 exe 'hi csGenericBraces guifg='s:warning2' ctermfg='s:twarning2
+exe 'hi csGeneric guifg='s:type2' ctermfg='s:ttype2
 exe 'hi csConditional guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi csNew guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi csNewType guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi csRepeat guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi csNew guifg='s:keyword' ctermfg='s:tkeyword' gui=italic cterm=italic'
+exe 'hi csNewType guifg='s:type' ctermfg='s:ttype
+exe 'hi csRepeat guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi csException guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi csIsType guifg='s:type' ctermfg='s:ttype
-exe 'hi csIsAs guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi csIsType guifg='s:type' ctermfg='s:ttype' gui=italic cterm=italic'
+exe 'hi csIsAs guifg='s:warning' ctermfg='s:twarning' gui=italic cterm=italic'
+exe 'hi csLogicSymbols guifg='s:warning' ctermfg='s:twarning
 exe 'hi csContextualStatement guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi csUnsupportedStatement guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi csAsync guifg='s:keyword' ctermfg='s:tkeyword
 
 " C Highlighting
 exe 'hi cParen guifg='s:var' ctermfg='s:tvar
@@ -263,3 +266,6 @@ exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 
 " CtrlP Highlighting
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
+
+" CoC
+exe 'hi CocHighlightText guifg='s:warning' ctermfg='s:twarning' gui=bold cterm=bold'
