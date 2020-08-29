@@ -175,12 +175,7 @@ exe 'hi pythonException guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi pythonExClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
 exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic'
 
-if has("autocmd")
-    au BufRead,BufNewFile *.py syn keyword dangerPythonDefClass def class
-    au BufRead,BufNewFile *.py syn match dangerPythonParens /[(){}\[\]]/
-    au BufRead,BufNewFile *.py syn match dangerPythonArg "\v[\(\,]\s{-}\zs\w+\ze\s{-}\=(\=)@!"
-endif
-
+" These are defined on after/syntax/python.vim
 exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2' gui=bold'
 exe 'hi dangerPythonParens guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonArg guifg='s:var' ctermfg='s:tvar
