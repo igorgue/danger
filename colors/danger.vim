@@ -162,6 +162,7 @@ exe 'hi SpellRare guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkey
 
 " Python Highlighting
 exe 'hi pythonBuiltinFunc guifg='s:builtin' ctermfg='s:tbuiltin
+exe 'hi pythonBuiltinObj guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi pythonImport guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStatement guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrFormat guifg='s:var' ctermfg='s:tvar
@@ -176,9 +177,14 @@ exe 'hi pythonExClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold
 exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic'
 
 " These are defined on after/syntax/python.vim
+exe 'hi dangerPythonTypedArgument guifg='s:var' ctermfg='s:tvar
 exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2' gui=bold'
-exe 'hi dangerPythonParens guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi dangerPythonBrackets guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi dangerPythonSquareBrackets guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi dangerPythonIndex guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonArg guifg='s:var' ctermfg='s:tvar
+exe 'hi dangerPythonParen guifg='s:fg2' ctermfg='s:tfg2
+exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
