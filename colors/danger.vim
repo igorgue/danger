@@ -166,7 +166,7 @@ exe 'hi pythonBuiltinObj guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi pythonImport guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStatement guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrFormat guifg='s:var' ctermfg='s:tvar
-exe 'hi pythonClassVar guifg='s:var' ctermfg='s:tvar
+exe 'hi pythonClassVar guifg='s:builtin' ctermfg='s:tbuiltin' gui=italic cterm=italic'
 exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrInterpRegion guifg='s:var' ctermfg='s:tvar
@@ -185,6 +185,21 @@ exe 'hi dangerPythonIndex guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonArg guifg='s:var' ctermfg='s:tvar
 exe 'hi dangerPythonParen guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
+
+" Now Semshi colors
+exe 'hi semshiLocal guifg='s:warning' ctermfg='s:twarning
+exe 'hi semshiGlobal guifg='s:const' ctermfg='s:tconst
+exe 'hi semshiImported guifg='s:const' ctermfg='s:tconst
+exe 'hi semshiParameter guifg='s:var' ctermfg='s:tvar
+exe 'hi semshiParameterUnused guifg='s:var' ctermfg='s:tvar' cterm=underline gui=underline'
+exe 'hi semshiFree guifg='s:type' ctermfg='s:ttype
+exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
+exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
+exe 'hi semshiSelf guifg='s:type' ctermfg='s:ttype' gui=italic cterm=italic'
+exe 'hi semshiUnresolved guifg='s:warning' ctermfg='s:twarning
+exe 'hi semshiSelected guifg='s:warning' ctermfg='s:twarning' cterm=bold gui=bold'
+exe 'hi semshiErrorSign guifg='s:warning2' ctermfg='s:twarning2' cterm=bold gui=bold'
+exe 'hi semshiErrorChar guifg='s:warning2' ctermfg='s:twarning2' cterm=bold gui=bold'
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
