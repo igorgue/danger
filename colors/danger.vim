@@ -166,7 +166,7 @@ exe 'hi pythonBuiltinObj guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi pythonImport guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStatement guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrFormat guifg='s:var' ctermfg='s:tvar
-exe 'hi pythonClassVar guifg='s:builtin' ctermfg='s:tbuiltin' gui=italic cterm=italic'
+exe 'hi pythonClassVar guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonStrInterpRegion guifg='s:var' ctermfg='s:tvar
