@@ -118,7 +118,7 @@ exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 
 if (has('nvim'))
-    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold cterm=bold'
+    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold,underline cterm=bold,underline'
 endif
 
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
@@ -189,13 +189,13 @@ exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
 " Now Semshi colors
 exe 'hi semshiLocal guifg='s:warning' ctermfg='s:twarning
 exe 'hi semshiGlobal guifg='s:const' ctermfg='s:tconst
-exe 'hi semshiImported guifg='s:const' ctermfg='s:tconst
+exe 'hi semshiImported guifg='s:type' ctermfg='s:tconst
 exe 'hi semshiParameter guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiParameterUnused guifg='s:var' ctermfg='s:tvar' cterm=underline gui=underline'
 exe 'hi semshiFree guifg='s:type' ctermfg='s:ttype
 exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
-exe 'hi semshiSelf guifg='s:type' ctermfg='s:ttype' gui=italic cterm=italic'
+exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi semshiUnresolved guifg='s:warning' ctermfg='s:twarning
 exe 'hi semshiSelected guifg='s:warning' ctermfg='s:twarning' cterm=bold gui=bold'
 exe 'hi semshiErrorSign guifg='s:warning2' ctermfg='s:twarning2' cterm=bold gui=bold'
@@ -284,4 +284,4 @@ exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
 
 " CoC
-exe 'hi CocHighlightText guifg='s:warning' ctermfg='s:twarning' gui=bold cterm=bold'
+exe 'hi CocHighlightText guifg='s:warning' ctermfg='s:twarning
