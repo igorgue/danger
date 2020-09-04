@@ -169,12 +169,13 @@ exe 'hi pythonStrFormat guifg='s:var' ctermfg='s:tvar
 exe 'hi pythonClassVar guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi pythonRepeat guifg='s:warning' ctermfg='s:twarning
 exe 'hi pythonOperator guifg='s:warning' ctermfg='s:twarning
-exe 'hi pythonStrInterpRegion guifg='s:var' ctermfg='s:tvar
 exe 'hi pythonDottedName guifg='s:builtin' ctermfg='s:tbuiltin' gui=italic cterm=italic'
 exe 'hi pythonDecorator guifg='s:fg4' ctermfg='s:tfg4
 exe 'hi pythonException guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi pythonExClass guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
 exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic'
+exe 'hi pythonFString guifg='s:str' ctermfg='s:tstr
+exe 'hi pythonStrInterpRegion guifg='s:fg' ctermfg='s:tfg
 
 " These are defined on after/syntax/python.vim
 exe 'hi dangerPythonTypedArgument guifg='s:var' ctermfg='s:tvar
