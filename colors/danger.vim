@@ -102,7 +102,6 @@ exe 'hi CursorColumn guibg='s:bg2' ctermbg='s:tbg2' guifg='s:type' ctermfg='s:tt
 exe 'hi ColorColumn guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
 exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg='s:tbg2
-exe 'hi MatchParen guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold cterm=bold'
 exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg3' ctermbg='s:tbg3' gui=bold cterm=bold'
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
 exe 'hi Pmenu guifg='s:fg' ctermfg='s:tfg' guibg='s:bg2' ctermbg='s:tbg2
@@ -118,7 +117,11 @@ exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 
 if (has('nvim'))
+    exe 'hi MatchParen guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold cterm=bold'
     exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold,underline cterm=bold,underline'
+else
+    exe 'hi MatchParen guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
+    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' ctermbg='s:tbg' gui=bold,underline cterm=bold,underline'
 endif
 
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
