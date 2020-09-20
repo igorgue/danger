@@ -117,10 +117,10 @@ exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 
 if (has('nvim'))
-    exe 'hi MatchParen guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold cterm=bold'
+    exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none'
     exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold,underline cterm=bold,underline'
 else
-    exe 'hi MatchParen guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
+    exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
     exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' ctermbg='s:tbg' gui=bold,underline cterm=bold,underline'
 endif
 
@@ -288,4 +288,4 @@ exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
 
 " CoC
-exe 'hi CocHighlightText guifg='s:warning' ctermfg='s:twarning
+exe 'hi CocHighlightText guisp='s:warning2' ctermfg='s:twarning2' gui=bold,undercurl cterm=bold,underline'
