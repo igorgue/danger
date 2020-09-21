@@ -288,4 +288,4 @@ exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
 
 " CoC
-exe 'hi CocHighlightText guisp='s:warning2' ctermfg='s:twarning2' gui=bold,undercurl cterm=bold,underline'
+exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
