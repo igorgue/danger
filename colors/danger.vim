@@ -17,7 +17,7 @@ set t_Co=255
 
 " Define reusable colorvariables.
 
-" Gui colorslet
+" Gui colorset
 let s:fg="#dadada"
 let s:fg2="#bcbcbc"
 let s:fg3="#9e9e9e"
