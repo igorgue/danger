@@ -104,8 +104,8 @@ exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
 exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg='s:tbg2
 exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg3' ctermbg='s:tbg3' gui=bold cterm=bold'
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
-exe 'hi Pmenu guifg='s:fg' ctermfg='s:tfg' guibg='s:bg2' ctermbg='s:tbg2
-exe 'hi PmenuSel guibg='s:bg3' ctermbg='s:tbg3
+exe 'hi Pmenu guifg='s:fg2' guibg='s:bg2' ctermbg='s:tbg2
+exe 'hi PmenuSel guifg='s:type' ctermfg='s:ttype' guibg='s:bg4' ctermbg='s:tbg4' gui=bold cterm=bold'
 exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkeyword' gui=bold cterm=bold'
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
