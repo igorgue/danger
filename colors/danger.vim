@@ -288,4 +288,8 @@ exe 'hi nimBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi CtrlPMatch guifg='s:type' ctermfg='s:ttype' gui=italic,bold cterm=italic,bold'
 
 " CoC
-exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
+if exists("g:gnvim")
+    exe 'hi CocHighlightText guisp='s:fg' gui=italic,bold,underline cterm=italic,bold,underline'
+else
+    exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
+endif
