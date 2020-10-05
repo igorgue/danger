@@ -237,6 +237,10 @@ let g:go_highlight_variable_declarations  = 1
 
 " Rust Highlighting
 exe 'hi rustCommentLineDoc guifg='s:comment' ctermfg='s:tcomment
+exe 'hi rustLifetime guifg='s:var' ctermfg='s:tvar
+exe 'hi rustModPathSep guifg='s:warning' ctermfg='s:twarning
+exe 'hi rustOperator guifg='s:warning' ctermfg='s:twarning
+exe 'hi rustAttribute guifg='s:keyword2' ctermfg='s:tkeyword2
 
 " Javascript Highlighting
 exe 'hi jsBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
