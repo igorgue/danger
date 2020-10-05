@@ -235,6 +235,9 @@ let g:go_highlight_types                  = 1
 let g:go_highlight_variable_assignments   = 1
 let g:go_highlight_variable_declarations  = 1
 
+" Rust Highlighting
+exe 'hi rustCommentLineDoc guifg='s:comment' ctermfg='s:tcomment
+
 " Javascript Highlighting
 exe 'hi jsBuiltins guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi jsFunction guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
