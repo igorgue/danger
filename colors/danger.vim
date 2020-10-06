@@ -300,3 +300,8 @@ if exists("g:gnvim")
 else
     exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
 endif
+
+exec 'hi CocErrorSign guifg='s:warning2' ctermfg='s:twarning2
+exec 'hi CocWarningSign guifg='s:warning' ctermfg='s:twarning
+exec 'hi CocInfoSign guifg='s:const' ctermfg='s:tconst
+exec 'hi CocHintSign guifg='s:keyword' ctermfg='s:tkeyword
