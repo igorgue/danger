@@ -305,3 +305,25 @@ exec 'hi CocErrorSign guifg='s:warning2' ctermfg='s:twarning2
 exec 'hi CocWarningSign guifg='s:warning' ctermfg='s:twarning
 exec 'hi CocInfoSign guifg='s:const' ctermfg='s:tconst
 exec 'hi CocHintSign guifg='s:keyword' ctermfg='s:tkeyword
+
+" NvimLSP
+exe 'hi LspDiagnosticsDefaultError guifg='s:warning2''
+exe 'hi LspDiagnosticsDefaultWarning guifg='s:warning''
+exe 'hi LspDiagnosticsDefaultInformation guifg='s:const''
+exe 'hi LspDiagnosticsDefaultHint guifg='s:func''
+exe 'hi LspDiagnosticsVirtualTextError guifg='w:warning''
+exe 'hi LspDiagnosticsVirtualTextWarning guifg='s:warning2''
+exe 'hi LspDiagnosticsVirtualTextInformation guifg='s:const''
+exe 'hi LspDiagnosticsVirtualTextHint guifg='s:func''
+exe 'hi LspDiagnosticsUnderlineError guifg='s:warning''
+exe 'hi LspDiagnosticsUnderlineWarning guifg='s:warning2''
+exe 'hi LspDiagnosticsUnderlineInformation guifg='s:const''
+exe 'hi LspDiagnosticsUnderlineHint guifg='s:func''
+exe 'hi LspDiagnosticsFloatingError guifg='s:warning''
+exe 'hi LspDiagnosticsFloatingWarning guifg='s:warning2''
+exe 'hi LspDiagnosticsFloatingInformation guifg='s:const''
+exe 'hi LspDiagnosticsFloatingHint guifg='s:func''
+exe 'hi LspDiagnosticsSignError guifg='s:warning''
+exe 'hi LspDiagnosticsSignWarning guifg='s:warning2''
+exe 'hi LspDiagnosticsSignInformation guifg='s:const''
+exe 'hi LspDiagnosticsSignHint guifg='s:func''
