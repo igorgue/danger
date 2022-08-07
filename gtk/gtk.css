@@ -1,0 +1,42 @@
+/*
+
+  Danger theme for libadwaita
+  and adw-gtk3 - https://github.com/lassekongo83/adw-gtk3
+
+  1. If ~/.config/gtk-4.0/gtk.css and/or ~/.config/gtk-3.0/gtk.css exists, make backups
+  2. Enable the adw-gtk3-dark theme
+  3. Save this file to ~/.config/gtk-4.0/gtk.css
+  4. Make the file a symbolic link to ~/.config/gtk-3.0/gtk.css (or copy it to that location)
+  5. Close and re-open any open apps or log out and in again
+
+*/
+
+/* Global color definitions */
+
+@define-color window_bg_color #161925;
+@define-color window_fg_color #dadada;
+@define-color view_bg_color #262B40;
+@define-color view_fg_color @window_fg_color;
+@define-color accent_bg_color #875fff;
+@define-color accent_color @accent_bg_color;
+@define-color headerbar_bg_color @window_bg_color;
+@define-color headerbar_fg_color @window_fg_color;
+@define-color popover_bg_color #454555;
+@define-color popover_fg_color @view_fg_color;
+@define-color card_bg_color rgba(255, 255, 255, 0.08);
+@define-color card_fg_color @window_fg_color;
+
+/* More customizations */
+
+headerbar:backdrop {
+  background-color: #020511;
+}
+
+headerbar.button.titlebutton:backdrop {
+    color: red;
+}
+
+button:backdrop {
+  opacity: 0.4;
+  color: #626262;
+}

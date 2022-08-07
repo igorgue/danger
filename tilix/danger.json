@@ -1,0 +1,29 @@
+{
+    "name": "Danger",
+    "comment": "Danger colorscheme",
+    "foreground-color": "#dadada",
+    "background-color": "#161925",
+    "use-theme-colors": false,
+    "use-highlight-color": false,
+    "highlight-foreground-color": "#ffffff",
+    "highlight-background-color": "#808080",
+    "use-cursor-color": false,
+    "cursor-foreground-color": "#ffd7ff",
+    "cursor-background-color": "#ffd7d7",
+    "use-badge-color": true,
+    "badge-color": "#875fff",
+    "palette": [
+        "#8787d7",
+        "#875fff",
+        "#ff8787",
+        "#ff5f00",
+        "#ffd7ff",
+        "#ffd7d7",
+        "#00af87",
+        "#ffd75f",
+        "#6c6c6c",
+        "#ffffd7",
+        "#afd7ff",
+        "#afd7af"
+    ]
+}
