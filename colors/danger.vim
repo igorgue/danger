@@ -5,15 +5,10 @@
 
 " Distributable under the same terms as Vim itself (see :help license)
 
+set background=dark
+
 hi clear
-
-if exists("syntax on")
-    syntax reset
-endif
-
 let g:colors_name = "danger"
-
-set t_Co=255
 
 " Define reusable colorvariables.
 
@@ -101,8 +96,8 @@ exe 'hi CursorLineNr guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2
 exe 'hi CursorColumn guibg='s:bg2' ctermbg='s:tbg2' guifg='s:type' ctermfg='s:ttype' gui=bold cterm=bold'
 exe 'hi ColorColumn guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
-exe 'hi VertSplit guifg='s:bg' ctermfg='s:tbg2' guibg='s:fg5' ctermbg='s:tbg2
-exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg3' ctermbg='s:tbg3' gui=bold cterm=bold'
+exe 'hi VertSplit guifg='s:bg2' ctermfg='s:tbg2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
 exe 'hi Pmenu guifg='s:fg2' guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi PmenuSel guifg='s:type' ctermfg='s:ttype' guibg='s:bg4' ctermbg='s:tbg4' gui=bold cterm=bold'
