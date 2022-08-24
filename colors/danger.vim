@@ -134,6 +134,7 @@ exe 'hi DiffText guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarn
 exe 'hi ErrorMsg guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2' ctermbg='s:tbg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning2' ctermbg='s:twarning2
 exe 'hi Float guifg='s:const' ctermfg='s:tconst
+exe 'hi FloatBoarder guifg='s:bg2' ctermfg='s:tbg2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi Function guifg='s:func' ctermfg='s:tfunc
 exe 'hi Identifier guifg='s:fg' ctermfg='s:tfg
 exe 'hi Keyword guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
@@ -322,3 +323,6 @@ exe 'hi LspDiagnosticsSignError guifg='s:warning''
 exe 'hi LspDiagnosticsSignWarning guifg='s:warning2''
 exe 'hi LspDiagnosticsSignInformation guifg='s:const''
 exe 'hi LspDiagnosticsSignHint guifg='s:func''
+
+" Telescope
+exe 'hi TelescopeBorder guifg='s:bg3' ctermfg='s:tbg3' guibg='s:bg' ctermbg='s:tbg
