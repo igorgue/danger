@@ -697,7 +697,7 @@ StScrollBar {
 /* TOP BAR */
 #panel {
   background-gradient-direction: none;
-  background-color: #161925;
+  background-color: #020511;
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
@@ -760,7 +760,7 @@ StScrollBar {
   #panel .screencast-indicator {
     color: #f47d49; }
   #panel.solid {
-    background-color: #161925;
+    background-color: #020511;
     /* transition from transparent to solid */
     transition-duration: 300ms; }
     #panel.solid .panel-corner {
