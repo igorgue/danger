@@ -1,14 +1,15 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.9.2
+" Version:      1.9.3
 
 " Distributable under the same terms as Vim itself (see :help license)
 
-set background=dark
-
 hi clear
+
+set background=dark
 let g:colors_name = "danger"
+
 
 " Define reusable colorvariables.
 
@@ -105,7 +106,9 @@ exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkey
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
-exe 'hi TabLine guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi TabLine guifg='s:bg4' ctermfg='s:tbg4' guibg=none gui=none cterm=none'
+exe 'hi TabLineSel guibg='s:keyword2' ctermbg='s:tkeyword2' guifg='s:bg' ctermfg='s:tbg' gui=none cterm=none'
+exe 'hi TabLineFill guifg='s:bg' ctermfg='s:tbg' gui=none cterm=none'
 exe 'hi Quote guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
