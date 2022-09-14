@@ -119,10 +119,10 @@ exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 
 if (has('nvim'))
     exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
-    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' ctermbg=none guibg=none gui=bold,underline cterm=bold,underline'
+    exe 'hi Search guifg=none ctermfg=none ctermbg='s:tkeyword2' guibg='s:keyword' gui=bold cterm=bold'
 else
     exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
-    exe 'hi Search guifg='s:warning2' ctermfg='s:twarning2' guibg='s:bg' ctermbg='s:tbg' gui=bold,underline cterm=bold,underline'
+    exe 'hi Search guifg=none ctermfg=none ctermbg='s:tkeyword2' guibg='s:keyword' gui=bold cterm=bold'
 endif
 
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
