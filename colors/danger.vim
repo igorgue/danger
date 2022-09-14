@@ -29,8 +29,10 @@ let s:bg5="#344055"
 let s:keyword="#8787d7"
 let s:keyword2="#875fff"
 
+let s:success="#00af87"
 let s:warning="#ff8787"
 let s:warning2="#ff5f00"
+let s:error="#ff3525"
 
 let s:type="#ffd7ff"
 let s:type2="#ffd7d7"
@@ -41,6 +43,7 @@ let s:comment="#6c6c6c"
 let s:func="#ffffd7"
 let s:str="#afd7ff"
 let s:var="#afd7af"
+
 
 " Terminal colors
 let s:tfg="253"
@@ -58,8 +61,10 @@ let s:tbg5="246"
 let s:tkeyword="104"
 let s:tkeyword2="99"
 
+let s:tsuccess="36"
 let s:twarning="210"
 let s:twarning2="202"
+let s:terror="160"
 
 let s:ttype="225"
 let s:ttype2="224"
@@ -81,7 +86,7 @@ let g:terminal_color_5 = s:builtin
 let g:terminal_color_6 = s:fg3
 let g:terminal_color_7 = s:str
 let g:terminal_color_8 = s:bg2
-let g:terminal_color_9 = s:warning2
+let g:terminal_color_9 = s:error
 let g:terminal_color_10 = s:fg2
 let g:terminal_color_11 = s:var
 let g:terminal_color_12 = s:const
@@ -129,13 +134,13 @@ exe 'hi Conditional guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi Constant guifg='s:const' ctermfg='s:tconst
 exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi Error gui=undercurl guibg=NONE guisp='s:warning2
+exe 'hi Error gui=undercurl guibg=NONE guisp='s:error
 exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin' ctermbg='s:tbuiltin
-exe 'hi DiffDelete guifg='s:bg' ctermfg='s:tbg' guibg='s:warning2
+exe 'hi DiffDelete guifg='s:bg' ctermfg='s:tbg' guibg='s:error
 exe 'hi DiffChange guifg='s:bg' guibg='s:const' ctermbg='s:tconst
 exe 'hi DiffText guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarning' gui=bold cterm=bold'
 exe 'hi ErrorMsg guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2' ctermbg='s:tbg2' gui=bold'
-exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning2' ctermbg='s:twarning2
+exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarning
 exe 'hi Float guifg='s:const' ctermfg='s:tconst
 exe 'hi FloatBoarder guifg='s:bg2' ctermfg='s:tbg2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi Function guifg='s:func' ctermfg='s:tfunc
@@ -157,7 +162,7 @@ exe 'hi Todo guifg='s:fg2' ctermfg='s:tfg2' gui=inverse,bold cterm=inverse,bold'
 exe 'hi Type guifg='s:type' ctermfg='s:ttype
 exe 'hi Underlined gui=underline'
 
-exe 'hi SpellBad guifg='s:fg' ctermfg='s:tfg' guibg='s:warning2' ctermbg='s:twarning2' guisp='s:warning' " undercurl color'
+exe 'hi SpellBad guifg='s:fg' ctermfg='s:tfg' guibg='s:error' ctermbg='s:twarning2' guisp='s:warning' " undercurl color'
 exe 'hi SpellCap guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
 exe 'hi SpellLocal guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
 exe 'hi SpellRare guifg='s:fg' ctermfg='s:tfg' guibg='s:keyword' ctermbg='s:tkeyword' guisp='s:warning' " undercurl color'
@@ -201,8 +206,8 @@ exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi semshiUnresolved guifg='s:warning' ctermfg='s:twarning
 exe 'hi semshiSelected guifg='s:warning' ctermfg='s:twarning' cterm=bold gui=bold'
-exe 'hi semshiErrorSign guifg='s:warning2' ctermfg='s:twarning2' cterm=bold gui=bold'
-exe 'hi semshiErrorChar guifg='s:warning2' ctermfg='s:twarning2' cterm=bold gui=bold'
+exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:twarning2' cterm=bold gui=bold'
+exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:twarning2' cterm=bold gui=bold'
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
@@ -300,20 +305,33 @@ else
     exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
 endif
 
-exec 'hi CocErrorSign guifg='s:warning2' ctermfg='s:twarning2
+exec 'hi CocErrorSign guifg='s:error' ctermfg='s:twarning2
 exec 'hi CocWarningSign guifg='s:warning' ctermfg='s:twarning
 exec 'hi CocInfoSign guifg='s:const' ctermfg='s:tconst
 exec 'hi CocHintSign guifg='s:keyword' ctermfg='s:tkeyword
 
 " NvimLSP
-exe 'hi DiagnosticError guifg='s:warning2''
+exe 'hi DiagnosticError guifg='s:error''
 exe 'hi DiagnosticWarning guifg='s:warning''
 exe 'hi DiagnosticInformation guifg='s:comment''
 exe 'hi DiagnosticHint guifg='s:fg5''
-exe 'hi DiagnosticUnderlineError guifg='s:warning2''
+exe 'hi DiagnosticUnderlineError guifg='s:error''
 exe 'hi DiagnosticUnderlineWarning guifg='s:warning''
 exe 'hi DiagnosticUnderlineInformation guifg='s:comment''
 exe 'hi DiagnosticUnderlineHint guifg='s:fg5''
 
 " Telescope
 exe 'hi TelescopeBorder guifg='s:bg3' ctermfg='s:tbg3' guibg='s:bg' ctermbg='s:tbg
+
+" Gitsigns
+exe 'hi GitSignsAdd guifg='s:success' ctermfg='s:tsuccess
+exe 'hi GitSignsChange guifg='s:warning' ctermfg='s:twarning
+exe 'hi GitSignsAddNr guifg='s:success' ctermfg='s:tsuccess
+exe 'hi GitSignsDelete guifg='s:error' ctermfg='s:terror
+exe 'hi GitSignsAddNr guifg='s:success' ctermfg='s:tsuccess
+exe 'hi GitSignsChangeNr guifg='s:warning' ctermfg='s:twarning
+exe 'hi GitSignsDeleteNr guifg='s:error' ctermfg='s:terror
+exe 'hi GitSignsAddLn guifg='s:success' ctermfg='s:tsuccess
+exe 'hi GitSignsChangeLn guifg='s:warning' ctermfg='s:twarning
+exe 'hi GitSignsDeleteLn guifg='s:error' ctermfg='s:terror
+exe 'hi GitSignsCurrentLineBlame guifg='s:error' ctermfg='s:terror
