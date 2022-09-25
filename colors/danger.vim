@@ -193,7 +193,7 @@ exe 'hi dangerPythonParen guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
 
 " Now Semshi colors
-exe 'hi semshiLocal guifg='s:warning' ctermfg='s:twarning
+exe 'hi semshiLocal guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi semshiGlobal guifg='s:const' ctermfg='s:tconst
 exe 'hi semshiImported guifg='s:type' ctermfg='s:tconst
 exe 'hi semshiParameter guifg='s:var' ctermfg='s:tvar
@@ -202,10 +202,10 @@ exe 'hi semshiFree guifg='s:type' ctermfg='s:ttype
 exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
-exe 'hi semshiUnresolved guifg='s:warning' ctermfg='s:twarning
-exe 'hi semshiSelected guifg='s:warning' ctermfg='s:twarning' cterm=bold gui=bold'
-exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:twarning2' cterm=bold gui=bold'
-exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:twarning2' cterm=bold gui=bold'
+exe 'hi semshiUnresolved guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi semshiSelected guifg=none guibg='s:keyword2' ctermfg=none ctermbg='s:tkeyword2' cterm=bold,italic,underline gui=bold'
+exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
+exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
