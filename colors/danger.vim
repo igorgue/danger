@@ -42,7 +42,6 @@ let s:func="#ffffd7"
 let s:str="#afd7ff"
 let s:var="#afd7af"
 
-
 " Terminal colors
 let s:tfg="253"
 let s:tfg2="250"
@@ -333,3 +332,7 @@ exe 'hi GitSignsAddLn guifg='s:success' ctermfg='s:tsuccess
 exe 'hi GitSignsChangeLn guifg='s:warning' ctermfg='s:twarning
 exe 'hi GitSignsDeleteLn guifg='s:error' ctermfg='s:terror
 exe 'hi GitSignsCurrentLineBlame guifg='s:error' ctermfg='s:terror
+
+" Copilot
+exe 'hi CopilotSuggestion guifg='s:keyword' ctermfg='s:tkeyword' guibg=none gui=italic cterm=italic'
+exe 'hi CopilotAnnotation guifg='s:keyword2' ctermfg='s:tkeyword2' guibg=none gui=italic cterm=italic'
