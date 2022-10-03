@@ -42,6 +42,18 @@ let s:func="#ffffd7"
 let s:str="#afd7ff"
 let s:var="#afd7af"
 
+" Extra colors
+let s:extra1 = "#8787d7"
+let s:extra2 = "#87afaf"
+let s:extra3 = "#ff8787"
+let s:extra4 = "#ffafaf"
+let s:extra5 = "#9e9e9e"
+let s:extra6 = "#dadada"
+let s:extra7 = "#5f8787"
+let s:extra8 = "#87afaf"
+let s:extra9 = "#d7d787"
+let s:extra10 = "#afafff"
+
 " Terminal colors
 let s:tfg="253"
 let s:tfg2="250"
@@ -72,6 +84,17 @@ let s:tcomment="242"
 let s:tfunc="230"
 let s:tstr="153"
 let s:tvar="151"
+
+let s:textra1 = "104"
+let s:textra2 = "37"
+let s:textra3 = "210"
+let s:textra4 = "224"
+let s:textra5 = "247"
+let s:textra6 = "253"
+let s:textra7 = "37"
+let s:textra8 = "37"
+let s:textra9 = "104"
+let s:textra10 = "153"
 
 " Neovim Terminal Mode
 let g:terminal_color_0 = s:bg
@@ -181,9 +204,12 @@ exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic
 exe 'hi pythonFString guifg='s:str' ctermfg='s:tstr
 exe 'hi pythonStrInterpRegion guifg='s:fg' ctermfg='s:tfg
 
+" Dart Highlighting
+exe 'hi dartConstant guifg='s:const' ctermfg='s:tconst
+
 " These are defined on after/syntax/python.vim
 exe 'hi dangerPythonTypedArgument guifg='s:var' ctermfg='s:tvar
-exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2' gui=bold'
+exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonBrackets guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonSquareBrackets guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonIndex guifg='s:keyword2' ctermfg='s:tkeyword2
@@ -336,3 +362,15 @@ exe 'hi GitSignsCurrentLineBlame guifg='s:error' ctermfg='s:terror
 " Copilot
 exe 'hi CopilotSuggestion guifg='s:keyword' ctermfg='s:tkeyword' guibg=none gui=italic cterm=italic'
 exe 'hi CopilotAnnotation guifg='s:keyword2' ctermfg='s:tkeyword2' guibg=none gui=italic cterm=italic'
+
+" Markid
+exe 'hi markid1 guifg='s:extra1' ctermfg='s:textra1
+exe 'hi markid2 guifg='s:extra2' ctermfg='s:textra2
+exe 'hi markid3 guifg='s:extra3' ctermfg='s:textra3
+exe 'hi markid4 guifg='s:extra4' ctermfg='s:textra4
+exe 'hi markid5 guifg='s:extra5' ctermfg='s:textra5
+exe 'hi markid6 guifg='s:extra6' ctermfg='s:textra6
+exe 'hi markid7 guifg='s:extra7' ctermfg='s:textra7
+exe 'hi markid8 guifg='s:extra8' ctermfg='s:textra8
+exe 'hi markid9 guifg='s:extra9' ctermfg='s:textra9
+exe 'hi markid10 guifg='s:extra10' ctermfg='s:textra10
