@@ -376,18 +376,18 @@ exe 'hi markid9 guifg='s:extra9' ctermfg='s:textra9
 exe 'hi markid10 guifg='s:extra10' ctermfg='s:textra10
 
 " nvim-notify
-exe 'hi NotifyERRORBorder guifg='s:error' ctermfg='s:terror'
-exe 'hi NotifyWARNBorder guifg='s:warning' ctermfg='s:twarning'
-exe 'hi NotifyINFOBorder guifg='s:var' ctermfg='s:tvar'
-exe 'hi NotifyDEBUGBorder guifg='s:comment' ctermfg='s:tcomment'
-exe 'hi NotifyTRACEBorder guifg='s:comment' ctermfg='s:tcomment'
-exe 'hi NotifyERRORIcon guifg='s:error' ctermfg='s:terror'
-exe 'hi NotifyWARNIcon guifg='s:warning' ctermfg='s:twarning'
-exe 'hi NotifyINFOIcon guifg='s:var' ctermfg='s:tvar'
-exe 'hi NotifyDEBUGIcon guifg='s:comment' ctermfg='s:tcomment'
-exe 'hi NotifyTRACEIcon guifg='s:comment' ctermfg='s:tcomment'
-exe 'hi NotifyERRORTitle  guifg='s:error' ctermfg='s:terror'
-exe 'hi NotifyWARNTitle guifg='s:warning' ctermfg='s:twarning'
-exe 'hi NotifyINFOTitle guifg='s:var' ctermfg='s:tvar'
-exe 'hi NotifyDEBUGTitle  guifg='s:comment' ctermfg='s:tcomment'
-exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment'
+exe 'hi NotifyERRORBorder guifg='s:error' ctermfg='s:terror
+exe 'hi NotifyWARNBorder guifg='s:warning' ctermfg='s:twarning
+exe 'hi NotifyINFOBorder guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyDEBUGBorder guifg='s:comment' ctermfg='s:tcomment
+exe 'hi NotifyTRACEBorder guifg='s:comment' ctermfg='s:tcomment
+exe 'hi NotifyERRORIcon guifg='s:error' ctermfg='s:terror
+exe 'hi NotifyWARNIcon guifg='s:warning' ctermfg='s:twarning
+exe 'hi NotifyINFOIcon guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyDEBUGIcon guifg='s:comment' ctermfg='s:tcomment
+exe 'hi NotifyTRACEIcon guifg='s:comment' ctermfg='s:tcomment
+exe 'hi NotifyERRORTitle  guifg='s:error' ctermfg='s:terror
+exe 'hi NotifyWARNTitle guifg='s:warning' ctermfg='s:twarning
+exe 'hi NotifyINFOTitle guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyDEBUGTitle  guifg='s:comment' ctermfg='s:tcomment
+exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment
