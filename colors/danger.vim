@@ -85,7 +85,7 @@ let s:tfunc="230"
 let s:tstr="153"
 let s:tvar="151"
 
-let s:textra1 = "151"
+let s:textra1 = "37"
 let s:textra2 = "37"
 let s:textra3 = "37"
 let s:textra4 = "37"
