@@ -43,16 +43,16 @@ let s:str="#afd7ff"
 let s:var="#afd7af"
 
 " Extra colors
-let s:extra1 = "#afd7af"
-let s:extra2 = "#87bba2"
-let s:extra3 = "#87afaf"
-let s:extra4 = "#92b6b6"
-let s:extra5 = "#5f8787"
-let s:extra6 = "#dede9c"
-let s:extra7 = "#d7d787"
-let s:extra8 = "#999933"
-let s:extra9 = "#c9e4ca"
-let s:extra10 = "#dcf763"
+let s:extra1 = "#daa8c8"
+let s:extra2 = "#c79eda"
+let s:extra3 = "#da9ea6"
+let s:extra4 = "#9f9eda"
+let s:extra5 = "#9ed9da"
+let s:extra6 = "#9ecbda"
+let s:extra7 = "#a5da9e"
+let s:extra8 = "#dac89e"
+let s:extra9 = "#dac09e"
+let s:extra10 = "#d7d787"
 
 " Terminal colors
 let s:tfg="253"
@@ -85,16 +85,16 @@ let s:tfunc="230"
 let s:tstr="153"
 let s:tvar="151"
 
-let s:textra1 = "37"
-let s:textra2 = "37"
-let s:textra3 = "37"
-let s:textra4 = "37"
-let s:textra5 = "37"
-let s:textra6 = "37"
-let s:textra7 = "37"
-let s:textra8 = "37"
-let s:textra9 = "37"
-let s:textra10 = "37"
+let s:textra1 = "205"
+let s:textra2 = "177"
+let s:textra3 = "203"
+let s:textra4 = "99"
+let s:textra5 = "109"
+let s:textra6 = "105"
+let s:textra7 = "118"
+let s:textra8 = "214"
+let s:textra9 = "208"
+let s:textra10 = "190"
 
 " Neovim Terminal Mode
 let g:terminal_color_0 = s:bg
@@ -118,11 +118,11 @@ exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg3
 exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
 exe 'hi CursorLine guibg='s:bg2' ctermbg='s:tbg2' cterm=none'
-exe 'hi CursorLineNr guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2
+exe 'hi CursorLineNr guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg2
 exe 'hi CursorColumn guibg='s:bg2' ctermbg='s:tbg2' guifg='s:type' ctermfg='s:ttype' gui=bold cterm=bold'
 exe 'hi ColorColumn guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi LineNr guifg='s:fg5' ctermfg='s:tfg5' guibg='s:bg
-exe 'hi VertSplit guifg='s:bg2' ctermfg='s:tbg2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi VertSplit guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
 exe 'hi Pmenu guifg='s:fg2' guibg='s:bg2' ctermbg='s:tbg2
@@ -162,7 +162,7 @@ exe 'hi DiffText guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarn
 exe 'hi ErrorMsg guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2' ctermbg='s:tbg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarning
 exe 'hi Float guifg='s:const' ctermfg='s:tconst
-exe 'hi FloatBoarder guifg='s:bg2' ctermfg='s:tbg2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi FloatBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:keyword2' ctermbg='s:tkeyword2
 exe 'hi Function guifg='s:func' ctermfg='s:tfunc
 exe 'hi Identifier guifg='s:fg' ctermfg='s:tfg
 exe 'hi Keyword guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
@@ -208,12 +208,12 @@ exe 'hi pythonStrInterpRegion guifg='s:fg' ctermfg='s:tfg
 exe 'hi dartConstant guifg='s:const' ctermfg='s:tconst
 
 " These are defined on after/syntax/python.vim
-exe 'hi dangerPythonTypedArgument guifg='s:var' ctermfg='s:tvar
+exe 'hi dangerPythonTypedArgument guifg='s:fg' ctermfg='s:tfg
 exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonBrackets guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonSquareBrackets guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonIndex guifg='s:keyword2' ctermfg='s:tkeyword2
-exe 'hi dangerPythonArg guifg='s:var' ctermfg='s:tvar
+exe 'hi dangerPythonArg guifg='s:fg' ctermfg='s:tfg
 exe 'hi dangerPythonParen guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
 
@@ -221,8 +221,8 @@ exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi semshiLocal guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi semshiGlobal guifg='s:const' ctermfg='s:tconst
 exe 'hi semshiImported guifg='s:type' ctermfg='s:tconst
-exe 'hi semshiParameter guifg='s:var' ctermfg='s:tvar
-exe 'hi semshiParameterUnused guifg='s:var' ctermfg='s:tvar' cterm=underline gui=underline'
+exe 'hi semshiParameter guifg='s:fg' ctermfg='s:tfg
+exe 'hi semshiParameterUnused guifg='s:fg' ctermfg='s:tfg' cterm=underline gui=underline'
 exe 'hi semshiFree guifg='s:type' ctermfg='s:ttype
 exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
@@ -234,8 +234,8 @@ exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin' ctermfg='s:tbuiltin
-exe 'hi rubyLocalVariableOrMethod guifg='s:var' ctermfg='s:tvar
-exe 'hi rubyGlobalVariable guifg='s:var' ctermfg='s:tvar' gui=italic'
+exe 'hi rubyLocalVariableOrMethod guifg='s:fg' ctermfg='s:tfg
+exe 'hi rubyGlobalVariable guifg='s:const' ctermfg='s:tconst' gui=italic'
 exe 'hi rubyInstanceVariable guifg='s:var' ctermfg='s:tvar
 exe 'hi rubyKeyword guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi rubyKeywordAsMethod guifg='s:keyword' ctermfg='s:tkeyword' gui=bold cterm=bold'
@@ -344,7 +344,7 @@ exe 'hi DiagnosticUnderlineInformation guifg='s:comment''
 exe 'hi DiagnosticUnderlineHint guifg='s:fg5''
 
 " Telescope
-exe 'hi TelescopeBorder guifg='s:bg3' ctermfg='s:tbg3' guibg='s:bg' ctermbg='s:tbg
+exe 'hi TelescopeBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 
 " Gitsigns
 exe 'hi GitSignsAdd guifg='s:success' ctermfg='s:tsuccess
