@@ -44,9 +44,9 @@ let s:var="#afd7af"
 
 " Extra colors
 let s:extra1 = "#daa8c8"
-let s:extra2 = "#c79eda"
+let s:extra2 = "#d7a8a8"
 let s:extra3 = "#da9ea6"
-let s:extra4 = "#9f9eda"
+let s:extra4 = "#9f9e9e"
 let s:extra5 = "#9ed9da"
 let s:extra6 = "#9ecbda"
 let s:extra7 = "#a5da9e"
@@ -86,12 +86,12 @@ let s:tstr="153"
 let s:tvar="151"
 
 let s:textra1 = "205"
-let s:textra2 = "177"
-let s:textra3 = "203"
-let s:textra4 = "99"
+let s:textra2 = "203"
+let s:textra3 = "202"
+let s:textra4 = "244"
 let s:textra5 = "109"
-let s:textra6 = "105"
-let s:textra7 = "118"
+let s:textra6 = "108"
+let s:textra7 = "64"
 let s:textra8 = "214"
 let s:textra9 = "208"
 let s:textra10 = "190"
@@ -162,7 +162,8 @@ exe 'hi DiffText guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarn
 exe 'hi ErrorMsg guifg='s:warning' ctermfg='s:twarning' guibg='s:bg2' ctermbg='s:tbg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' ctermfg='s:tfg' guibg='s:warning' ctermbg='s:twarning
 exe 'hi Float guifg='s:const' ctermfg='s:tconst
-exe 'hi FloatBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:keyword2' ctermbg='s:tkeyword2
+exe 'hi NormalFloat guibg='s:bg' ctermbg='s:tbg
+exe 'hi FloatBorder guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi Function guifg='s:func' ctermfg='s:tfunc
 exe 'hi Identifier guifg='s:fg' ctermfg='s:tfg
 exe 'hi Keyword guifg='s:keyword' ctermfg='s:tkeyword' gui=bold'
@@ -342,6 +343,9 @@ exe 'hi DiagnosticUnderlineError guifg='s:error''
 exe 'hi DiagnosticUnderlineWarning guifg='s:warning''
 exe 'hi DiagnosticUnderlineInformation guifg='s:comment''
 exe 'hi DiagnosticUnderlineHint guifg='s:fg5''
+
+exe 'hi LspCodeLens guifg='s:bg3' guibg=none gui=italic cterm=italic'
+exe 'hi LspCodeLensSeparator guifg='s:bg3' guibg=none gui=italic cterm=italic'
 
 " Telescope
 exe 'hi TelescopeBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
