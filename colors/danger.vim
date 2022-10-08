@@ -347,6 +347,8 @@ exe 'hi DiagnosticUnderlineHint guifg='s:fg5''
 exe 'hi LspCodeLens guifg='s:bg3' guibg=none gui=italic cterm=italic'
 exe 'hi LspCodeLensSeparator guifg='s:bg3' guibg=none gui=italic cterm=italic'
 
+exe 'hi LspInfoBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+
 " Telescope
 exe 'hi TelescopeBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 
