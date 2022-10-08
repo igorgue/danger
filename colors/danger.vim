@@ -213,7 +213,7 @@ exe 'hi dangerPythonTypedArgument guifg='s:fg' ctermfg='s:tfg
 exe 'hi dangerPythonDefClass guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi dangerPythonBrackets guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonSquareBrackets guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi dangerPythonIndex guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi dangerPythonIndex guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi dangerPythonArg guifg='s:fg' ctermfg='s:tfg
 exe 'hi dangerPythonParen guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi dangerPythonParenBlock guifg='s:fg2' ctermfg='s:tfg2
@@ -229,7 +229,7 @@ exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi semshiUnresolved guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi semshiSelected guifg=none guibg='s:keyword2' ctermfg=none ctermbg='s:tkeyword2' cterm=bold,italic,underline gui=bold'
+exe 'hi semshiSelected guifg=none guibg='s:keyword' ctermfg=none ctermbg='s:tkeyword' cterm=bold,italic,underline gui=bold'
 exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 
