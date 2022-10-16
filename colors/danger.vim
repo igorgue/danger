@@ -205,6 +205,11 @@ exe 'hi pythonRun guifg='s:comment' ctermfg='s:tcomment' gui=italic cterm=italic
 exe 'hi pythonFString guifg='s:str' ctermfg='s:tstr
 exe 'hi pythonStrInterpRegion guifg='s:fg' ctermfg='s:tfg
 
+" Django templates
+exe 'hi djangoFilter guifg='s:func' ctermfg='s:tfunc
+exe 'hi djangoStatement guifg='s:type' ctermfg='s:ttype
+exe 'hi djangoVarBlock guifg='s:var' ctermfg='s:tvar
+
 " Dart Highlighting
 exe 'hi dartConstant guifg='s:const' ctermfg='s:tconst
 
@@ -278,8 +283,13 @@ exe 'hi jsAssignmentExps guifg='s:var' ctermfg='s:tvar
 
 " Html Highlighting
 exe 'hi htmlLink guifg='s:var' ctermfg='s:tvar' gui=underline'
+exe 'hi htmlBold gui=bold cterm=bold'
+exe 'hi htmlItalic gui=italic cterm=italic'
 exe 'hi htmlStatement guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi htmlSpecialTagName guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi htmlTag guifg='s:type2' ctermfg='s:ttype2
+exe 'hi htmlTagName guifg='s:type' ctermfg='s:ttype
+exe 'hi htmlArg guifg='s:var' ctermfg='s:tvar
 
 " Markdown Highlighting
 exe 'hi mkdCode guifg='s:builtin' ctermfg='s:tbuiltin
