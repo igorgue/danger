@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.9.3
+" Version:      1.10.0
 
 " Distributable under the same terms as Vim itself (see :help license)
 hi clear
@@ -9,7 +9,7 @@ hi clear
 set background=dark
 let g:colors_name = "danger"
 
-" Define reusable colorvariables.
+" Define reusable color variables.
 
 " Gui colorset
 let s:fg="#dadada"
@@ -127,7 +127,7 @@ exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg' ctermbg='s:tbg' g
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
 exe 'hi Pmenu guifg='s:fg2' guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi PmenuSel guifg='s:type' ctermfg='s:ttype' guibg='s:bg4' ctermbg='s:tbg4' gui=bold cterm=bold'
-exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword' ctermbg='s:tkeyword' gui=bold cterm=bold'
+exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
@@ -139,13 +139,8 @@ exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 
-if (has('nvim'))
-    exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
-    exe 'hi Search guifg=none ctermfg=none ctermbg='s:tkeyword2' guibg='s:keyword' gui=bold cterm=bold'
-else
-    exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' guibg='s:bg' ctermbg='s:tbg' gui=bold cterm=bold'
-    exe 'hi Search guifg=none ctermfg=none ctermbg='s:tkeyword2' guibg='s:keyword' gui=bold cterm=bold'
-endif
+exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
+exe 'hi Search guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2
 
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
 exe 'hi Character guifg='s:const' ctermfg='s:tconst
@@ -234,7 +229,7 @@ exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi semshiUnresolved guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi semshiSelected guifg=none guibg='s:keyword' ctermfg=none ctermbg='s:tkeyword' cterm=bold,italic,underline gui=bold'
+exe 'hi semshiselected guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
 exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 
