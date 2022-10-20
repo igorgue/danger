@@ -402,3 +402,15 @@ exe 'hi NotifyWARNTitle guifg='s:warning' ctermfg='s:twarning
 exe 'hi NotifyINFOTitle guifg='s:var' ctermfg='s:tvar
 exe 'hi NotifyDEBUGTitle  guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment
+
+" lsp saga TODO maybe use different colors, but consistency is great
+exe 'hi LspSagaCodeActionBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaAutoPreview guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaLspFinderBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi FinderSpinnerBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi DefinitionBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaHoverBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaRenameBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaDiagnosticBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LspSagaSignatureHelpBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+exe 'hi LSOutlinePreviewBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
