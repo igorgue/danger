@@ -386,6 +386,15 @@ exe 'hi markid8 guifg='s:extra8' ctermfg='s:textra8
 exe 'hi markid9 guifg='s:extra9' ctermfg='s:textra9
 exe 'hi markid10 guifg='s:extra10' ctermfg='s:textra10
 
+" rainbow colors
+exe 'hi rainbowcol1 guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi rainbowcol2 guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi rainbowcol3 guifg='s:builtin' ctermfg='s:tbuiltin
+exe 'hi rainbowcol4 guifg='s:type' ctermfg='s:ttype
+exe 'hi rainbowcol5 guifg='s:warning' ctermfg='s:twarning
+exe 'hi rainbowcol6 guifg='s:warning2' ctermfg='s:twarning2
+exe 'hi rainbowcol7 guifg='s:error' ctermfg='s:terror
+
 " nvim-notify
 exe 'hi NotifyERRORBorder guifg='s:error' ctermfg='s:terror
 exe 'hi NotifyWARNBorder guifg='s:warning' ctermfg='s:twarning
