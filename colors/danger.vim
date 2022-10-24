@@ -168,7 +168,7 @@ exe 'hi Number guifg='s:const' ctermfg='s:tconst
 exe 'hi Operator guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi PreProc guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi Special guifg='s:fg' ctermfg='s:tfg
-exe 'hi SpecialKey guifg='s:fg2' ctermfg='s:tfg2' guibg='s:bg2' ctermbg='s:tbg2
+exe 'hi SpecialKey guifg='s:fg2' ctermfg='s:tfg2
 exe 'hi Statement guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi StorageClass guifg='s:type' ctermfg='s:ttype' gui=italic'
 exe 'hi String guifg='s:str' ctermfg='s:tstr
@@ -412,7 +412,10 @@ exe 'hi NotifyINFOTitle guifg='s:var' ctermfg='s:tvar
 exe 'hi NotifyDEBUGTitle  guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment
 
-" lsp saga TODO maybe use different colors, but consistency is great
+" lsp saga
+exe 'hi LspSagaLightBulb guifg='s:func' ctermfg='s:tfunc
+
+" TODO maybe use different colors, but consistency is great
 exe 'hi LspSagaCodeActionBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LspSagaAutoPreview guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LspSagaLspFinderBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
@@ -423,3 +426,12 @@ exe 'hi LspSagaRenameBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg
 exe 'hi LspSagaDiagnosticBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LspSagaSignatureHelpBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LSOutlinePreviewBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
+
+" redis
+exe 'hi redisStringCommand guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi redisHashCommand guifg='s:keyword2' ctermfg='s:tkeyword2
+
+" dap
+exe 'hi DapBreakpoint guifg='s:error' ctermfg='s:terror
+exe 'hi DapStopped guifg='s:success' ctermfg='s:tsuccess
+exe 'hi DapLogPoint guifg='s:warning' ctermfg='s:twarning
