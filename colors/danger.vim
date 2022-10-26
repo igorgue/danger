@@ -127,7 +127,7 @@ exe 'hi StatusLine guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg' ctermbg='s:tbg' g
 exe 'hi StatusLineNC guifg='s:bg' ctermfg='s:tbg' guibg='s:fg2' ctermbg='s:tfg2' gui=bold cterm=bold'
 exe 'hi Pmenu guifg='s:fg2' guibg='s:bg2' ctermbg='s:tbg2
 exe 'hi PmenuSel guifg='s:type' ctermfg='s:ttype' guibg='s:bg4' ctermbg='s:tbg4' gui=bold cterm=bold'
-exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2
+exe 'hi IncSearch guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
 exe 'hi Directory guifg='s:const' ctermfg='s:tconst
 exe 'hi Folded guifg='s:fg4' ctermfg='s:tfg4' guibg='s:bg
 exe 'hi WildMenu guifg='s:str' ctermfg='s:tstr' guibg='s:bg
@@ -138,10 +138,8 @@ exe 'hi Quote guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
-
 exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
-exe 'hi Search guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2
-
+exe 'hi Search guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
 exe 'hi Character guifg='s:const' ctermfg='s:tconst
 exe 'hi Comment guifg='s:comment' ctermfg='s:tcomment
@@ -229,7 +227,7 @@ exe 'hi semshiBuiltin guifg='s:builtin' ctermfg='s:tbuiltin
 exe 'hi semshiAttribute guifg='s:var' ctermfg='s:tvar
 exe 'hi semshiSelf guifg='s:type2' ctermfg='s:ttype2' gui=italic cterm=italic'
 exe 'hi semshiUnresolved guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi semshiselected guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
+exe 'hi semshiSelected guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
 exe 'hi semshiErrorSign guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 exe 'hi semshiErrorChar guifg='s:error' ctermfg='s:terror' cterm=bold gui=bold'
 
