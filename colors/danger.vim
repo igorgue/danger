@@ -394,17 +394,17 @@ exe 'hi rainbowcol7 guifg='s:error' ctermfg='s:terror
 " nvim-notify
 exe 'hi NotifyERRORBorder guifg='s:error' ctermfg='s:terror
 exe 'hi NotifyWARNBorder guifg='s:warning' ctermfg='s:twarning
-exe 'hi NotifyINFOBorder guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyINFOBorder guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi NotifyDEBUGBorder guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyTRACEBorder guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyERRORIcon guifg='s:error' ctermfg='s:terror
 exe 'hi NotifyWARNIcon guifg='s:warning' ctermfg='s:twarning
-exe 'hi NotifyINFOIcon guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyINFOIcon guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi NotifyDEBUGIcon guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyTRACEIcon guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyERRORTitle  guifg='s:error' ctermfg='s:terror
 exe 'hi NotifyWARNTitle guifg='s:warning' ctermfg='s:twarning
-exe 'hi NotifyINFOTitle guifg='s:var' ctermfg='s:tvar
+exe 'hi NotifyINFOTitle guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi NotifyDEBUGTitle  guifg='s:comment' ctermfg='s:tcomment
 exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment
 
