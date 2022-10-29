@@ -114,7 +114,7 @@ let g:terminal_color_13 = s:type
 let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
-exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
+exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg='s:tbg
 exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg3
 exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
 exe 'hi CursorLine guibg='s:bg2' ctermbg='s:tbg2' cterm=none'
@@ -145,7 +145,6 @@ exe 'hi Character guifg='s:const' ctermfg='s:tconst
 exe 'hi Comment guifg='s:comment' ctermfg='s:tcomment
 exe 'hi Conditional guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi Constant guifg='s:const' ctermfg='s:tconst
-exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi Error gui=undercurl guibg=NONE guisp='s:error
 exe 'hi DiffAdd guifg='s:bg' guibg='s:builtin' ctermbg='s:tbuiltin
@@ -172,7 +171,6 @@ exe 'hi StorageClass guifg='s:type' ctermfg='s:ttype' gui=italic'
 exe 'hi String guifg='s:str' ctermfg='s:tstr
 exe 'hi Tag guifg='s:keyword' ctermfg='s:tkeyword
 exe 'hi Title guifg='s:fg' ctermfg='s:tfg' gui=bold cterm=bold'
-exe 'hi Todo guifg='s:fg2' ctermfg='s:tfg2' gui=inverse,bold cterm=inverse,bold'
 exe 'hi Type guifg='s:type' ctermfg='s:ttype
 exe 'hi Underlined gui=underline'
 
@@ -413,7 +411,7 @@ exe 'hi NotifyTRACETitle  guifg='s:comment' ctermfg='s:tcomment
 " lsp saga
 exe 'hi LspSagaLightBulb guifg='s:func' ctermfg='s:tfunc
 
-" TODO maybe use different colors, but consistency is great
+" maybe use different colors, but consistency is great
 exe 'hi LspSagaCodeActionBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LspSagaAutoPreview guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
 exe 'hi LspSagaLspFinderBorder guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg' ctermbg='s:tbg
