@@ -431,3 +431,6 @@ exe 'hi redisHashCommand guifg='s:keyword2' ctermfg='s:tkeyword2
 exe 'hi DapBreakpoint guifg='s:error' ctermfg='s:terror
 exe 'hi DapStopped guifg='s:success' ctermfg='s:tsuccess
 exe 'hi DapLogPoint guifg='s:warning' ctermfg='s:twarning
+
+" noice
+exe 'hi NoiceVirtualText guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
