@@ -434,6 +434,3 @@ exe 'hi DapLogPoint guifg='s:warning' ctermfg='s:twarning
 
 " noice
 exe 'hi NoiceVirtualText guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
-
-" Treesitter context
-exe 'hi TreesitterContext guibg='s:bg2' ctermbg='s:tbg2' gui=bold cterm=bold'
