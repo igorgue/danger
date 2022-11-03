@@ -115,7 +115,7 @@ let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
 exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg='s:tbg
-exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg3
+exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg4
 exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
 exe 'hi CursorLine guibg='s:bg2' ctermbg='s:tbg2' cterm=none'
 exe 'hi CursorLineNr guifg='s:keyword2' ctermfg='s:tkeyword2' guibg='s:bg2
@@ -434,3 +434,6 @@ exe 'hi DapLogPoint guifg='s:warning' ctermfg='s:twarning
 
 " noice
 exe 'hi NoiceVirtualText guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
+
+" Treesitter context
+exe 'hi TreesitterContext guibg='s:bg2' ctermbg='s:tbg2' gui=bold cterm=bold'
