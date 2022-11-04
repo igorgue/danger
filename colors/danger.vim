@@ -39,20 +39,20 @@ let s:builtin="#00af87"
 let s:const= "#ffd75f"
 let s:comment="#6c6c6c"
 let s:func="#ffffd7"
-let s:str="#afd7ff"
+let s:str="#cbe6ff"
 let s:var="#afd7af"
 
 " Extra colors
-let s:extra1 = "#daa8c8"
-let s:extra2 = "#d7a8a8"
-let s:extra3 = "#da9ea6"
-let s:extra4 = "#ffffd7"
-let s:extra5 = "#c6c6a0"
-let s:extra6 = "#ffc7a1"
-let s:extra7 = "#fdefde"
-let s:extra8 = "#dac89e"
-let s:extra9 = "#dac09e"
-let s:extra10 = "#fff3f3"
+let s:extra1 = "#c4c9f3"
+let s:extra2 = "#eac9e4"
+let s:extra3 = "#b1a7cd"
+let s:extra4 = "#cbb9ad"
+let s:extra5 = "#aca0c3"
+let s:extra6 = "#facfc7"
+let s:extra7 = "#be9fb3"
+let s:extra8 = "#9187b4"
+let s:extra9 = "#f7e4e3"
+let s:extra10 = "#9d81a4"
 
 " Terminal colors
 let s:tfg="253"
@@ -85,16 +85,16 @@ let s:tfunc="230"
 let s:tstr="153"
 let s:tvar="151"
 
-let s:textra1 = "205"
-let s:textra2 = "203"
-let s:textra3 = "202"
-let s:textra4 = "230"
-let s:textra5 = "188"
-let s:textra6 = "24"
-let s:textra7 = "64"
-let s:textra8 = "214"
-let s:textra9 = "208"
-let s:textra10 = "190"
+let s:textra1 = "69"
+let s:textra2 = "68"
+let s:textra3 = "61"
+let s:textra4 = "60"
+let s:textra5 = "59"
+let s:textra6 = "58"
+let s:textra7 = "57"
+let s:textra8 = "56"
+let s:textra9 = "55"
+let s:textra10 = "54"
 
 " Neovim Terminal Mode
 let g:terminal_color_0 = s:bg
@@ -383,10 +383,10 @@ exe 'hi markid9 guifg='s:extra9' ctermfg='s:textra9
 exe 'hi markid10 guifg='s:extra10' ctermfg='s:textra10
 
 " rainbow colors
-exe 'hi rainbowcol1 guifg='s:keyword' ctermfg='s:tkeyword
-exe 'hi rainbowcol2 guifg='s:keyword2' ctermfg='s:tkeyword2
+exe 'hi rainbowcol1 guifg='s:type' ctermfg='s:ttype
+exe 'hi rainbowcol2 guifg='s:type2' ctermfg='s:ttype2
 exe 'hi rainbowcol3 guifg='s:builtin' ctermfg='s:tbuiltin
-exe 'hi rainbowcol4 guifg='s:type' ctermfg='s:ttype
+exe 'hi rainbowcol4 guifg='s:func' ctermfg='s:tfunc
 exe 'hi rainbowcol5 guifg='s:warning' ctermfg='s:twarning
 exe 'hi rainbowcol6 guifg='s:warning2' ctermfg='s:twarning2
 exe 'hi rainbowcol7 guifg='s:error' ctermfg='s:terror
