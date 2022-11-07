@@ -1,12 +1,9 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.10.0
+" Version:      1.11.0
 
 " Distributable under the same terms as Vim itself (see :help license)
-hi clear
-
-set background=dark
 let g:colors_name = "danger"
 
 " Define reusable color variables.
@@ -47,9 +44,9 @@ let s:extra1 = "#c4c9f3"
 let s:extra2 = "#eac9e4"
 let s:extra3 = "#b1a7cd"
 let s:extra4 = "#cbb9ad"
-let s:extra5 = "#aca0c3"
+let s:extra5 = "#c7a0c3"
 let s:extra6 = "#facfc7"
-let s:extra7 = "#be9fb3"
+let s:extra7 = "#b8b1b3"
 let s:extra8 = "#9187b4"
 let s:extra9 = "#f7e4e3"
 let s:extra10 = "#9d81a4"
@@ -96,7 +93,7 @@ let s:textra8 = "56"
 let s:textra9 = "55"
 let s:textra10 = "54"
 
-" Neovim Terminal Mode
+" neovim Terminal Mode
 let g:terminal_color_0 = s:bg
 let g:terminal_color_1 = s:warning
 let g:terminal_color_2 = s:builtin
@@ -114,6 +111,7 @@ let g:terminal_color_13 = s:type
 let g:terminal_color_14 = s:fg4
 let g:terminal_color_15 = s:comment
 
+" set highlighting
 exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg='s:tbg
 exe 'hi Visual guibg='s:bg4' ctermbg='s:tbg4
 exe 'hi Cursor guibg='s:type' ctermbg='s:ttype
@@ -330,10 +328,10 @@ else
     exe 'hi CocHighlightText gui=italic,bold,underline cterm=italic,bold,underline'
 endif
 
-exec 'hi CocErrorSign guifg='s:error' ctermfg='s:twarning2
-exec 'hi CocWarningSign guifg='s:warning' ctermfg='s:twarning
-exec 'hi CocInfoSign guifg='s:const' ctermfg='s:tconst
-exec 'hi CocHintSign guifg='s:keyword' ctermfg='s:tkeyword
+exe 'hi CocErrorSign guifg='s:error' ctermfg='s:twarning2
+exe 'hi CocWarningSign guifg='s:warning' ctermfg='s:twarning
+exe 'hi CocInfoSign guifg='s:const' ctermfg='s:tconst
+exe 'hi CocHintSign guifg='s:keyword' ctermfg='s:tkeyword
 
 " NvimLSP
 exe 'hi DiagnosticError guifg='s:error''
