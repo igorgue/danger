@@ -1,7 +1,12 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.11.0
+" Version:      1.12.0
+
+" Call clear if g:colors_name is defined
+if exists("g:colors_name")
+    hi clear
+end
 
 " Distributable under the same terms as Vim itself (see :help license)
 let g:colors_name = "danger"
