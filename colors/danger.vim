@@ -36,6 +36,7 @@ let s:error="#ff3525"
 
 let s:type="#ffd7ff"
 let s:type2="#ffd7d7"
+let s:type3="#ffe6ff"
 
 let s:builtin="#00af87"
 let s:const= "#ffd75f"
@@ -141,7 +142,7 @@ exe 'hi Quote guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi Folded guifg='s:fg' ctermfg='s:tfg' guibg='s:bg
 exe 'hi FoldColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
 exe 'hi SignColumn guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg=none'
-exe 'hi MatchParen guifg='s:type' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
+exe 'hi MatchParen guifg='s:type3' ctermfg='s:ttype' ctermbg=none guibg=none gui=bold cterm=bold'
 exe 'hi Search guifg=none guibg=none ctermfg=none ctermbg=none gui=bold,reverse cterm=bold,reverse'
 exe 'hi Boolean guifg='s:const' ctermfg='s:tconst
 exe 'hi Character guifg='s:const' ctermfg='s:tconst
