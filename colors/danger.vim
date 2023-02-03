@@ -438,3 +438,6 @@ exe 'hi DapLogPoint guifg='s:warning' ctermfg='s:twarning
 
 " noice
 exe 'hi NoiceVirtualText guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg='s:tkeyword2' gui=bold cterm=bold'
+
+" whichkey
+exe 'hi WhichKeyFloat guifg='s:fg2' ctermfg='s:tfg2' guibg='s:bg2' ctermbg='s:bg2' gui=bold cterm=bold'
