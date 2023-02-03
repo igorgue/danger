@@ -441,3 +441,11 @@ exe 'hi NoiceVirtualText guifg='s:bg' ctermfg='s:tbg' guibg='s:keyword2' ctermbg
 
 " whichkey
 exe 'hi WhichKeyFloat guibg='s:bg2' ctermbg='s:tbg2
+
+" navic
+"highlight : If set to true, will add colors to icons and text as defined by highlight groups NavicIcons* (NavicIconsFile, NavicIconsModule.. etc.), NavicText and NavicSeparator.
+
+exe 'hi NavicIconsFile guibg=NONE'
+exe 'hi NavicIconsModule guibg=NONE'
+exe 'hi NavicText guibg=NONE'
+exe 'hi NavicSeparator guibg=NONE'
