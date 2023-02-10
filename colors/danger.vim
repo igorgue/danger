@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.12.0
+" Version:      1.2.0
 
 " Call clear if g:colors_name is defined
 if exists("g:colors_name")
@@ -100,7 +100,7 @@ let s:textra9 = "55"
 let s:textra10 = "54"
 
 " neovim Terminal Mode
-let g:terminal_color_0 = s:bg
+let g:terminal_color_0 = s:comment
 let g:terminal_color_1 = s:warning
 let g:terminal_color_2 = s:builtin
 let g:terminal_color_3 = s:const
@@ -108,7 +108,7 @@ let g:terminal_color_4 = s:type
 let g:terminal_color_5 = s:builtin
 let g:terminal_color_6 = s:fg3
 let g:terminal_color_7 = s:str
-let g:terminal_color_8 = s:bg2
+let g:terminal_color_8 = s:keyword
 let g:terminal_color_9 = s:error
 let g:terminal_color_10 = s:fg2
 let g:terminal_color_11 = s:var
@@ -451,18 +451,14 @@ exe 'hi NavicText guibg=NONE'
 exe 'hi NavicSeparator guibg=NONE'
 
 " Treesitter
-exe 'hi @functions gui=bold,italic guifg='s:keyword2
-exe 'hi @keyword gui=bold,italic guifg='s:keyword2
-exe 'hi @keyword.function gui=bold,italic guifg='s:keyword
+exe 'hi @functions gui=bold guifg='s:keyword2
+exe 'hi @keyword gui=bold guifg='s:keyword2
+exe 'hi @keyword.function gui=bold,italic guifg='s:keyword2
 
 " Alpha
-exe "hi AlphaShortcut gui=bold,italic guifg="s:const
-exe "hi AlphaHeaderLabel gui=bold,italic guifg="s:success
-exe "hi AlphaFooter gui=bold,italic guifg="s:error
 exe 'hi AlphaHeader gui=bold guifg='s:type
-exe 'hi AlphaButtons gui=bold,italic guifg='s:keyword2
+exe 'hi AlphaButtons guifg='s:keyword2
+exe "hi AlphaShortcut gui=italic guifg="s:type2
+exe "hi AlphaFooter gui=italic guifg="s:comment
 
-exe "hi DashboardShortCut gui=bold,italic guifg="s:const
-exe "hi DashboardHeader gui=bold,italic guifg="s:success
-exe "hi DashboardCenter gui=bold,italic guifg="s:error
-exe 'hi DashboardFooter gui=bold,italic guifg='s:keyword2
+exe 'hi DashboardFooter gui=italic guifg='s:comment
