@@ -449,3 +449,20 @@ exe 'hi NavicIconsFile guibg=NONE'
 exe 'hi NavicIconsModule guibg=NONE'
 exe 'hi NavicText guibg=NONE'
 exe 'hi NavicSeparator guibg=NONE'
+
+" Treesitter
+exe 'hi @functions gui=bold,italic guifg='s:keyword2
+exe 'hi @keyword gui=bold,italic guifg='s:keyword2
+exe 'hi @keyword.function gui=bold,italic guifg='s:keyword
+
+" Alpha
+exe "hi AlphaShortcut gui=bold,italic guifg="s:const
+exe "hi AlphaHeaderLabel gui=bold,italic guifg="s:success
+exe "hi AlphaFooter gui=bold,italic guifg="s:error
+exe 'hi AlphaHeader gui=bold guifg='s:type
+exe 'hi AlphaButtons gui=bold,italic guifg='s:keyword2
+
+exe "hi DashboardShortCut gui=bold,italic guifg="s:const
+exe "hi DashboardHeader gui=bold,italic guifg="s:success
+exe "hi DashboardCenter gui=bold,italic guifg="s:error
+exe 'hi DashboardFooter gui=bold,italic guifg='s:keyword2
