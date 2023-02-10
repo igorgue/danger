@@ -115,7 +115,7 @@ let g:terminal_color_11 = s:var
 let g:terminal_color_12 = s:const
 let g:terminal_color_13 = s:type
 let g:terminal_color_14 = s:fg4
-let g:terminal_color_15 = s:comment
+let g:terminal_color_15 = s:success
 
 " set highlighting
 exe 'hi Normal guifg='s:fg' ctermfg='s:tfg' guibg='s:bg' ctermbg='s:tbg
@@ -462,3 +462,6 @@ exe "hi AlphaShortcut gui=italic guifg="s:type2
 exe "hi AlphaFooter gui=italic guifg="s:comment
 
 exe 'hi DashboardFooter gui=italic guifg='s:comment
+
+" Mini indent scope
+exe 'hi MiniIndentscopeSymbol guifg='s:type
