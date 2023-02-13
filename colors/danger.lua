@@ -1,1 +1,1 @@
-require("danger").load({ style = "dark" })
+require("danger").load()

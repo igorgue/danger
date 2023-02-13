@@ -4,6 +4,12 @@ M.load = function(opts, colors)
 	local colorsheme_name = "danger_" .. opts.style
 	local set = require("danger.utils").set_highlight
 
+	if opts.style == "dark" then
+		vim.cmd("set background=dark")
+	else
+		vim.cmd("set background=light")
+	end
+
 	if vim.g.colors_name ~= colorsheme_name then
 		vim.cmd("hi clear")
 
@@ -39,10 +45,9 @@ M.load = function(opts, colors)
 	set("LineNr", { fg = colors.fg5, bg = colors.bg })
 	set("VertSplit", { fg = colors.keyword2, bg = colors.bg })
 	set("StatusLine", { fg = colors.fg4, bg = colors.bg })
-	set("StatusLineNC", { fg = colors.fg4, bg = colors.bg })
+	set("StatusLineNC", { fg = colors.bg, bg = colors.fg2, bold = true })
 	set("Pmenu", { fg = colors.fg2, bg = colors.bg2 })
 	set("PmenuSel", { fg = colors.type, bg = colors.bg4, bold = true })
-	set("IncSearch", { fg = colors.bg, bg = colors.type, bold = true, reverse = true })
 	set("Directory", { fg = colors.const })
 	set("Folded", { fg = colors.fg4, bg = colors.bg })
 	set("WildMenu", { fg = colors.str, bg = colors.bg })
@@ -54,7 +59,8 @@ M.load = function(opts, colors)
 	set("FoldColumn", { fg = colors.fg, bg = colors.bg })
 	set("SignColumn", { fg = colors.fg, bg = colors.bg })
 	set("MatchParen", { fg = colors.type3, bg = "none", bold = true })
-	set("Search", { fg = colors.bg, bg = colors.type, bold = true, reverse = true })
+	set("Search", { fg = "none", bg = "none", bold = true, reverse = true })
+	set("IncSearch", { fg = "none", bg = "none", bold = true, reverse = true })
 	set("Boolean", { fg = colors.const })
 	set("Character", { fg = colors.const })
 	set("Comment", { fg = colors.comment })
@@ -169,7 +175,7 @@ M.load = function(opts, colors)
 	set("FinderSpinnerBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("DefinitionBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaBorderTitle", { fg = colors.keyword2, bg = colors.bg })
-	set("LspSagaHoverBorder", { fg = colors.keyword2, bg = colors.bg })
+	set("LspSagaHoverBorder", { fg = colors.keyword2, bg = "none" })
 	set("LspSagaRenameBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaDiagnosticBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaSignatureHelpBorder", { fg = colors.keyword2, bg = colors.bg })
@@ -219,6 +225,31 @@ M.load = function(opts, colors)
 	set("rainbowcol5", { fg = colors.warning })
 	set("rainbowcol6", { fg = colors.warning2 })
 	set("rainbowcol7", { fg = colors.error })
+
+	-- noice
+	set("NoiceCompletionItemKindDefault", { fg = colors.fg, bg = "none" })
+	set("NoiceCompletionItemKindKeyword", { fg = colors.keyword, bg = "none" })
+	--   NoiceCompletionItemKindKeyword = { fg = c.cyan, bg = c.none },
+	--   NoiceCompletionItemKindVariable = { fg = c.magenta, bg = c.none },
+	--   NoiceCompletionItemKindConstant = { fg = c.magenta, bg = c.none },
+	--   NoiceCompletionItemKindReference = { fg = c.magenta, bg = c.none },
+	--   NoiceCompletionItemKindValue = { fg = c.magenta, bg = c.none },
+	--   NoiceCompletionItemKindFunction = { fg = c.blue, bg = c.none },
+	--   NoiceCompletionItemKindMethod = { fg = c.blue, bg = c.none },
+	--   NoiceCompletionItemKindConstructor = { fg = c.blue, bg = c.none },
+	--   NoiceCompletionItemKindClass = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindInterface = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindStruct = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindEvent = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindEnum = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindUnit = { fg = c.orange, bg = c.none },
+	--   NoiceCompletionItemKindModule = { fg = c.yellow, bg = c.none },
+	--   NoiceCompletionItemKindProperty = { fg = c.green1, bg = c.none },
+	--   NoiceCompletionItemKindField = { fg = c.green1, bg = c.none },
+	--   NoiceCompletionItemKindTypeParameter = { fg = c.green1, bg = c.none },
+	--   NoiceCompletionItemKindEnumMember = { fg = c.green1, bg = c.none },
+	--   NoiceCompletionItemKindOperator = { fg = c.green1, bg = c.none },
+	--   NoiceCompletionItemKindSnippet = { fg = c.dark5, bg = c.none },
 end
 
 return M

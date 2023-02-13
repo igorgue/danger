@@ -45,7 +45,49 @@ M.dark = {
 	extra10 = "#9d81a4",
 }
 
--- TODO: 
-M.light = M.dark
+M.light = {
+	bg = "#dadada",
+	bg2 = "#bcbcbc",
+	bg3 = "#9e9e9e",
+	bg4 = "#808080",
+	bg5 = "#626262",
+
+	fg = "#161925",
+	fg2 = "#262B40",
+	fg3 = "#454555",
+	fg4 = "#394160",
+	fg5 = "#344055",
+
+	keyword = "#4b4b9b",
+	keyword2 = "#6941e1",
+
+	success = "#00875f",
+	warning = "#af3737",
+	warning2 = "#d73700",
+	error = "#eb2111",
+
+	type = "#694169",
+	type2 = "#684b69",
+	type3 = "#695a69",
+
+	builtin = "#009b73",
+	const = "#916923",
+	comment = "#444444",
+	func = "#696941",
+	str = "#3f5a73",
+	var = "#416941",
+
+	-- extra colors
+	extra1 = "#4c517b",
+	extra2 = "#684762",
+	extra3 = "#574d73",
+	extra4 = "#715f53",
+	extra5 = "#6d4669",
+	extra6 = "#82574f",
+	extra7 = "#544d4f",
+	extra8 = "#4b416e",
+	extra9 = "#6b5857",
+	extra10 = "#614568",
+}
 
 return M
