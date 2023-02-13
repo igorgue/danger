@@ -2,8 +2,7 @@ local M = {}
 
 M.load = function(opts, colors)
 	local colorsheme_name = "danger_" .. opts.style
-	local utils = require("danger.utils")
-	local set = utils.set_highlight
+	local set = require("danger.utils").set_highlight
 
 	if vim.g.colors_name ~= colorsheme_name then
 		vim.cmd("hi clear")
@@ -11,6 +10,7 @@ M.load = function(opts, colors)
 		vim.g.colors_name = colorsheme_name
 	end
 
+	-- neovim terminal colors
 	vim.g.terminal_color_0 = colors.comment
 	vim.g.terminal_color_1 = colors.warning
 	vim.g.terminal_color_2 = colors.builtin
@@ -28,6 +28,7 @@ M.load = function(opts, colors)
 	vim.g.terminal_color_14 = colors.fg4
 	vim.g.terminal_color_15 = colors.success
 
+	-- core highlight groups
 	set("Normal", { fg = colors.fg, bg = colors.bg })
 	set("Visual", { fg = colors.fg, bg = colors.bg4 })
 	set("Cursor", { bg = colors.type })
@@ -45,9 +46,9 @@ M.load = function(opts, colors)
 	set("Directory", { fg = colors.const })
 	set("Folded", { fg = colors.fg4, bg = colors.bg })
 	set("WildMenu", { fg = colors.str, bg = colors.bg })
-	set("TabLine", { fg = colors.bg4, bg = "none", gui = "none", cterm = "none" })
-	set("TabLineSel", { fg = colors.bg, bg = colors.keyword2, gui = "none", cterm = "none" })
-	set("TabLineFill", { fg = colors.bg, gui = "none", cterm = "none" })
+	set("TabLine", { fg = colors.bg4, bg = "none" })
+	set("TabLineSel", { fg = colors.bg, bg = colors.keyword2 })
+	set("TabLineFill", { fg = colors.bg, bg = "none" })
 	set("Quote", { fg = colors.fg, bg = colors.bg })
 	set("Folded", { fg = colors.fg, bg = colors.bg })
 	set("FoldColumn", { fg = colors.fg, bg = colors.bg })
@@ -91,6 +92,10 @@ M.load = function(opts, colors)
 	set("SpellCap", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning })
 	set("SpellLocal", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning })
 	set("SpellRare", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning })
+	set("cParen", { fg = colors.var })
+	set("cCustomParen", { fg = colors.var })
+
+	-- plugins' ui
 	set("pythonBuiltinFunc", { fg = colors.builtin })
 	set("pythonBuiltinObj", { fg = colors.builtin })
 	set("pythonImport", { fg = colors.warning })
@@ -109,10 +114,11 @@ M.load = function(opts, colors)
 	set("djangoFilter", { fg = colors.func })
 	set("djangoStatement", { fg = colors.type })
 	set("djangoVarBlock", { fg = colors.var })
+
 	set("dartConstant", { fg = colors.const })
-	set("cParen", { fg = colors.var })
-	set("cCustomParen", { fg = colors.var })
+
 	set("nimBuiltin", { fg = colors.builtin })
+
 	set("DiagnosticError", { fg = colors.error })
 	set("DiagnosticWarning", { fg = colors.warning })
 	set("DiagnosticInformation", { fg = colors.comment })
@@ -124,7 +130,9 @@ M.load = function(opts, colors)
 	set("LspCodeLens", { fg = colors.bg3, italic = true })
 	set("LspCodeLensSeparator", { fg = colors.bg3, italic = true })
 	set("LspInfoBorder", { fg = colors.keyword2, bg = colors.bg })
+
 	set("TelescopeBorder", { fg = colors.keyword2, bg = colors.bg })
+
 	set("GitSignsAdd", { fg = colors.success })
 	set("GitSignsChange", { fg = colors.warning })
 	set("GitSignsDelete", { fg = colors.error })
@@ -137,23 +145,7 @@ M.load = function(opts, colors)
 	set("GitSignsCurrentLineBlame", { fg = colors.fg2 })
 	set("CopilotSuggestion", { fg = colors.keyword, italic = true })
 	set("CopilotAnnotation", { fg = colors.keyword2, italic = true })
-	set("markid1", { fg = colors.extra1 })
-	set("markid2", { fg = colors.extra2 })
-	set("markid3", { fg = colors.extra3 })
-	set("markid4", { fg = colors.extra4 })
-	set("markid5", { fg = colors.extra5 })
-	set("markid6", { fg = colors.extra6 })
-	set("markid7", { fg = colors.extra7 })
-	set("markid8", { fg = colors.extra8 })
-	set("markid9", { fg = colors.extra9 })
-	set("markid10", { fg = colors.extra10 })
-	set("rainbowcol1", { fg = colors.type })
-	set("rainbowcol2", { fg = colors.type2 })
-	set("rainbowcol3", { fg = colors.builtin })
-	set("rainbowcol4", { fg = colors.func })
-	set("rainbowcol5", { fg = colors.warning })
-	set("rainbowcol6", { fg = colors.warning2 })
-	set("rainbowcol7", { fg = colors.error })
+
 	set("NotifyERRORBorder", { fg = colors.error })
 	set("NotifyWARNBorder", { fg = colors.warning })
 	set("NotifyINFOBorder", { fg = colors.keyword })
@@ -169,6 +161,7 @@ M.load = function(opts, colors)
 	set("NotifyINFOTitle", { fg = colors.keyword })
 	set("NotifyDEBUGTitle", { fg = colors.comment })
 	set("NotifyTRACETitle", { fg = colors.comment })
+
 	set("LspSagaLightBulb", { fg = colors.func })
 	set("LspSagaCodeActionBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaAutoPreview", { fg = colors.keyword2, bg = colors.bg })
@@ -181,22 +174,51 @@ M.load = function(opts, colors)
 	set("LspSagaDiagnosticBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaSignatureHelpBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LSOutlinePreviewBorder", { fg = colors.keyword2, bg = colors.bg })
+
 	set("redisStringCommand", { fg = colors.keyword2 })
 	set("redisHashCommand", { fg = colors.keyword2 })
+
 	set("DapBreakpoint", { fg = colors.error })
 	set("DapStopped", { fg = colors.success })
 	set("DapLogPoint", { fg = colors.warning })
-	set("NoiceVirtualText", { fg = colors.bg, bg = colors.keyword2, gui = "bold" })
+
+	set("NoiceVirtualText", { fg = colors.bg, bg = colors.keyword2, bold = true })
+
 	set("WhichKeyFloat", { bg = colors.bg2 })
-	set("AlphaHeader", { fg = colors.type, gui = "bold" })
+
+	set("AlphaHeader", { fg = colors.type, bold = true })
 	set("AlphaButtons", { fg = colors.keyword2 })
-	set("AlphaShortcut", { fg = colors.type2, gui = "italic" })
-	set("AlphaFooter", { fg = colors.comment, gui = "italic" })
-	set("DashboardFooter", { fg = colors.comment, gui = "italic" })
+	set("AlphaShortcut", { fg = colors.type2, italic = true })
+	set("AlphaFooter", { fg = colors.comment, italic = true })
+	set("DashboardFooter", { fg = colors.comment, italic = true })
+
 	set("MiniIndentscopeSymbol", { fg = colors.type })
-	set("@functions", { fg = colors.keyword2, gui = "bold" })
-	set("@keyword", { fg = colors.keyword2, gui = "bold" })
-	set("@keyword.function", { fg = colors.keyword2, gui = "bold,italic" })
+
+	-- treesitter
+	set("@functions", { fg = colors.keyword2, bold = true })
+	set("@keyword", { fg = colors.keyword2, bold = true })
+	set("@keyword.function", { fg = colors.keyword2, bold = true, italic = true })
+
+	-- markid plugin
+	set("markid1", { fg = colors.extra1 })
+	set("markid2", { fg = colors.extra2 })
+	set("markid3", { fg = colors.extra3 })
+	set("markid4", { fg = colors.extra4 })
+	set("markid5", { fg = colors.extra5 })
+	set("markid6", { fg = colors.extra6 })
+	set("markid7", { fg = colors.extra7 })
+	set("markid8", { fg = colors.extra8 })
+	set("markid9", { fg = colors.extra9 })
+	set("markid10", { fg = colors.extra10 })
+
+	-- rainbow parentheses
+	set("rainbowcol1", { fg = colors.type })
+	set("rainbowcol2", { fg = colors.type2 })
+	set("rainbowcol3", { fg = colors.builtin })
+	set("rainbowcol4", { fg = colors.func })
+	set("rainbowcol5", { fg = colors.warning })
+	set("rainbowcol6", { fg = colors.warning2 })
+	set("rainbowcol7", { fg = colors.error })
 end
 
 return M
