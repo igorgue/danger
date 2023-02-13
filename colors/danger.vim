@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         danger.vim
 " Author:       Igor Guerrero <igorgue@protonmail.com>
-" Version:      1.2.0
+" Version:      1.2.1
 
 " Call clear if g:colors_name is defined
 if exists("g:colors_name")
