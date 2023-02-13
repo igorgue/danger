@@ -169,6 +169,8 @@ M.load = function(opts, colors)
 	set("NotifyDEBUGTitle", { fg = colors.comment })
 	set("NotifyTRACETitle", { fg = colors.comment })
 
+	-- LspSaga
+	-- https://github.com/glepnir/lspsaga.nvim/blob/main/lua/lspsaga/highlight.lua
 	set("LspSagaLightBulb", { fg = colors.func })
 	set("LspSagaCodeActionBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LspSagaAutoPreview", { fg = colors.keyword2, bg = colors.bg })
@@ -228,29 +230,7 @@ M.load = function(opts, colors)
 	set("rainbowcol7", { fg = colors.error })
 
 	-- noice
-	set("NoiceCompletionItemKindDefault", { fg = colors.fg, bg = "none" })
-	set("NoiceCompletionItemKindKeyword", { fg = colors.keyword, bg = "none" })
-	--   NoiceCompletionItemKindKeyword = { fg = c.cyan, bg = c.none },
-	--   NoiceCompletionItemKindVariable = { fg = c.magenta, bg = c.none },
-	--   NoiceCompletionItemKindConstant = { fg = c.magenta, bg = c.none },
-	--   NoiceCompletionItemKindReference = { fg = c.magenta, bg = c.none },
-	--   NoiceCompletionItemKindValue = { fg = c.magenta, bg = c.none },
-	--   NoiceCompletionItemKindFunction = { fg = c.blue, bg = c.none },
-	--   NoiceCompletionItemKindMethod = { fg = c.blue, bg = c.none },
-	--   NoiceCompletionItemKindConstructor = { fg = c.blue, bg = c.none },
-	--   NoiceCompletionItemKindClass = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindInterface = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindStruct = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindEvent = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindEnum = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindUnit = { fg = c.orange, bg = c.none },
-	--   NoiceCompletionItemKindModule = { fg = c.yellow, bg = c.none },
-	--   NoiceCompletionItemKindProperty = { fg = c.green1, bg = c.none },
-	--   NoiceCompletionItemKindField = { fg = c.green1, bg = c.none },
-	--   NoiceCompletionItemKindTypeParameter = { fg = c.green1, bg = c.none },
-	--   NoiceCompletionItemKindEnumMember = { fg = c.green1, bg = c.none },
-	--   NoiceCompletionItemKindOperator = { fg = c.green1, bg = c.none },
-	--   NoiceCompletionItemKindSnippet = { fg = c.dark5, bg = c.none },
+	-- https://github.com/folke/noice.nvim#-highlight-groups
 end
 
 return M
