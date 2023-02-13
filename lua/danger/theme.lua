@@ -100,6 +100,7 @@ M.load = function(opts, colors)
 	set("SpellRare", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning })
 	set("cParen", { fg = colors.var })
 	set("cCustomParen", { fg = colors.var })
+	set("Todo", { fg = colors.fg, bg = colors.const })
 
 	-- plugins' ui
 	set("pythonBuiltinFunc", { fg = colors.builtin })
@@ -184,6 +185,80 @@ M.load = function(opts, colors)
 	set("LspSagaSignatureHelpBorder", { fg = colors.keyword2, bg = colors.bg })
 	set("LSOutlinePreviewBorder", { fg = colors.keyword2, bg = colors.bg })
 
+	-- LspSagaWinbarModule	LspSagaWinbarModule
+	-- LspSagaWinbarInterface	LspSagaWinbarInterface
+	-- LspSagaWinbarConstructor	LspSagaWinbarConstructor
+	-- LspSagaWinbarStruct	LspSagaWinbarStruct
+	-- LspSagaWinbarObject	LspSagaWinbarObject
+	-- LspSagaWinbarUnit	LspSagaWinbarUnit
+	-- LspSagaWinbarFile	LspSagaWinbarFile
+	-- LspSagaWinbarSnippet	LspSagaWinbarSnippet
+	-- LspSagaWinbarText	LspSagaWinbarText
+	-- LspSagaWinbarTypeAlias	LspSagaWinbarTypeAlias
+	-- LspSagaWinbarEvent	LspSagaWinbarEvent
+	-- LspSagaWinbarParameter	LspSagaWinbarParameter
+	-- LspSagaWinbarKey	LspSagaWinbarKey
+	-- LspSagaWinbarValue	LspSagaWinbarValue
+	-- LspSagaWinbarMacro	LspSagaWinbarMacro
+	-- LspSagaWinbarNumber	LspSagaWinbarNumber
+	-- LspSagaWinbarConstant	LspSagaWinbarConstant
+	-- LspSagaWinbarFunction	LspSagaWinbarFunction
+	-- LspSagaWinbarEnum	LspSagaWinbarEnum
+	-- LspSagaWinbarField	LspSagaWinbarField
+	-- LspSagaWinbarProperty	LspSagaWinbarProperty
+	-- LspSagaWinbarMethod	LspSagaWinbarMethod
+	-- LspSagaWinbarClass	LspSagaWinbarClass
+	-- LspSagaWinbarFolder	LspSagaWinbarFolder
+	-- LspSagaWinbarPackage	LspSagaWinbarPackage
+	-- LspSagaWinbarStaticMethod	LspSagaWinbarStaticMethod
+	-- LspSagaWinbarTypeParameter	LspSagaWinbarTypeParameter
+	-- LspSagaWinbarEnumMember	LspSagaWinbarEnumMember
+	-- LspSagaWinbarOperator	LspSagaWinbarOperator
+	-- LspSagaWinbarNull	LspSagaWinbarNull
+	-- LspSagaWinbarNamespace	LspSagaWinbarNamespace
+	-- LspSagaWinbarArray	LspSagaWinbarArray
+	-- LspSagaWinbarBoolean	LspSagaWinbarBoolean
+	-- LspSagaWinbarString	LspSagaWinbarString
+	-- LspSagaWinbarVariable	LspSagaWinbarVariable
+	-- LspSagaWinbarSep	LspSagaWinbarSep
+	-- LspSagaWinbarWord	LspSagaWinbarWord
+	-- LspSagaWinbarFolderName	LspSagaWinbarFolderName
+	-- LSOutlineModule	LSOutlineModule
+	-- LSOutlineInterface	LSOutlineInterface
+	-- LSOutlineConstructor	LSOutlineConstructor
+	-- LSOutlineStruct	LSOutlineStruct
+	-- LSOutlineObject	LSOutlineObject
+	-- LSOutlineUnit	LSOutlineUnit
+	-- LSOutlineFile	LSOutlineFile
+	-- LSOutlineSnippet	LSOutlineSnippet
+	-- LSOutlineText	LSOutlineText
+	-- LSOutlineTypeAlias	LSOutlineTypeAlias
+	-- LSOutlineEvent	LSOutlineEvent
+	-- LSOutlineParameter	LSOutlineParameter
+	-- LSOutlineKey	LSOutlineKey
+	-- LSOutlineValue	LSOutlineValue
+	-- LSOutlineMacro	LSOutlineMacro
+	-- LSOutlineNumber	LSOutlineNumber
+	-- LSOutlineConstant	LSOutlineConstant
+	-- LSOutlineFunction	LSOutlineFunction
+	-- LSOutlineEnum	LSOutlineEnum
+	-- LSOutlineField	LSOutlineField
+	-- LSOutlineProperty	LSOutlineProperty
+	-- LSOutlineMethod	LSOutlineMethod
+	-- LSOutlineClass	LSOutlineClass
+	-- LSOutlineFolder	LSOutlineFolder
+	-- LSOutlinePackage	LSOutlinePackage
+	-- LSOutlineStaticMethod	LSOutlineStaticMethod
+	-- LSOutlineTypeParameter	LSOutlineTypeParameter
+	-- LSOutlineEnumMember	LSOutlineEnumMember
+	-- LSOutlineOperator	LSOutlineOperator
+	-- LSOutlineNull	LSOutlineNull
+	-- LSOutlineNamespace	LSOutlineNamespace
+	-- LSOutlineArray	LSOutlineArray
+	-- LSOutlineBoolean	LSOutlineBoolean
+	-- LSOutlineString	LSOutlineString
+	-- LSOutlineVariable	LSOutlineVariable
+
 	set("redisStringCommand", { fg = colors.keyword2 })
 	set("redisHashCommand", { fg = colors.keyword2 })
 
@@ -231,6 +306,7 @@ M.load = function(opts, colors)
 
 	-- noice
 	-- https://github.com/folke/noice.nvim#-highlight-groups
+	set("NvimInternalError", { fg = colors.bg, bg = colors.error, bold = true })
 end
 
 return M
