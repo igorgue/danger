@@ -1,7 +1,9 @@
 local M = {}
 
 M.dark = {
-	fg = "#dadada",
+	none = "none",
+
+	fg = "#dadaee",
 	fg2 = "#bcbcbc",
 	fg3 = "#9e9e9e",
 	fg4 = "#808080",
@@ -46,6 +48,8 @@ M.dark = {
 }
 
 M.light = {
+	none = "none",
+
 	bg = "#dadaee",
 	bg2 = "#bcbccf",
 	bg3 = "#9e9eb9",
@@ -72,7 +76,7 @@ M.light = {
 
 	builtin = "#009b73",
 	const = "#916923",
-	comment = "#444444",
+	comment = "#404040",
 	func = "#696941",
 	str = "#3f5a73",
 	var = "#416941",
