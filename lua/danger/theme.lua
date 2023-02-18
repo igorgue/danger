@@ -1,8 +1,8 @@
 local M = {}
 
-M.load = function(opts, colors)
-	local colorsheme_name = "danger_" .. opts.style
+function M.load(opts, colors)
 	local hi = require("danger.utils").set_highlight
+	local colorsheme_name = "danger_" .. opts.style
 	local is_dark = opts.style == "dark"
 	local is_light = not is_dark
 
@@ -559,13 +559,13 @@ M.load = function(opts, colors)
 	hi("markid10", { fg = colors.extra10 })
 
 	-- rainbow parentheses
-	hi("rainbowcol1", { fg = colors.type })
-	hi("rainbowcol2", { fg = colors.type2 })
-	hi("rainbowcol3", { fg = colors.builtin })
-	hi("rainbowcol4", { fg = colors.func })
-	hi("rainbowcol5", { fg = colors.warning })
-	hi("rainbowcol6", { fg = colors.keyword })
-	hi("rainbowcol7", { fg = colors.error })
+	hi("TSRainbowRed", { fg = colors.warning2 })
+	hi("TSRainbowYellow", { fg = colors.const })
+	hi("TSRainbowBlue", { fg = colors.keyword })
+	hi("TSRainbowOrange", { fg = colors.warning })
+	hi("TSRainbowGreen", { fg = colors.success })
+	hi("TSRainbowViolet", { fg = colors.keyword2 })
+	hi("TSRainbowCyan", { fg = colors.str })
 
 	-- noice
 	-- https://github.com/folke/noice.nvim#-highlight-groups

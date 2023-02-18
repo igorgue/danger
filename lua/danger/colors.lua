@@ -76,7 +76,7 @@ M.light = {
 
 	builtin = "#009b73",
 	const = "#916923",
-	comment = "#404040",
+	comment = "#868686",
 	func = "#696941",
 	str = "#3f5a73",
 	var = "#416941",
