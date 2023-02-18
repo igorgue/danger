@@ -40,7 +40,7 @@ function M.load(opts)
 					theme_colors = require("danger.colors").light
 				end
 
-				local change_alacritty_bg_cmd = "! alacritty msg config -w "
+				local change_alacritty_bg_cmd = "silent !alacritty msg config -w "
 					.. vim.env.ALACRITTY_WINDOW_ID
 					.. [[ colors.primary.background=\"\]]
 					.. theme_colors.bg
