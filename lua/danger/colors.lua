@@ -62,8 +62,8 @@ M.light = {
 	fg4 = "#394174",
 	fg5 = "#344069",
 
-	keyword = "#4b4b9b",
-	keyword2 = "#6941e1",
+	keyword = "#8787d7",
+	keyword2 = "#875fff",
 
 	success = "#00875f",
 	warning = "#af3737",
@@ -78,7 +78,7 @@ M.light = {
 	const = "#916923",
 	comment = "#868686",
 	func = "#696941",
-	str = "#3f5a73",
+	str = "#464673",
 	var = "#416941",
 
 	-- extra colors
