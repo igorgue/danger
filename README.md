@@ -1,52 +1,54 @@
-# danger
+# Danger
 
-I've been using this color scheme for 15 years. It includes some goodies for Python and CSharp. There's still some changes for Ruby, Nim, Go, Rust and other languages that I have not yet ported to this new structure. Will do later. Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I want every editor I use or stumble upon to have the same color scheme.
+I've been using this color scheme for 15 years, re-written in Lua, and includes a `light` theme as well as the usual `dark` theme.
 
-![Python Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/python.png)
+Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I want every editor I use or stumble upon to have the same color scheme.
 
-![All Editors Screenshot](https://github.com/igorgue/danger/raw/master/screenshots/all.png)
+![rust-btw](https://user-images.githubusercontent.com/7014/219985121-092a8c37-f6bb-4e1d-9104-342277d45ff8.png)
+*Rust source code example, [full config](https://github.com/igorgue/dotnvim)*
 
-## vim
+## Install
 
-As usual install on Vim is different, depends on what package management you use, or if you do nvim (like myself). Here's how to install:
+### lazy.nvim
 
-### vundle
-Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
-
-```vim
-Plugin 'igorgue/danger'
+```lua
+return {
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "danger",
+    },
+  },
+  {
+    "igorgue/danger",
+    opts = {
+      style = "dark",
+      alacritty = true,
+    },
+    keys = {
+      {
+        "<leader>D",
+        function()
+          if vim.g.colors_name == "danger_dark" then
+            vim.cmd("colorscheme danger_light")
+          else
+            vim.cmd("colorscheme danger_dark")
+          end
+        end,
+        desc = "Toggle Danger dark mode",
+      },
+    },
+  },
+}
 ```
+*Setups `<leader>D` as well, to switch between **dark** and **light** mode, includes a `alacritty` plugin to change alacritty background as well, works great since I only use it for nvim*
 
-### vim-plug
-Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
+Switch to it:
 
-```vim
-Plug 'igorgue/danger'
-```
-
-### pathogen
-
-```sh
-cd ~/.vim/bundle
-git clone https://github.com/igorgue/danger.git
-```
-
-### manual
-
-```sh
-cd ~/.vim/colors
-git clone git://github.com/igorgue/danger.git danger
-cp danger/colors/danger.vim .
-```
-
-Add `colorscheme danger` to your `~/.vimrc` (Use `~/.config/.nvim/init.vim` for nvim). To configure it on startup.
-
-## extras
-
-### lightline
-
-```vim
-let g:lightline = { 'colorscheme': 'danger' }
+```viml
+colorscheme danger_dark " Dark mode
+colorscheme danger_light " Light mode
+colorscheme danger " Default is `danger_dark`
 ```
 
 ### gnome-terminal
@@ -96,3 +98,14 @@ This will also work for the `fzf` plugin on vim, just make sure your vim uses th
 ```sh
 export BAT_THEME="danger"
 ```
+
+## More Screenshots
+
+![light-dark-all](https://user-images.githubusercontent.com/7014/219985118-d756230a-5687-4d60-aa33-c48673c62b03.png)
+*Themes available `danger_light` and `danger_dark`*
+
+![light-dark-startup](https://user-images.githubusercontent.com/7014/219985119-1aa4bda6-0567-4222-866e-4e6e401db764.png)
+*NVIM startup*
+
+![light-dark-telescope](https://user-images.githubusercontent.com/7014/219985120-670c8078-12db-4024-b2e1-5ec2ad113d55.png)
+*Telescope file find example*
