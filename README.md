@@ -1,6 +1,6 @@
 # Danger
 
-I've been using this color scheme for 15 years, re-written in Lua, and includes a `light` theme as well as the usual `dark` theme.
+I've been using this color scheme since 2003, re-written in Lua, and includes a `light` theme as well as the usual `dark` theme.
 
 Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I want every editor I use or stumble upon to have the same color scheme.
 
