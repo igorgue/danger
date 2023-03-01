@@ -41,7 +41,7 @@ function M.load(opts, colors)
 	hi("Visual", { fg = colors.fg, bg = colors.bg4 })
 	hi("Cursor", { bg = colors.type, fg = colors.keyword2 })
 	hi("CursorLine", { bg = colors.bg2 })
-	hi("Conceal", { fg = colors.fg, bg = colors.bg4 })
+	hi("Conceal", { fg = colors.fg, bg = colors.bg2 })
 	hi("CursorLineNr", { fg = colors.keyword2, bg = colors.bg2 })
 	hi("CursorColumn", { fg = colors.type, bg = colors.bg2 })
 	hi("ColorColumn", { bg = colors.bg2 })
@@ -384,6 +384,11 @@ function M.load(opts, colors)
 	hi("TodoBgHACK", { fg = colors.bg, bg = colors.warning2, bold = true })
 	hi("TodoFgHACK", { fg = colors.warning2 })
 	hi("TodoSignHACK", { fg = colors.warning2 })
+
+	-- Vim illumniate
+	hi("IlluminatedWordText", { underline = false })
+	hi("IlluminatedWordRead", { underline = false })
+	hi("IlluminatedWordWrite", { underline = false })
 
 	hi("NvimInternalError", { fg = colors.bg, bg = colors.error, bold = true })
 end
