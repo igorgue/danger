@@ -394,6 +394,7 @@ function M.load(opts, colors)
     { "TodoSignHACK", { fg = colors.warning2 } },
 
     -- Vim illumniate
+    { "illuminatedWord", { link = "CursorLine" } },
     { "IlluminatedWordText", { underline = false } },
     { "IlluminatedWordRead", { underline = false } },
     { "IlluminatedWordWrite", { underline = false } },
