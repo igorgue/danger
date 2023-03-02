@@ -192,7 +192,7 @@ function M.load(opts, colors)
     { "SagaNormal", { bg = colors.none, blend = 50 } },
     { "SagaExpand", { fg = colors.success } },
     { "SagaCollapse", { fg = colors.success } },
-    { "SagaBeacon", { bg = colors.bg } },
+    { "SagaBeacon", { bg = colors.func } },
 
     -- finder
     { "ActionPreviewTitle", { fg = colors.keyword2, bg = colors.none } },
@@ -215,7 +215,7 @@ function M.load(opts, colors)
     { "CallHierarchyIcon", { fg = colors.keyword2 } },
     { "CallHierarchyTitle", { fg = colors.keyword2 } },
     { "SagaShadow", { bg = colors.bg } },
-    { "OutlineIndent", { fg = colors.bg } },
+    { "OutlineIndent", { fg = colors.bg5 } },
 
     -- Because kind never worked after changing colorscheme
     { "LspSagaWinbarFile", { fg = colors.fg } },
