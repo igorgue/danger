@@ -135,7 +135,7 @@ function M.load(opts, colors)
 
     { "nimBuiltin", { fg = colors.builtin } },
 
-    { "DiagnosticError", { fg = colors.error, bg = colors.bg2 } },
+    { "DiagnosticError", { fg = colors.error, bg = colors.none } },
     { "DiagnosticWarning", { fg = colors.warning, bg = colors.none } },
     { "DiagnosticWarn", { fg = colors.warning, bg = colors.none } },
     { "DiagnosticInformation", { fg = colors.comment, bg = colors.none } },
