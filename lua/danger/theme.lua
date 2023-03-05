@@ -402,6 +402,9 @@ function M.load(opts, colors)
     { "IlluminatedWordRead", { underline = false } },
     { "IlluminatedWordWrite", { underline = false } },
 
+    -- null-ls
+    { "NullLsInfoBorder", { link = "FloatBorder" } },
+
     { "NvimInternalError", { fg = colors.bg, bg = colors.error, bold = true } },
   }
 
