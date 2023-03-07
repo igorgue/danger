@@ -67,7 +67,7 @@ function M.load(opts, colors)
     { "Folded", { fg = colors.fg, bg = colors.bg } },
     { "FoldColumn", { fg = colors.fg, bg = colors.bg } },
     { "SignColumn", { fg = colors.fg, bg = colors.none } },
-    { "MatchParen", { fg = colors.type3, bg = colors.none, bold = true } },
+    { "MatchParen", { fg = colors.type3, bg = colors.bg5, bold = true } },
     { "Search", { fg = colors.none, bg = colors.none, bold = true, reverse = true } },
     { "IncSearch", { fg = colors.none, bg = colors.none, bold = true, reverse = true } },
     { "Boolean", { fg = colors.const } },
