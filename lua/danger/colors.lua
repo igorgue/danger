@@ -32,7 +32,7 @@ M.dark = {
   comment = "#6c6c6c",
   func = "#ffffd7",
   str = "#cbe6ff",
-  var = "#afd7af",
+  var = "#8080c1",
 
   -- extra colors
   extra1 = "#c4c9f3",
@@ -79,7 +79,7 @@ M.light = {
   comment = "#868686",
   func = "#696941",
   str = "#464673",
-  var = "#416941",
+  var = "#3a4495",
 
   -- extra colors
   extra1 = "#4c517b",

@@ -24,9 +24,9 @@ function M.load(opts, colors)
   vim.g.terminal_color_2 = colors.builtin
   vim.g.terminal_color_3 = colors.const
   vim.g.terminal_color_4 = colors.type
-  vim.g.terminal_color_5 = colors.builtin
+  vim.g.terminal_color_5 = colors.var
   vim.g.terminal_color_6 = colors.fg3
-  vim.g.terminal_color_7 = colors.str
+  vim.g.terminal_color_7 = colors.builtin
   vim.g.terminal_color_8 = colors.keyword
   vim.g.terminal_color_9 = colors.error
   vim.g.terminal_color_10 = colors.fg2
@@ -366,6 +366,26 @@ function M.load(opts, colors)
     { "TSRainbowViolet", { fg = colors.keyword2 } },
     { "TSRainbowCyan", { fg = colors.str } },
 
+    -- semantic highlight on lsp
+    -- LSP Semantic Token Groups
+    { "@lsp.type.class", { link = "@type" } },
+    { "@lsp.type.decorator", { link = "@function" } },
+    { "@lsp.type.enum", { link = "@type" } },
+    { "@lsp.type.enumMember", { link = "@constant" } },
+    { "@lsp.type.function", { link = "@function" } },
+    { "@lsp.type.interface", { link = "Identifier" } },
+    { "@lsp.type.keyword", { link = "@keyword" } },
+    { "@lsp.type.macro", { link = "@macro" } },
+    { "@lsp.typemod.function.defaultLibrary", { link = "Special" } },
+    { "@lsp.typemod.variable.defaultLibrary", { link = "@variable.builtin" } },
+    { "@lsp.typemod.variable.globalScope", { link = "@constant" } },
+    { "@lsp.type.namespace", { link = "@namespace" } },
+    { "@lsp.type.parameter", { link = "@parameter" } },
+    { "@lsp.type.property", { link = "@property" } },
+    { "@lsp.type.struct", { link = "@structure" } },
+    { "@lsp.type.type", { link = "@type" } },
+    { "@lsp.type.variable", { link = "@variable" } },
+
     -- noice
     -- https://github.com/folke/noice.nvim#-highlight-groups
     { "NoiceVirtualText", { fg = colors.bg, bg = colors.keyword2, bold = true } },
@@ -373,7 +393,7 @@ function M.load(opts, colors)
     { "NoiceCmdlinePopupBorderSearch", { fg = colors.keyword2, bold = true } },
     { "NoiceConfirmBorder", { fg = colors.keyword2, bold = true } },
 
-    -- TODO: test
+    -- todo comments
     { "TodoBgTODO", { fg = colors.bg, bg = colors.str, bold = true } },
     { "TodoFgTODO", { fg = colors.str } },
     { "TodoSignTODO", { fg = colors.str, bg = colors.none } },
