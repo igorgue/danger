@@ -86,7 +86,7 @@ function M.load(opts, colors)
     { "Float", { fg = colors.const } },
     { "NormalFloat", { bg = colors.bg } },
     { "FloatBorder", { fg = colors.keyword2 } },
-    { "Function", { fg = colors.func, italic = true } },
+    { "Function", { fg = colors.func } },
     { "Identifier", { fg = colors.fg2 } },
     { "Keyword", { fg = colors.keyword, italic = true } },
     { "Label", { fg = colors.fg2 } },
