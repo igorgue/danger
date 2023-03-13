@@ -42,10 +42,10 @@ function M.load(opts, colors)
 
     -- Core highlight groups
     { "Normal", { fg = colors.fg, bg = colors.bg } },
-    { "Visual", { fg = colors.fg, bg = colors.bg4 } },
-    { "Cursor", { bg = colors.type, fg = colors.keyword2 } },
+    { "Visual", { fg = colors.none, bg = colors.bg4 } },
+    { "Cursor", { fg = colors.keyword2, bg = colors.type } },
     { "Conceal", { fg = colors.fg, bg = colors.bg2 } },
-    { "CursorLine", { bg = colors.bg2 } },
+    { "CursorLine", { fg = colors.none, bg = colors.bg2 } },
     { "CursorLineSign", { bg = colors.bg2 } },
     { "CursorLineNr", { fg = colors.keyword2, bg = colors.bg2 } },
     { "CursorColumn", { fg = colors.type, bg = colors.bg2 } },
