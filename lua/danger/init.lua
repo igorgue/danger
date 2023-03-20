@@ -1,9 +1,73 @@
 local M = {}
 
+vim.g.danger_plugins_loaded = false
+
 local default_opts = {
   style = "dark",
   alacritty = false,
+  kitty = false,
 }
+
+local function theme_colors()
+  if vim.g.colors_name == "danger_light" then
+    return require("danger.colors").light
+  end
+
+  return require("danger.colors").dark
+end
+
+local function add_plugins(opts)
+  -- stylua: ignore
+  if vim.g.danger_plugins_loaded then return end
+
+  if opts.alacritty then
+    opts.cond = function()
+      return vim.fn.executable("alacritty") and vim.env.ALACRITTY_WINDOW_ID
+    end
+
+    opts.run = function()
+      local change_alacritty_bg_cmd = "silent !alacritty msg config -w "
+        .. vim.env.ALACRITTY_WINDOW_ID
+        .. [[ colors.primary.background=\"\]]
+        .. theme_colors().bg
+        .. [[\"]]
+
+      vim.cmd(change_alacritty_bg_cmd)
+    end
+
+    vim.api.nvim_create_autocmd("Colorscheme", {
+      callback = function()
+        -- stylua: ignore
+        if not opts.cond() then return end
+
+        opts.run()
+      end,
+    })
+  end
+
+  if opts.kitty then
+    opts.cond = function()
+      return vim.fn.executable("kitty") and vim.env.KITTY_WINDOW_ID
+    end
+
+    opts.run = function()
+      local change_kitty_bg_cmd = "silent !kitty @ set-colors " .. [[background=\]] .. theme_colors().bg
+
+      vim.cmd(change_kitty_bg_cmd)
+    end
+
+    vim.api.nvim_create_autocmd("Colorscheme", {
+      callback = function()
+        -- stylua: ignore
+        if not opts.cond() then return end
+
+        opts.run()
+      end,
+    })
+  end
+
+  vim.g.danger_plugins_loaded = true
+end
 
 function M.load(opts)
   opts = vim.tbl_extend("force", default_opts, opts or {})
@@ -17,33 +81,7 @@ function M.load(opts)
 
   require("danger.theme").load(opts, colors)
 
-  if opts.alacritty then
-    vim.api.nvim_create_autocmd("Colorscheme", {
-      callback = function()
-        -- stylua: ignore
-				if not vim.fn.executable("alacritty") then return end
-        -- stylua: ignore
-        if not vim.env.ALACRITTY_WINDOW_ID then return end
-        -- stylua: ignore
-        if not (vim.g.colors_name == "danger_dark" or vim.g.colors_name == "danger_light") then return end
-
-        local theme_colors = {}
-        if vim.g.colors_name == "danger_dark" then
-          theme_colors = require("danger.colors").dark
-        elseif vim.g.colors_name == "danger_light" then
-          theme_colors = require("danger.colors").light
-        end
-
-        local change_alacritty_bg_cmd = "silent !alacritty msg config -w "
-          .. vim.env.ALACRITTY_WINDOW_ID
-          .. [[ colors.primary.background=\"\]]
-          .. theme_colors.bg
-          .. [[\"]]
-
-        vim.cmd(change_alacritty_bg_cmd)
-      end,
-    })
-  end
+  add_plugins(opts)
 end
 
 function M.setup(opts)
