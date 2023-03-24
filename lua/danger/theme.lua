@@ -388,6 +388,12 @@ function M.load(opts, colors)
     { "@lsp.type.type", { fg = colors.type } },
     { "@lsp.type.variable", { fg = colors.var } },
 
+    -- rust specific
+    { "@lsp.type.variable.rust", { link = "@lsp.type.variable" } },
+    { "@lsp.type.function.rust", { link = "@lsp.type.variable" } },
+    { "@lsp.mod.declaration.rust", { link = "@lsp.type.variable" } },
+    { "@lsp.typemod.function.declaration.rust", { link = "@lsp.type.variable" } },
+
     -- noice
     -- https://github.com/folke/noice.nvim#-highlight-groups
     { "NoiceVirtualText", { fg = colors.bg, bg = colors.keyword2, bold = true } },
@@ -423,6 +429,36 @@ function M.load(opts, colors)
     { "IlluminatedWordText", { underline = false } },
     { "IlluminatedWordRead", { underline = false } },
     { "IlluminatedWordWrite", { underline = false } },
+
+    -- navic
+    { "NavicIconsFile", { bg = colors.none, fg = colors.fg } },
+    { "NavicIconsModule", { bg = colors.none, fg = colors.keyword } },
+    { "NavicIconsNamespace", { bg = colors.none, fg = colors.const } },
+    { "NavicIconsPackage", { bg = colors.none, fg = colors.func } },
+    { "NavicIconsClass", { bg = colors.none, fg = colors.keyword2 } },
+    { "NavicIconsMethod", { bg = colors.none, fg = colors.warning } },
+    { "NavicIconsProperty", { bg = colors.none, fg = colors.type } },
+    { "NavicIconsField", { bg = colors.none, fg = colors.warning2 } },
+    { "NavicIconsConstructor", { bg = colors.none, fg = colors.var } },
+    { "NavicIconsEnum", { bg = colors.none, fg = colors.type3 } },
+    { "NavicIconsInterface", { bg = colors.none, fg = colors.keyword2 } },
+    { "NavicIconsFunction", { bg = colors.none, fg = colors.keyword2 } },
+    { "NavicIconsVariable", { bg = colors.none, fg = colors.var } },
+    { "NavicIconsConstant", { bg = colors.none, fg = colors.const } },
+    { "NavicIconsString", { bg = colors.none, fg = colors.str } },
+    { "NavicIconsNumber", { bg = colors.none, fg = colors.func } },
+    { "NavicIconsBoolean", { bg = colors.none, fg = colors.type2 } },
+    { "NavicIconsArray", { bg = colors.none, fg = colors.fg3 } },
+    { "NavicIconsObject", { bg = colors.none, fg = colors.fg2 } },
+    { "NavicIconsKey", { bg = colors.none, fg = colors.keyword } },
+    { "NavicIconsNull", { bg = colors.none, fg = colors.const } },
+    { "NavicIconsEnumMember", { bg = colors.none, fg = colors.const } },
+    { "NavicIconsStruct", { bg = colors.none, fg = colors.keyword2 } },
+    { "NavicIconsEvent", { bg = colors.none, fg = colors.str } },
+    { "NavicIconsOperator", { bg = colors.none, fg = colors.keyword2 } },
+    { "NavicIconsTypeParameter", { bg = colors.none, fg = colors.type } },
+    { "NavicText", { bg = colors.none, fg = colors.fg5, italic = true } },
+    { "NavicSeparator", { bg = colors.none, fg = colors.fg4 } },
 
     -- null-ls
     { "NullLsInfoBorder", { link = "FloatBorder" } },
