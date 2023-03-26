@@ -369,7 +369,7 @@ function M.load(opts, colors)
     { "TSRainbowRed", { fg = colors.warning } },
     { "TSRainbowYellow", { fg = colors.const } },
     { "TSRainbowBlue", { fg = colors.keyword } },
-    { "TSRainbowOrange", { fg = colors.error } },
+    { "TSRainbowOrange", { fg = colors.func } },
     { "TSRainbowGreen", { fg = colors.success } },
     { "TSRainbowViolet", { fg = colors.keyword2 } },
     { "TSRainbowCyan", { fg = colors.str } },
