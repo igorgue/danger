@@ -18,10 +18,17 @@ M.dark = {
   keyword = "#8787d7",
   keyword2 = "#875fff",
 
-  success = "#00af87",
-  warning = "#ff8787",
-  warning2 = "#ff5f00",
-  error = "#ff3525",
+  success = "#46e1b9",
+  hint = "#808080",
+  info = "#8b8baf",
+  warning = "#fa7878",
+  error = "#ff0d03",
+
+  success_bg = "#022507",
+  hint_bg = "#1c1c1c",
+  info_bg = "#1d1d41",
+  warning_bg = "#2e0a14",
+  error_bg = "#230311",
 
   type = "#ffd7ff",
   type2 = "#ffd7d7",
@@ -65,10 +72,17 @@ M.light = {
   keyword = "#8787d7",
   keyword2 = "#875fff",
 
-  success = "#00875f",
-  warning = "#af3737",
-  warning2 = "#d73700",
-  error = "#eb2111",
+  success = "#026107",
+  hint = "#1c1c1c",
+  info = "#1d1d41",
+  warning = "#b04600",
+  error = "#a50311",
+
+  success_bg = "#46e1b9",
+  hint_bg = "#d0d0d0",
+  info_bg = "#8b8baf",
+  warning_bg = "#faa0a0",
+  error_bg = "#ff5a5a",
 
   type = "#694169",
   type2 = "#684b69",
