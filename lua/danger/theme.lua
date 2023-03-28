@@ -312,7 +312,7 @@ function M.load(opts, colors)
     { "@parameter", { link = "Identifier" } },
     { "@parameter.reference", { link = "@parameter" } },
     { "@preproc", { link = "PreProc" } },
-    { "@property", { link = "Identifier" } },
+    { "@property", { link = "Label" } },
     { "@punctuation.bracket", { link = "cParen" } },
     { "@punctuation.delimiter", { link = "Delimiter" } },
     { "@punctuation.special", { link = "cCustomParen" } },
