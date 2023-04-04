@@ -114,4 +114,51 @@ M.red_and_black = vim.deepcopy(M.dark)
 M.red_and_black.bg = "#000000"
 M.red_and_black.fg = "#e60004"
 
+M.red_and_black.fg2 = "#c80004"
+M.red_and_black.fg3 = "#a00004"
+M.red_and_black.fg4 = "#780004"
+M.red_and_black.fg5 = "#500004"
+
+M.red_and_black.bg2 = "#000000"
+M.red_and_black.bg3 = "#282828"
+M.red_and_black.bg4 = "#505050"
+M.red_and_black.bg5 = "#787878"
+
+M.red_and_black.keyword = "#ffffff"
+M.red_and_black.keyword2 = "#ffebeb"
+
+M.red_and_black.success = "#e60004"
+M.red_and_black.hint = "#808080"
+M.red_and_black.info = "#8b4541"
+M.red_and_black.warning = "#fa7878"
+M.red_and_black.error = "#ff0d03"
+
+M.red_and_black.success_bg = "#3e0707"
+M.red_and_black.hint_bg = "#441c1c"
+M.red_and_black.info_bg = "#271323"
+M.red_and_black.warning_bg = "#2e0a14"
+M.red_and_black.error_bg = "#230311"
+
+M.red_and_black.type = "#ffd7d7"
+M.red_and_black.type2 = "#ffc3c3"
+M.red_and_black.type3 = "#ffa5a5"
+
+M.red_and_black.builtin = "#967878"
+M.red_and_black.const = "#6c0606"
+M.red_and_black.comment = "#6c6c6c"
+M.red_and_black.func = "#ffd7d7"
+M.red_and_black.str = "#a00004"
+M.red_and_black.var = "#5a0004"
+
+M.red_and_black.extra1 = "#be2822"
+M.red_and_black.extra2 = "#aa6e6e"
+M.red_and_black.extra3 = "#fa6e6e"
+M.red_and_black.extra4 = "#fabec8"
+M.red_and_black.extra5 = "#fa643c"
+M.red_and_black.extra6 = "#d2a0a0"
+M.red_and_black.extra7 = "#fa7878"
+M.red_and_black.extra8 = "#820000"
+M.red_and_black.extra9 = "#82003c"
+M.red_and_black.extra10 = "#be1e00"
+
 return M
