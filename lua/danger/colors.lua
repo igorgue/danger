@@ -34,12 +34,12 @@ M.dark = {
   type2 = "#ffd7d7",
   type3 = "#ffe6ff",
 
-  builtin = "#00af87",
+  builtin = "#009b73",
   const = "#ffd75f",
   comment = "#6c6c6c",
   func = "#ffffd7",
   str = "#cbe6ff",
-  var = "#8080c1",
+  var = "#b6b6da",
 
   -- extra colors
   extra1 = "#c4c9f3",
@@ -107,5 +107,11 @@ M.light = {
   extra9 = "#6b5857",
   extra10 = "#614568",
 }
+
+-- WIP of a red and black theme
+M.red_and_black = vim.deepcopy(M.dark)
+
+M.red_and_black.bg = "#000000"
+M.red_and_black.fg = "#e60004"
 
 return M

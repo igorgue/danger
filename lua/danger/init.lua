@@ -11,6 +11,8 @@ local default_opts = {
 local function theme_colors()
   if vim.g.colors_name == "danger_light" then
     return require("danger.colors").light
+  elseif vim.g.colors_name == "danger_red_and_black" then
+    return require("danger.colors").red_and_black
   end
 
   return require("danger.colors").dark
@@ -70,11 +72,19 @@ local function add_plugins(opts)
 end
 
 function M.load(opts)
-  opts = vim.tbl_extend("force", default_opts, opts or {})
+  if vim.g.danger_loaded then
+    opts = vim.tbl_extend("force", vim.g.danger_opts, opts or {})
+  else
+    opts = vim.tbl_extend("force", default_opts, opts or {})
+
+    vim.g.danger_opts = opts
+  end
 
   local colors = {}
   if opts.style == "light" then
     colors = require("danger.colors").light
+  elseif opts.style == "red_and_black" then
+    colors = require("danger.colors").red_and_black
   elseif opts.style == "dark" then
     colors = require("danger.colors").dark
   end
@@ -82,6 +92,8 @@ function M.load(opts)
   require("danger.theme").load(opts, colors)
 
   add_plugins(opts)
+
+  vim.g.danger_loaded = true
 end
 
 function M.setup(opts)

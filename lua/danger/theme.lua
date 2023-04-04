@@ -3,7 +3,7 @@ local M = {}
 function M.load(opts, colors)
   local hi = require("danger.utils").set_highlight
   local colorsheme_name = "danger_" .. opts.style
-  local is_dark = opts.style == "dark"
+  local is_dark = opts.style == "dark" or opts.style == "red_and_black"
   local is_light = not is_dark
 
   if is_dark then
@@ -112,22 +112,22 @@ function M.load(opts, colors)
     { "Todo", { fg = colors.bg, bg = colors.const } },
 
     -- plugins' ui
-    -- { "pythonBuiltinFunc", { fg = colors.builtin } },
-    -- { "pythonBuiltinObj", { fg = colors.builtin } },
-    -- { "pythonImport", { fg = colors.warning } },
-    -- { "pythonStatement", { fg = colors.warning } },
-    -- { "pythonStrFormat", { fg = colors.var } },
-    -- { "pythonClassVar", { fg = colors.type2, italic = true } },
-    -- { "pythonRepeat", { fg = colors.warning } },
-    -- { "pythonOperator", { fg = colors.warning } },
-    -- { "pythonDottedName", { fg = colors.builtin, italic = true } },
-    -- { "pythonDecorator", { fg = colors.builtin, italic = true } },
+    { "pythonBuiltinFunc", { fg = colors.builtin } },
+    { "pythonBuiltinObj", { fg = colors.builtin } },
+    { "pythonImport", { fg = colors.warning } },
+    { "pythonStatement", { fg = colors.keyword2, italic = true } },
+    { "pythonStrFormat", { fg = colors.var } },
+    { "pythonClassVar", { fg = colors.type2, italic = true } },
+    { "pythonRepeat", { fg = colors.warning } },
+    { "pythonOperator", { fg = colors.warning } },
+    { "pythonDottedName", { fg = colors.builtin, italic = true } },
+    { "pythonDecorator", { fg = colors.builtin, italic = true } },
     { "pythonDecoratorName", { fg = colors.func, italic = true } },
-    -- { "pythonException", { fg = colors.keyword } },
-    -- { "pythonExClass", { fg = colors.keyword, bold = true } },
+    { "pythonException", { fg = colors.keyword } },
+    { "pythonExClass", { fg = colors.keyword, bold = true } },
     { "pythonRun", { fg = colors.comment, italic = is_light } },
-    -- { "pythonFString", { fg = colors.str } },
-    -- { "pythonStrInterpRegion", { fg = colors.fg } },
+    { "pythonFString", { fg = colors.str } },
+    { "pythonStrInterpRegion", { fg = colors.fg } },
     { "djangoFilter", { fg = colors.func } },
     { "djangoStatement", { fg = colors.type } },
     { "djangoVarBlock", { fg = colors.var } },
@@ -291,8 +291,7 @@ function M.load(opts, colors)
     { "@delimiter", { link = "Delimiter" } },
     { "@exception", { fg = colors.keyword2, bold = true } },
     { "@exception", { link = "Exception" } },
-    { "@field", { fg = colors.fg2 } },
-    { "@field", { link = "Identifier" } },
+    { "@field", { fg = colors.extra8 } },
     { "@float", { link = "Float" } },
     { "@function.builtin", { fg = colors.keyword2 } },
     { "@function.call", { link = "@function" } },
@@ -309,8 +308,8 @@ function M.load(opts, colors)
     { "@namespace", { link = "Include" } },
     { "@number", { link = "Number" } },
     { "@operator", { link = "Operator" } },
-    { "@parameter", { link = "Identifier" } },
-    { "@parameter.reference", { link = "@parameter" } },
+    { "@parameter", { fg = colors.extra3 } },
+    { "@parameter.reference", { fg = colors.extra5 } },
     { "@preproc", { link = "PreProc" } },
     { "@property", { link = "Label" } },
     { "@punctuation.bracket", { link = "cParen" } },
@@ -427,9 +426,9 @@ function M.load(opts, colors)
     { "TodoBgNOTE", { fg = colors.bg, bg = colors.comment, bold = true } },
     { "TodoFgNOTE", { fg = colors.comment } },
     { "TodoSignNOTE", { fg = colors.comment, bg = colors.none } },
-    { "TodoBgHACK", { fg = colors.bg, bg = colors.warning_bg, bold = true } },
-    { "TodoFgHACK", { fg = colors.warning_bg } },
-    { "TodoSignHACK", { fg = colors.warning_bg, bg = colors.none } },
+    { "TodoBgHACK", { fg = colors.bg, bg = colors.warning, bold = true } },
+    { "TodoFgHACK", { fg = colors.warning } },
+    { "TodoSignHACK", { fg = colors.warning, bg = colors.none } },
 
     -- Vim illumniate
     { "illuminatedWord", { link = "CursorLine" } },
@@ -456,7 +455,7 @@ function M.load(opts, colors)
     { "NavicIconsNumber", { bg = colors.none, fg = colors.func } },
     { "NavicIconsBoolean", { bg = colors.none, fg = colors.type2 } },
     { "NavicIconsArray", { bg = colors.none, fg = colors.fg3 } },
-    { "NavicIconsObject", { bg = colors.none, fg = colors.fg2 } },
+    { "NavicIconsObject", { bg = colors.none, fg = colors.fg5 } },
     { "NavicIconsKey", { bg = colors.none, fg = colors.keyword } },
     { "NavicIconsNull", { bg = colors.none, fg = colors.const } },
     { "NavicIconsEnumMember", { bg = colors.none, fg = colors.const } },
