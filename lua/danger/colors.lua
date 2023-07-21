@@ -164,10 +164,10 @@ M.red_and_black.extra10 = "#be1e00"
 -- very minimal colors
 M.mnml = vim.deepcopy(M.dark)
 
-M.mnml.fg4 = M.mnml.keyword
-M.mnml.fg5 = M.mnml.keyword
+M.mnml.fg4 = M.mnml.keyword2
+M.mnml.fg5 = M.mnml.keyword2
 
-M.mnml.keyword2 = M.mnml.keyword
+M.mnml.keyword = M.mnml.keyword2
 
 M.mnml.type = M.mnml.fg
 M.mnml.type2 = M.mnml.fg
@@ -177,15 +177,15 @@ M.mnml.builtin = M.mnml.fg
 M.mnml.func = M.mnml.fg
 M.mnml.var = M.mnml.fg
 
-M.mnml.extra1 = M.mnml.keyword
-M.mnml.extra2 = M.mnml.keyword
-M.mnml.extra3 = M.mnml.keyword
-M.mnml.extra4 = M.mnml.keyword
-M.mnml.extra5 = M.mnml.keyword
-M.mnml.extra6 = M.mnml.keyword
-M.mnml.extra7 = M.mnml.keyword
+M.mnml.extra1 = M.mnml.keyword2
+M.mnml.extra2 = M.mnml.keyword2
+M.mnml.extra3 = M.mnml.keyword2
+M.mnml.extra4 = M.mnml.keyword2
+M.mnml.extra5 = M.mnml.keyword2
+M.mnml.extra6 = M.mnml.keyword2
+M.mnml.extra7 = M.mnml.keyword2
 M.mnml.extra8 = M.mnml.fg
-M.mnml.extra9 = M.mnml.keyword
-M.mnml.extra10 = M.mnml.keyword
+M.mnml.extra9 = M.mnml.keyword2
+M.mnml.extra10 = M.mnml.keyword2
 
 return M
