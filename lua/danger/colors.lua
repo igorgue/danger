@@ -165,16 +165,15 @@ M.red_and_black.extra10 = "#be1e00"
 M.mnml = vim.deepcopy(M.dark)
 
 M.mnml.keyword2 = M.mnml.keyword
---
+
 M.mnml.type = M.mnml.fg
 M.mnml.type2 = M.mnml.fg
 M.mnml.type3 = M.mnml.fg
---
+
 M.mnml.builtin = M.mnml.fg
-M.mnml.const = M.mnml.fg
 M.mnml.func = M.mnml.fg
 M.mnml.var = M.mnml.fg
---
+
 M.mnml.extra1 = M.mnml.keyword
 M.mnml.extra2 = M.mnml.keyword
 M.mnml.extra3 = M.mnml.keyword
