@@ -108,7 +108,7 @@ M.light = {
   extra10 = "#614568",
 }
 
--- WIP of a red and black theme
+-- red and black theme
 M.red_and_black = vim.deepcopy(M.dark)
 
 M.red_and_black.bg = "#000000"
@@ -160,5 +160,30 @@ M.red_and_black.extra7 = "#fa7878"
 M.red_and_black.extra8 = "#820000"
 M.red_and_black.extra9 = "#82003c"
 M.red_and_black.extra10 = "#be1e00"
+
+-- very minimal colors
+M.mnml = vim.deepcopy(M.dark)
+
+M.mnml.keyword2 = M.mnml.keyword
+--
+M.mnml.type = M.mnml.fg
+M.mnml.type2 = M.mnml.fg
+M.mnml.type3 = M.mnml.fg
+--
+M.mnml.builtin = M.mnml.fg
+M.mnml.const = M.mnml.fg
+M.mnml.func = M.mnml.fg
+M.mnml.var = M.mnml.fg
+--
+M.mnml.extra1 = M.mnml.keyword
+M.mnml.extra2 = M.mnml.keyword
+M.mnml.extra3 = M.mnml.keyword
+M.mnml.extra4 = M.mnml.keyword
+M.mnml.extra5 = M.mnml.keyword
+M.mnml.extra6 = M.mnml.keyword
+M.mnml.extra7 = M.mnml.keyword
+M.mnml.extra8 = M.mnml.fg
+M.mnml.extra9 = M.mnml.keyword
+M.mnml.extra10 = M.mnml.keyword
 
 return M
