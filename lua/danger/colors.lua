@@ -164,6 +164,9 @@ M.red_and_black.extra10 = "#be1e00"
 -- very minimal colors
 M.mnml = vim.deepcopy(M.dark)
 
+M.mnml.fg4 = M.mnml.keyword
+M.mnml.fg5 = M.mnml.keyword
+
 M.mnml.keyword2 = M.mnml.keyword
 
 M.mnml.type = M.mnml.fg
