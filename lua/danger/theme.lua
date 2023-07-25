@@ -286,7 +286,7 @@ function M.load(opts, colors)
     { "@character.special", { link = "SpecialChar" } },
     { "@comment", { link = "Comment" } },
     { "@conditional", { link = "Conditional" } },
-    { "@constant.builtin", { link = "Special" } },
+    { "@constant.builtin", { link = "Constant" } },
     { "@constant", { link = "Constant" } },
     { "@constant.macro", { link = "Define" } },
     { "@constructor", { link = "cParen" } },
