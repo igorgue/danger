@@ -1,12 +1,11 @@
 local M = {}
 
-function M.load(opts, colors)
+function M.load(colors, opts)
   local hi = require("danger.utils").set_highlight
   local colorsheme_name = "danger_" .. opts.style
   local is_dark = opts.style == "dark" or opts.style == "red_and_black" or opts.style == "mnml"
-  local is_light = not is_dark
-  local bold = opts.bold or true
-  local italic = opts.italic or true
+  local bold = opts.bold
+  local italic = opts.italic
 
   if is_dark then
     vim.opt.background = "dark"
@@ -128,7 +127,7 @@ function M.load(opts, colors)
     { "pythonDecoratorName", { fg = colors.func, italic = italic } },
     { "pythonException", { fg = colors.keyword } },
     { "pythonExClass", { fg = colors.keyword, bold = bold } },
-    { "pythonRun", { fg = colors.comment, italic = is_light } },
+    { "pythonRun", { fg = colors.comment, italic = italic } },
     { "pythonFString", { fg = colors.str } },
     { "pythonStrInterpRegion", { fg = colors.fg } },
     { "djangoFilter", { fg = colors.func } },
@@ -355,6 +354,7 @@ function M.load(opts, colors)
 
     -- more ts highlights
     { "@variable.htmldjango", { fg = colors.var } },
+    { "@include.python", { link = "Include" } },
 
     -- markid plugin
     { "markid1", { fg = colors.extra1 } },

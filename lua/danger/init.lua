@@ -6,6 +6,8 @@ local default_opts = {
   style = "dark",
   alacritty = false,
   kitty = false,
+  italic = true,
+  bold = true,
 }
 
 local function theme_colors()
@@ -76,6 +78,8 @@ end
 function M.load(opts)
   if vim.g.danger_loaded then
     opts = vim.tbl_extend("force", vim.g.danger_opts, opts or {})
+
+    vim.g.danger_opts = opts
   else
     opts = vim.tbl_extend("force", default_opts, opts or {})
 
@@ -93,7 +97,7 @@ function M.load(opts)
     colors = require("danger.colors").mnml
   end
 
-  require("danger.theme").load(opts, colors)
+  require("danger.theme").load(colors, opts)
 
   add_plugins(opts)
 
