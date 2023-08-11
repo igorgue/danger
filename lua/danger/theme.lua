@@ -174,8 +174,8 @@ function M.load(colors, opts)
     { "GitSignsDeleteLn", { fg = colors.error, bg = colors.none } },
     { "GitSignsCurrentLineBlame", { fg = colors.fg2, bg = colors.none } },
 
-    { "CopilotSuggestion", { fg = colors.keyword, italic = italic } },
-    { "CopilotAnnotation", { fg = colors.keyword2, italic = italic } },
+    { "CopilotSuggestion", { fg = colors.keyword2, bg = colors.info_bg } },
+    { "CopilotAnnotation", { fg = colors.keyword, italic = italic } },
 
     { "NotifyERRORBorder", { fg = colors.error } },
     { "NotifyWARNBorder", { fg = colors.warning } },
