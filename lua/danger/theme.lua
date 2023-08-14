@@ -113,11 +113,16 @@ function M.load(colors, opts)
     { "Delimiter", { fg = colors.fg3 } },
     { "Todo", { fg = colors.bg, bg = colors.const } },
 
-    -- plugins' ui
+    -- python' ui
     { "pythonBuiltinFunc", { fg = colors.builtin } },
+    { "pythonDocstring", { link = "SpecialComment" } },
     { "pythonBuiltinObj", { fg = colors.builtin } },
     { "pythonImport", { fg = colors.keyword2 } },
+    { "pythonFunction", { link = "Function" } },
+    { "pythonParam", { fg = colors.fg4 } },
+    { "pythonInclude", { fg = colors.keyword, italic = italic } },
     { "pythonStatement", { fg = colors.keyword2, italic = italic } },
+    { "pythonDoctestValue", { fg = colors.const } },
     { "pythonStrFormat", { fg = colors.var } },
     { "pythonClassVar", { fg = colors.type2, italic = italic } },
     { "pythonRepeat", { fg = colors.keyword2 } },
