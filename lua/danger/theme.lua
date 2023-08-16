@@ -115,6 +115,7 @@ function M.load(colors, opts)
 
     { "pythonBuiltinFunc", { fg = colors.builtin } },
     { "pythonBuiltinObj", { fg = colors.builtin } },
+    { "pythonBrackets", { fg = colors.type2 } },
     { "pythonCall", { link = "Function" } },
     { "pythonClassVar", { fg = colors.type2, italic = italic } },
     { "pythonDecorator", { fg = colors.builtin, italic = italic } },
