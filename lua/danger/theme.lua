@@ -462,10 +462,10 @@ function M.load(colors, opts)
     { "TodoSignHACK", { fg = colors.warning, bg = colors.none } },
 
     -- Vim illumniate
-    { "IlluminatedWord", { bg = colors.bg2 } },
-    { "IlluminatedWordText", { bg = colors.bg3 } },
-    { "IlluminatedWordRead", { bg = colors.bg4 } },
-    { "IlluminatedWordWrite", { bg = colors.bg5 } },
+    { "IlluminatedWord", { fg = colors.extra1, bg = colors.bg2 } },
+    { "IlluminatedWordText", { fg = colors.extra2, bg = colors.bg3 } },
+    { "IlluminatedWordRead", { fg = colors.extra3, bg = colors.bg4 } },
+    { "IlluminatedWordWrite", { fg = colors.extra4, bg = colors.bg5 } },
 
     -- navic
     { "NavicIconsFile", { bg = colors.none, fg = colors.fg } },
