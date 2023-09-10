@@ -39,7 +39,7 @@ M.dark = {
   comment = "#6c6c6c",
   func = "#ffffd7",
   str = "#cbe6ff",
-  var = "#b6b6da",
+  var = "#f0f0ff",
 
   -- extra colors
   extra1 = "#c4c9f3",
