@@ -140,6 +140,12 @@ function M.load(colors, opts)
     { "pythonStrInterpRegion", { fg = colors.fg } },
     { "pythonVars", { fg = colors.var } },
 
+    { "mojoKeywords", { fg = colors.keyword, bold = bold, italic = italic } },
+    { "mojoBuiltins", { fg = colors.keyword2 } },
+    { "mojoName", { fg = colors.type3 } },
+    { "mojoRefName", { fg = colors.type2 } },
+    { "mojoDialect", { fg = colors.func } },
+
     { "djangoFilter", { fg = colors.func } },
     { "djangoStatement", { fg = colors.type } },
     { "djangoVarBlock", { fg = colors.var } },
