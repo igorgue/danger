@@ -140,11 +140,13 @@ function M.load(colors, opts)
     { "pythonStrInterpRegion", { fg = colors.fg } },
     { "pythonVars", { fg = colors.var } },
 
-    { "mojoKeywords", { fg = colors.keyword, bold = bold, italic = italic } },
-    { "mojoBuiltins", { fg = colors.keyword2 } },
-    { "mojoName", { fg = colors.type3 } },
-    { "mojoRefName", { fg = colors.type2 } },
-    { "mojoDialect", { fg = colors.func } },
+    { "mojoStatement", { italic = italic, fg = colors.keyword2 } },
+    { "mojoConditional", { bold = bold, fg = colors.keyword } },
+    { "mojoRepeat", { bold = bold, fg = colors.keyword } },
+    { "mojoOperator", { bold = bold, fg = colors.keyword } },
+    { "mojoException", { bold = bold, fg = colors.func } },
+    { "mojoInclude", { italic = italic, fg = colors.keyword2 } },
+    { "mojoAsync", { italic = italic, fg = colors.keyword2 } },
 
     { "djangoFilter", { fg = colors.func } },
     { "djangoStatement", { fg = colors.type } },
