@@ -19,6 +19,14 @@ function M.load(colors, opts)
     vim.g.colors_name = colorsheme_name
   end
 
+  -- only needed to clear when not the default colorscheme
+  if vim.g.colors_name then
+    vim.cmd("hi clear")
+  end
+
+  vim.o.termguicolors = true
+  vim.g.colors_name = "tokyonight"
+
   -- neovim terminal colors
   vim.g.terminal_color_0 = colors.comment
   vim.g.terminal_color_1 = colors.warning
