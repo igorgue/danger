@@ -25,7 +25,7 @@ function M.load(colors, opts)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "tokyonight"
+  vim.g.colors_name = "danger"
 
   -- neovim terminal colors
   vim.g.terminal_color_0 = colors.comment
