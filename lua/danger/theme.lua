@@ -471,10 +471,11 @@ function M.load(colors, opts)
     { "TodoFgHACK", { fg = colors.warning } },
     { "TodoSignHACK", { fg = colors.warning, bg = colors.none } },
 
-    -- Vim illumniate
-    { "IlluminatedWord", { fg = colors.extra1, bg = colors.bg2 } },
-    { "IlluminatedWordText", { fg = colors.extra2, bg = colors.bg3 } },
-    { "IlluminatedWordRead", { fg = colors.extra3, bg = colors.bg4 } },
+    -- Illumniate
+    { "illuminatedWord", { fg = colors.extra1, bg = colors.bg4 } },
+    { "illuminatedCurWord", { fg = colors.extra1, bg = colors.bg4 } },
+    { "IlluminatedWordText", { fg = colors.extra2, bg = colors.bg4 } },
+    { "IlluminatedWordRead", { fg = colors.extra3, bg = colors.bg5 } },
     { "IlluminatedWordWrite", { fg = colors.extra4, bg = colors.bg5 } },
 
     -- navic
