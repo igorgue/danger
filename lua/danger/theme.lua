@@ -309,7 +309,15 @@ function M.load(colors, opts)
     { "AlphaButtons", { fg = colors.keyword2 } },
     { "AlphaShortcut", { fg = colors.type2, italic = italic } },
     { "AlphaFooter", { fg = colors.comment, italic = italic } },
+
     { "DashboardFooter", { fg = colors.comment, italic = italic } },
+    { "DashboardShortCut", { fg = colors.type2 } },
+    { "DashboardHeader", { fg = colors.type, bold = bold } },
+    { "DashboardCenter", { fg = colors.keyword2 } },
+    { "DashboardFooter", { fg = colors.comment, italic = italic } },
+    { "DashboardKey", { fg = colors.keyword } },
+    { "DashboardDesc", { fg = colors.fg } },
+    { "DashboardIcon", { fg = colors.const, italic = italic } },
 
     { "MiniIndentscopeSymbol", { fg = colors.type, bold = bold } },
 
