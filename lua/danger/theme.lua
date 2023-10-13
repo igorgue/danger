@@ -114,6 +114,12 @@ function M.load(colors, opts)
     { "Delimiter", { fg = colors.fg3 } },
     { "Todo", { fg = colors.bg, bg = colors.const } },
 
+    { "shNumber", { fg = colors.func } },
+    { "shVariable", { link = "Constant" } },
+    { "shVar", { fg = colors.fg } },
+    { "shVarAssign", { fg = colors.success } },
+    { "zshVariableDef", { link = "Constant" } },
+
     { "pythonBrackets", { link = "cParen" } },
     { "pythonBuiltinFunc", { fg = colors.builtin } },
     { "pythonBuiltinObj", { fg = colors.builtin } },
