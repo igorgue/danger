@@ -55,8 +55,8 @@ function M.load(colors, opts)
     { "ColorColumn", { bg = colors.bg2 } },
     { "LineNr", { fg = colors.fg5, bg = colors.bg } },
     { "VertSplit", { fg = colors.keyword2, bg = colors.bg } },
-    { "StatusLine", { fg = colors.fg4, bg = colors.bg2, bold = bold } },
-    { "StatusLineNC", { fg = colors.bg, bg = colors.comment } },
+    { "StatusLine", { fg = colors.fg2, bg = colors.bg2, bold = bold } },
+    { "StatusLineNC", { fg = colors.comment, bg = colors.bg } },
     { "Pmenu", { fg = colors.fg2, bg = colors.bg2, blend = 5 } },
     { "PmenuSel", { fg = colors.type, bg = colors.bg4, bold = bold, blend = 0 } },
     { "Directory", { fg = colors.const } },
@@ -538,7 +538,7 @@ function M.load(colors, opts)
   }
 
   for _, highlight in ipairs(highlights) do
-    hi(table.unpack(highlight))
+    hi(unpack(highlight))
   end
 end
 
