@@ -120,7 +120,7 @@ function M.load(colors, opts)
     { "shVarAssign", { fg = colors.success } },
     { "zshVariableDef", { link = "Constant" } },
 
-    { "pythonAttribute", { fg = colors.fg3 } },
+    { "pythonAttribute", { fg = colors.fg4, force = true } },
     { "pythonBrackets", { link = "cParen" } },
     { "pythonBuiltinFunc", { fg = colors.builtin } },
     { "pythonBuiltinObj", { fg = colors.builtin } },
@@ -139,7 +139,7 @@ function M.load(colors, opts)
     { "pythonInclude", { fg = colors.keyword, italic = italic } },
     { "pythonOperator", { fg = colors.keyword } },
     { "pythonParameters", { fg = colors.fg4 } },
-    { "pythonParam", { fg = colors.fg5 } },
+    { "pythonParam", { fg = colors.extra3, force = true } },
     { "pythonParen", { link = "cParen" } },
     { "pythonRepeat", { fg = colors.keyword2 } },
     { "pythonRun", { fg = colors.comment, italic = italic } },
