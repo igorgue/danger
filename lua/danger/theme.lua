@@ -172,7 +172,7 @@ function M.load(colors, opts)
     { "semshiParameter", { fg = colors.extra2 } },
     { "semshiParameterUnused", { fg = colors.hint } },
     { "semshiSelected", { fg = colors.info, bg = colors.info_bg } },
-    { "semshiSelf", { fg = colors.var } },
+    { "semshiSelf", { fg = colors.builtin } },
     { "semshiUnresolved", { fg = colors.fg2 } },
 
     { "dartConstant", { fg = colors.const } },
