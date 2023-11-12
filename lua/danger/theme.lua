@@ -203,6 +203,7 @@ function M.load(colors, opts)
     { "LspInfoBorder", { fg = colors.keyword2, bg = colors.bg } },
 
     { "TelescopeBorder", { fg = colors.keyword2, bg = colors.bg } },
+    { "TelescopeSelection", { bg = colors.bg2, bold = bold } },
 
     { "GitSignsAdd", { fg = colors.success, bg = colors.none } },
     { "GitSignsChange", { fg = colors.warning, bg = colors.none } },
