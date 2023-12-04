@@ -55,6 +55,8 @@ function M.load(colors, opts)
     { "ColorColumn", { bg = colors.bg2 } },
     { "LineNr", { fg = colors.fg5, bg = colors.bg } },
     { "VertSplit", { fg = colors.keyword2, bg = colors.bg } },
+    { "WinSeparator", { fg = colors.keyword2, bg = colors.bg } },
+    { "WinBar", { bg = colors.bg } },
     { "StatusLine", { fg = colors.fg2, bg = colors.bg2, bold = bold } },
     { "StatusLineNC", { fg = colors.comment, bg = colors.bg } },
     { "Pmenu", { fg = colors.fg2, bg = colors.bg2, blend = 5 } },
