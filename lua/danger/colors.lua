@@ -188,4 +188,10 @@ M.mnml.extra8 = M.mnml.fg
 M.mnml.extra9 = M.mnml.keyword2
 M.mnml.extra10 = M.mnml.keyword2
 
+M.candy = vim.deepcopy(M.dark)
+M.candy.bg = "#000000"
+M.candy.fg = "#f0f0f8"
+
+M.ir_black = vim.deepcopy(M.dark)
+
 return M
