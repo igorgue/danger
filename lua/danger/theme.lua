@@ -541,6 +541,14 @@ function M.load(colors, opts)
     { "NavicText", { bg = colors.none, fg = colors.fg5, italic = italic } },
     { "NavicSeparator", { bg = colors.none, fg = colors.fg4 } },
 
+    -- cmp
+    { "CmpItemAbbr", { fg = colors.fg } },
+    { "CmpItemAbbrDeprecated", { fg = colors.fg5, strikethrough = true } },
+    { "CmpItemAbbrMatch", { fg = colors.keyword2, bold = bold } },
+    { "CmpItemAbbrMatchFuzzy", { fg = colors.keyword, bold = bold } },
+    { "CmpItemKind", { fg = colors.type, italic = italic } },
+    { "CmpItemMenu", { fg = colors.type2, italic = italic } },
+
     -- null-ls
     { "NullLsInfoBorder", { link = "FloatBorder" } },
 
