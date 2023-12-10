@@ -350,7 +350,7 @@ function M.load(colors, opts)
     { "@constant.builtin", { link = "Constant" } },
     { "@constant", { link = "Constant" } },
     { "@constant.macro", { link = "Define" } },
-    { "@constructor", { link = "cParen" } },
+    { "@constructor", { link = "Type" } },
     { "@debug", { link = "Debug" } },
     { "@define", { link = "Define" } },
     { "@delimiter", { link = "Delimiter" } },
