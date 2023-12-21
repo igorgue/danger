@@ -73,6 +73,7 @@ function M.load(colors, opts)
     { "SignColumn", { fg = colors.info, bg = colors.none } },
     { "MatchParen", { fg = colors.type3, bg = colors.bg5 } },
     { "Search", { fg = colors.none, bg = colors.none, bold = bold, reverse = true } },
+    { "CurSearch", { fg = colors.bg, bg = colors.keyword2, bold = bold } },
     { "IncSearch", { fg = colors.none, bg = colors.none, bold = bold, reverse = true } },
     { "Boolean", { fg = colors.const } },
     { "Character", { fg = colors.const } },
