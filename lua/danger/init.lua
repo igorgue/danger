@@ -17,6 +17,10 @@ local function theme_colors()
     return require("danger.colors").red_and_black
   elseif vim.g.colors_name == "danger_mnml" then
     return require("danger.colors").mnml
+  elseif vim.g.colors_name == "ir_black" then
+    return require("danger.colors").ir_black
+  elseif vim.g.colors_name == "danger_black" then
+    return require("danger.colors").black
   end
 
   return require("danger.colors").dark
@@ -95,6 +99,10 @@ function M.load(opts)
     colors = require("danger.colors").red_and_black
   elseif opts.style == "mnml" then
     colors = require("danger.colors").mnml
+  elseif opts.style == "ir_black" then
+    colors = require("danger.colors").ir_black
+  elseif opts.style == "black" then
+    colors = require("danger.colors").black
   end
 
   require("danger.theme").load(colors, opts)

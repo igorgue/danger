@@ -3,7 +3,7 @@ local M = {}
 function M.load(colors, opts)
   local hi = require("danger.utils").set_highlight
   local colorsheme_name = "danger_" .. opts.style
-  local is_dark = opts.style == "dark" or opts.style == "red_and_black" or opts.style == "mnml"
+  local is_dark = opts.style == "dark" or opts.style == "red_and_black" or opts.style == "mnml" or opts.style == "black"
   local bold = opts.bold
   local italic = opts.italic
 

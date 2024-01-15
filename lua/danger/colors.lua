@@ -194,4 +194,7 @@ M.candy.fg = "#f0f0f8"
 
 M.ir_black = vim.deepcopy(M.dark)
 
+M.black = vim.deepcopy(M.dark)
+M.black.bg = "#000000"
+
 return M
