@@ -65,7 +65,7 @@ function M.load(colors, opts)
     { "Directory", { fg = colors.const } },
     { "WildMenu", { fg = colors.str, bg = colors.bg } },
     { "TabLine", { fg = colors.bg4, bg = colors.none } },
-    { "TabLineSel", { fg = colors.bg, bg = colors.keyword2 } },
+    { "TabLineSel", { fg = colors.bg, bg = colors.keyword2, bold = bold } },
     { "TabLineFill", { fg = colors.bg, bg = colors.none } },
     { "Quote", { fg = colors.fg, bg = colors.bg } },
     { "Folded", { fg = colors.info, bg = colors.info_bg, bold = bold } },
