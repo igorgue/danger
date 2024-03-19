@@ -207,10 +207,14 @@ function M.load(colors, opts)
     { "DiagnosticVirtualTextError", { fg = colors.error, bg = colors.error_bg } },
 
     { "DiagnosticSignInfo", { fg = colors.keyword2, bg = colors.none } },
+
     { "LspCodeLens", { fg = colors.bg3, bg = colors.none, italic = italic } },
     { "LspCodeLensSeparator", { fg = colors.bg3, bg = colors.none, italic = italic } },
-
     { "LspInfoBorder", { fg = colors.keyword2, bg = colors.bg } },
+    {
+      "LspInlayHint",
+      { fg = is_dark and colors.keyword2 or colors.bg, bg = is_dark and colors.info_bg or colors.keyword2 },
+    },
 
     { "TelescopeBorder", { fg = colors.keyword2, bg = colors.bg } },
     { "TelescopeSelection", { bg = colors.bg2, bold = bold } },
@@ -226,10 +230,7 @@ function M.load(colors, opts)
     { "GitSignsDeleteLn", { fg = colors.error, bg = colors.none } },
     { "GitSignsCurrentLineBlame", { fg = colors.fg2, bg = colors.none } },
 
-    {
-      "CopilotSuggestion",
-      { fg = is_dark and colors.keyword2 or colors.bg, bg = is_dark and colors.info_bg or colors.keyword2 },
-    },
+    { "CopilotSuggestion", { link = "LspInlayHint" } },
     { "CopilotAnnotation", { fg = colors.keyword, italic = italic } },
 
     { "NotifyERRORBorder", { fg = colors.error } },
