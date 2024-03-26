@@ -419,6 +419,7 @@ function M.load(colors, opts)
     -- more ts highlights
     { "@variable.htmldjango", { fg = colors.var } },
     { "@include.python", { link = "Include" } },
+    { "@variable.parameter.python", { fg = colors.fg4 } },
 
     -- markid plugin
     { "markid1", { fg = colors.extra1 } },
