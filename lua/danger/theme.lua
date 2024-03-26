@@ -113,7 +113,7 @@ function M.load(colors, opts)
     { "SpellCap", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning } },
     { "SpellLocal", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning } },
     { "SpellRare", { fg = colors.fg, bg = colors.keyword, undercurl = true, special = colors.warning } },
-    { "cParen", { fg = colors.fg5 } },
+    { "cParen", { fg = colors.paren } },
     { "cCustomParen", { fg = colors.fg4 } },
     { "Delimiter", { fg = colors.fg3 } },
     { "Todo", { fg = colors.bg, bg = colors.const } },
@@ -411,15 +411,20 @@ function M.load(colors, opts)
     { "@text.warning", { link = "Todo" } },
     { "@type.builtin", { link = "Type" } },
     { "@type.definition", { link = "Typedef" } },
-    { "@type", { link = "Type" } },
+    { "@type", { link = "Type", italic = true } },
     { "@type.qualifier", { link = "Type" } },
     { "@variable.builtin", { link = "Special" } },
     { "@variable", { fg = colors.var } },
 
-    -- more ts highlights
-    { "@variable.htmldjango", { fg = colors.var } },
+    -- ts highlights for python
     { "@include.python", { link = "Include" } },
-    { "@variable.parameter.python", { fg = colors.fg4 } },
+    { "@keyword.operator.python", { bold = bold } },
+    { "@keyword.return.python", { fg = colors.keyword, italic = italic } },
+    { "@none.python", { fg = colors.fg } },
+    { "@variable.builtin.python", { fg = colors.builtin } },
+    { "@variable.htmldjango", { fg = colors.var } },
+    { "@variable.member.python", { link = "@property" } },
+    { "@variable.parameter.python", { fg = colors.fg2 } },
 
     -- markid plugin
     { "markid1", { fg = colors.extra1 } },
@@ -452,30 +457,35 @@ function M.load(colors, opts)
 
     -- semantic highlight on lsp
     -- LSP Semantic Token Groups
-    { "@lsp.type.class", { fg = colors.type, italic = italic } },
-    { "@lsp.type.decorator", { fg = colors.keyword2, italic = italic } },
-    { "@lsp.type.enum", { fg = colors.func, italic = italic } },
-    { "@lsp.type.enumMember", { fg = colors.const } },
-    { "@lsp.type.function", { fg = colors.func } },
-    { "@lsp.type.interface", { fg = colors.func } },
+    { "@lsp.type.class", { link = "@type" } },
+    { "@lsp.type.decorator", { link = "@function" } },
+    { "@lsp.type.enum", { link = "@type" } },
+    { "@lsp.type.enumMember", { link = "@constant" } },
+    { "@lsp.type.function", { link = "@function" } },
+    { "@lsp.type.interface", { link = "@type" } },
     { "@lsp.type.keyword", { fg = colors.keyword, italic = italic } },
-    { "@lsp.type.macro", { link = "PreProc" } },
-    { "@lsp.typemod.function.defaultLibrary", { link = "Special" } },
+    { "@lsp.type.macro", { link = "@macro" } },
+    { "@lsp.type.method", { link = "@method" } },
     { "@lsp.typemod.variable.defaultLibrary", { fg = colors.builtin } },
     { "@lsp.typemod.variable.globalScope", { fg = colors.const } },
     { "@lsp.type.namespace", { link = "@namespace" } },
-    { "@lsp.type.parameter", { link = "Indentifier" } },
-    { "@lsp.type.property", { fg = colors.fg3 } },
-    { "@lsp.type.method", { link = "Indentifier" } },
-    { "@lsp.type.struct", { fg = colors.type } },
-    { "@lsp.type.type", { fg = colors.type } },
-    { "@lsp.type.variable", { fg = colors.var } },
+    { "@lsp.type.parameter", { link = "@parameter" } },
+    { "@lsp.type.property", { link = "@property" } },
+    { "@lsp.type.struct", { link = "@structure" } },
+    { "@lsp.type.type", { link = "@type" } },
+    { "@lsp.type.variable", { link = "@variable" } },
 
     -- rust specific
     { "@lsp.type.variable.rust", { link = "@lsp.type.variable" } },
     { "@lsp.type.function.rust", { link = "@lsp.type.variable" } },
     { "@lsp.mod.declaration.rust", { link = "@lsp.type.variable" } },
     { "@lsp.typemod.function.declaration.rust", { link = "@lsp.type.variable" } },
+
+    -- python specific
+    { "@keyword.conditional.python", { fg = colors.keyword2, bold = bold } },
+    { "@keyword.repeat.python", { bold = bold } },
+    { "@lsp.type.class.python", { italic = italic } },
+    { "@lsp.type.variable.python", {} },
 
     -- noice
     -- https://github.com/folke/noice.nvim#-highlight-groups

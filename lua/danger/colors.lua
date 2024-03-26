@@ -34,7 +34,8 @@ M.dark = {
   type2 = "#ffd7d7",
   type3 = "#ffe6ff",
 
-  builtin = "#009b73",
+  paren = "#fa96a0",
+  builtin = "#00cd9b",
   const = "#ffd75f",
   comment = "#6c6c6c",
   func = "#ffffd7",
