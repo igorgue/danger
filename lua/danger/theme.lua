@@ -483,8 +483,8 @@ function M.load(colors, opts)
 
     -- python specific
     { "@keyword.conditional.python", { fg = colors.keyword2, bold = bold } },
-    { "@keyword.repeat.python", { bold = bold } },
-    { "@lsp.type.class.python", { italic = italic } },
+    { "@keyword.repeat.python", { fg = colors.keyword2, bold = bold } },
+    { "@lsp.type.class.python", { fg = colors.type, italic = italic } },
     { "@lsp.type.variable.python", {} },
 
     -- noice
