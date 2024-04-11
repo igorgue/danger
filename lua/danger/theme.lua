@@ -486,6 +486,7 @@ function M.load(colors, opts)
     { "@keyword.repeat.python", { fg = colors.keyword2, bold = bold } },
     { "@lsp.type.class.python", { fg = colors.type, italic = italic } },
     { "@lsp.type.variable.python", {} },
+    { "@lsp.type.parameter.python", {} },
 
     -- noice
     -- https://github.com/folke/noice.nvim#-highlight-groups
