@@ -233,6 +233,9 @@ function M.load(colors, opts)
     { "CopilotSuggestion", { link = "LspInlayHint" } },
     { "CopilotAnnotation", { fg = colors.keyword, italic = italic } },
 
+    { "TabbyCompletion", { link = "CopilotSuggestion" } },
+    { "TabbyCompletionReplaceRange", { fg = colors.keyword, italic = italic } },
+
     { "NotifyERRORBorder", { fg = colors.error } },
     { "NotifyWARNBorder", { fg = colors.warning } },
     { "NotifyINFOBorder", { fg = colors.keyword } },
