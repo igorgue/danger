@@ -569,6 +569,8 @@ function M.load(colors, opts)
     -- null-ls
     { "NullLsInfoBorder", { link = "FloatBorder" } },
 
+    { "ZenBg", { bg = colors.bg } },
+
     { "NvimInternalError", { fg = colors.bg, bg = colors.error, bold = bold } },
   }
 
