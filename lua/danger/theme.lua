@@ -48,7 +48,7 @@ function M.load(colors, opts)
     { "Visual", { fg = colors.none, bg = colors.bg4 } },
     { "Cursor", { fg = colors.keyword2, bg = colors.type } },
     { "Conceal", { fg = colors.fg, bg = colors.bg2 } },
-    { "CursorLine", { fg = colors.none, bg = colors.bg2, bold = bold } },
+    { "CursorLine", { fg = colors.none, bg = colors.bg2 } },
     { "CursorLineSign", { bg = colors.bg2 } },
     { "CursorLineNr", { fg = colors.keyword2, bg = colors.bg2 } },
     { "CursorColumn", { fg = colors.type, bg = colors.bg2 } },
