@@ -486,6 +486,7 @@ function M.load(colors, opts)
 
     -- python specific
     { "@keyword.conditional.python", { fg = colors.keyword2, bold = bold } },
+    { "@keyword.operator.python", { fg = colors.keyword2, bold = bold } },
     { "@keyword.repeat.python", { fg = colors.keyword2, bold = bold } },
     { "@lsp.type.class.python", { fg = colors.type, italic = italic } },
     { "@lsp.type.variable.python", {} },
