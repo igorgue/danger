@@ -522,6 +522,9 @@ function M.load(colors, opts)
     { "TodoFgHACK", { fg = colors.warning } },
     { "TodoSignHACK", { fg = colors.warning, bg = colors.none } },
 
+    -- Html
+    { "htmlTagN", { link = "HtmlTagName" } },
+
     -- Illumniate
     { "illuminatedWord", { fg = colors.extra1, bg = colors.bg4 } },
     { "illuminatedCurWord", { fg = colors.extra1, bg = colors.bg4 } },
