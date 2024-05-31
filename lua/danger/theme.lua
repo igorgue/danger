@@ -576,6 +576,9 @@ function M.load(colors, opts)
     { "ZenBg", { bg = colors.bg } },
 
     { "NvimInternalError", { fg = colors.bg, bg = colors.error, bold = bold } },
+
+    -- markdown
+    { "CodeBlock", { bg = colors.bg } },
   }
 
   for _, highlight in ipairs(highlights) do
