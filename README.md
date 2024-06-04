@@ -4,8 +4,8 @@ I've been using this color scheme since 2003, re-written in Lua, and includes a 
 
 Even though it's a VIM theme, I also made versions for: Visual Studio Code, Sublime Text, TextMate, Gedit and GTKSourceView based editors, Gnome Terminal Color Schemes and VIM statuses Lightline I want every editor I use or stumble upon to have the same color scheme.
 
-![rust-btw](https://user-images.githubusercontent.com/7014/219985121-092a8c37-f6bb-4e1d-9104-342277d45ff8.png)
-*Rust source code example, [full config](https://github.com/igorgue/dotnvim)*
+![nim-btw](https://github.com/igorgue/danger/assets/7014/eb8c4875-f549-4a70-9e58-bc6e545e6984)
+*Nim source code example, [full config](https://github.com/igorgue/dotnvim)*
 
 ## Install
 
