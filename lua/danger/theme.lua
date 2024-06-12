@@ -570,6 +570,27 @@ function M.load(colors, opts)
     { "CmpItemKind", { fg = colors.type, italic = italic } },
     { "CmpItemMenu", { fg = colors.type2, italic = italic } },
 
+    -- FzfLua
+    { "FzfLuaBorder", { fg = colors.keyword2, bg = colors.bg } },
+    { "FzfLuaNormal", { fg = colors.fg, bg = colors.bg } },
+    { "FzfLuaFzfNormal", { fg = colors.fg } },
+    { "FzfLuaTitle", { fg = colors.warning, bg = colors.bg } },
+    { "FzfLuaPreviewTitle", { fg = colors.keyword2, bg = colors.bg } },
+    -- FzfLuaDirPart = { link = "Directory" },
+    { "FzfLuaFilePart", { link = "FzfLuaFzfNormal" } },
+    -- FzfLuaDirPart", { fg = c.dark3 },
+    -- FzfLuaDirPart", { fg = c.dark5 },
+    { "FzfLuaDirPart", { fg = colors.comment } },
+    -- FzfLuaTitle", { bg = c.bg_highlight, fg = c.orange },
+    -- FzfLuaPreviewTitle", { bg = c.bg_dark, fg = c.bg_dark },
+    { "FzfLuaCursor", { link = "IncSearch" } },
+    { "FzfLuaHeaderBind", { link = "@punctuation.special" } },
+    { "FzfLuaHeaderText", { link = "Title" } },
+    { "FzfLuaPath", { link = "Directory" } },
+    { "FzfLuaFzfPointer", { fg = colors.keyword2 } },
+    { "FzfLuaFzfCursorLine", { link = "Visual" } },
+    { "FzfLuaFzfSeparator", { fg = colors.warning2, bg = colors.bg } },
+
     -- null-ls
     { "NullLsInfoBorder", { link = "FloatBorder" } },
 
