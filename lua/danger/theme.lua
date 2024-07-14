@@ -325,7 +325,7 @@ function M.load(colors, opts)
     { "DapStopped", { fg = colors.success } },
     { "DapLogPoint", { fg = colors.warning } },
 
-    { "WhichKeyNormal", { bg = colors.bg2 } },
+    { "WhichKeyNormal", { bg = colors.bg } },
 
     { "AlphaHeader", { fg = colors.type, bold = bold } },
     { "AlphaButtons", { fg = colors.keyword2 } },
