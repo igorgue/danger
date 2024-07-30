@@ -211,6 +211,7 @@ function M.load(colors, opts)
     { "LspCodeLens", { fg = colors.bg3, bg = colors.none, italic = italic } },
     { "LspCodeLensSeparator", { fg = colors.bg3, bg = colors.none, italic = italic } },
     { "LspInfoBorder", { fg = colors.keyword2, bg = colors.bg } },
+    { "LspReferenceText", { bg = colors.bg2 } },
     {
       "LspInlayHint",
       { fg = is_dark and colors.keyword2 or colors.bg, bg = is_dark and colors.info_bg or colors.keyword2 },
@@ -527,7 +528,7 @@ function M.load(colors, opts)
 
     -- Illumniate
     { "illuminatedWord", { fg = colors.extra1, bg = colors.bg4 } },
-    { "illuminatedCurWord", { fg = colors.extra1, bg = colors.bg4 } },
+    { "illuminatedCurWord", { fg = colors.extra3, bg = colors.bg4 } },
     { "IlluminatedWordText", { fg = colors.extra2, bg = colors.bg4 } },
     { "IlluminatedWordRead", { fg = colors.extra3, bg = colors.bg5 } },
     { "IlluminatedWordWrite", { fg = colors.extra4, bg = colors.bg5 } },
