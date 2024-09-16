@@ -237,6 +237,8 @@ function M.load(colors, opts)
     { "TabbyCompletion", { link = "CopilotSuggestion" } },
     { "TabbyCompletionReplaceRange", { fg = colors.keyword, italic = italic } },
 
+    { "SupermavenSuggestion", { link = "CopilotSuggestion" } },
+
     { "NotifyERRORBorder", { fg = colors.error } },
     { "NotifyWARNBorder", { fg = colors.warning } },
     { "NotifyINFOBorder", { fg = colors.keyword } },
