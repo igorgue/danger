@@ -598,6 +598,7 @@ function M.load(colors, opts)
 
     -- markdown
     { "CodeBlock", { bg = colors.bg } },
+    { "RenderMarkdownCode", { bg = colors.bg } },
   }
 
   for _, highlight in ipairs(highlights) do
