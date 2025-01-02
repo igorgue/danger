@@ -601,7 +601,7 @@ function M.load(colors, opts)
     { "RenderMarkdownCode", { bg = colors.bg } },
 
     -- snacks indent
-    { "SnacksIndent", { bg = colors.none, fg = colors.fg3 } },
+    { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
   }
 
   for _, highlight in ipairs(highlights) do
