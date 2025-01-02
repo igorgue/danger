@@ -149,7 +149,7 @@ M.red_and_black.const = "#6c0606"
 M.red_and_black.comment = "#6c6c6c"
 M.red_and_black.func = "#ffd7d7"
 M.red_and_black.str = "#a00004"
-M.red_and_black.var = "#be1418"
+M.red_and_black.var = "#5a0004"
 
 M.red_and_black.extra1 = "#be2822"
 M.red_and_black.extra2 = "#aa6e6e"

@@ -599,6 +599,9 @@ function M.load(colors, opts)
     -- markdown
     { "CodeBlock", { bg = colors.bg } },
     { "RenderMarkdownCode", { bg = colors.bg } },
+
+    -- snacks indent
+    { "SnacksIndent", { bg = colors.none, fg = colors.fg3 } },
   }
 
   for _, highlight in ipairs(highlights) do
