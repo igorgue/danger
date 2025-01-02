@@ -451,7 +451,7 @@ function M.load(colors, opts)
     { "TSRainbowOrange", { fg = colors.func } },
     { "TSRainbowGreen", { fg = colors.success } },
     { "TSRainbowViolet", { fg = colors.keyword2 } },
-    { "TSRainbowCyan", { fg = colors.str } },
+    { "TSRainbowCyan", { fg = colors.extra1 } },
 
     { "RainbowDelimiterRed", { fg = colors.warning } },
     { "RainbowDelimiterYellow", { fg = colors.const } },
@@ -459,7 +459,7 @@ function M.load(colors, opts)
     { "RainbowDelimiterOrange", { fg = colors.func } },
     { "RainbowDelimiterGreen", { fg = colors.success } },
     { "RainbowDelimiterViolet", { fg = colors.keyword2 } },
-    { "RainbowDelimiterCyan", { fg = colors.str } },
+    { "RainbowDelimiterCyan", { fg = colors.extra1 } },
 
     -- semantic highlight on lsp
     -- LSP Semantic Token Groups
