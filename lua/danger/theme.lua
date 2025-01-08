@@ -613,6 +613,9 @@ function M.load(colors, opts)
     { "BlinkCmpSignatureHelpBorder", { link = "FloatBorder" } },
     { "BlinkCmpDocSeparator", { fg = colors.keyword } },
     { "BlinkCmpMenuSelection", { fg = colors.none, bg = colors.bg5 } },
+    { "BlinkCmpLabelDeprecated", { fg = colors.none, bg = colors.none, strikethrough = true } },
+    { "BlinkCmpLabelMatch", { fg = colors.type, bold = bold } },
+    { "BlinkCmpSignatureHelpActiveParameter", { fg = colors.type, bold = bold } },
   }
 
   for _, highlight in ipairs(highlights) do
