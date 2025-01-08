@@ -461,6 +461,9 @@ function M.load(colors, opts)
     { "RainbowDelimiterViolet", { fg = colors.keyword2 } },
     { "RainbowDelimiterCyan", { fg = colors.extra1 } },
 
+    -- ts context
+    { "TreesitterContext", { bg = colors.info_bg } },
+
     -- semantic highlight on lsp
     -- LSP Semantic Token Groups
     { "@lsp.type.class", { link = "@type" } },
