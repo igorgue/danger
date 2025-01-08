@@ -116,7 +116,7 @@ function M.load(colors, opts)
     { "cParen", { fg = colors.paren } },
     { "cCustomParen", { fg = colors.fg4 } },
     { "Delimiter", { fg = colors.fg3 } },
-    { "Todo", { fg = colors.bg, bg = colors.const } },
+    { "Todo", { fg = colors.bg, bg = colors.str, bold = bold } },
 
     { "shNumber", { fg = colors.func } },
     { "shVariable", { link = "Constant" } },
