@@ -605,6 +605,14 @@ function M.load(colors, opts)
 
     -- snacks indent
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
+
+    -- blink.cmp
+    { "BlinkCmpMenu", { bg = colors.bg } },
+    { "BlinkCmpMenuBorder", { link = "FloatBorder" } },
+    { "BlinkCmpDocBorder", { link = "FloatBorder" } },
+    { "BlinkCmpSignatureHelpBorder", { link = "FloatBorder" } },
+    { "BlinkCmpDocSeparator", { fg = colors.keyword } },
+    { "BlinkCmpMenuSelection", { fg = colors.none, bg = colors.bg5 } },
   }
 
   for _, highlight in ipairs(highlights) do
