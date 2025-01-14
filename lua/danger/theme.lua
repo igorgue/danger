@@ -26,7 +26,7 @@ function M.load(colors, opts)
   vim.g.terminal_color_1 = colors.warning
   vim.g.terminal_color_2 = colors.builtin
   vim.g.terminal_color_3 = colors.const
-  vim.g.terminal_color_4 = colors.type
+  vim.g.terminal_color_4 = colors.keyword
   vim.g.terminal_color_5 = colors.var
   vim.g.terminal_color_6 = colors.fg3
   vim.g.terminal_color_7 = colors.builtin
@@ -35,7 +35,7 @@ function M.load(colors, opts)
   vim.g.terminal_color_10 = colors.fg2
   vim.g.terminal_color_11 = colors.var
   vim.g.terminal_color_12 = colors.const
-  vim.g.terminal_color_13 = colors.type
+  vim.g.terminal_color_13 = colors.keyword
   vim.g.terminal_color_14 = colors.fg4
   vim.g.terminal_color_15 = colors.success
 
