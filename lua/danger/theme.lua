@@ -603,8 +603,9 @@ function M.load(colors, opts)
     { "CodeBlock", { bg = colors.bg } },
     { "RenderMarkdownCode", { bg = colors.bg } },
 
-    -- snacks indent
+    -- snacks
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
+    { "SnacksPicker", { bg = colors.none } },
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
