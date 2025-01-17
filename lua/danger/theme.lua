@@ -620,6 +620,14 @@ function M.load(colors, opts)
     { "BlinkCmpLabelDeprecated", { fg = colors.none, bg = colors.none, strikethrough = true } },
     { "BlinkCmpLabelMatch", { fg = colors.type, bold = bold } },
     { "BlinkCmpSignatureHelpActiveParameter", { fg = colors.type, bold = bold } },
+
+    -- git conflict
+    { "GitConflictCurrent", { bg = colors.info_bg } },
+    { "GitConflictCurrentLabel", { bg = colors.info, fg = colors.info_bg, bold = bold } },
+    { "GitConflictIncoming", { bg = colors.success_bg } },
+    { "GitConflictIncomingLabel", { bg = colors.success, fg = colors.success_bg, bold = bold } },
+    { "GitConflictAncestor", { bg = colors.warning_bg } },
+    { "GitConflictAncestorLabel", { bg = colors.warning_bg, fg = colors.warning, bold = bold } },
   }
 
   for _, highlight in ipairs(highlights) do
