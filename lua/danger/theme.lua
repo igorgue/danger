@@ -27,7 +27,7 @@ function M.load(colors, opts)
   vim.g.terminal_color_2 = colors.builtin
   vim.g.terminal_color_3 = colors.const
   vim.g.terminal_color_4 = colors.keyword
-  vim.g.terminal_color_5 = colors.var
+  vim.g.terminal_color_5 = colors.keyword2
   vim.g.terminal_color_6 = colors.fg3
   vim.g.terminal_color_7 = colors.builtin
   vim.g.terminal_color_8 = colors.keyword
