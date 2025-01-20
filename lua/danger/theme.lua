@@ -217,7 +217,11 @@ function M.load(colors, opts)
       { fg = is_dark and colors.keyword2 or colors.bg, bg = is_dark and colors.info_bg or colors.keyword2 },
     },
 
-    { "TelescopeBorder", { fg = colors.keyword2, bg = colors.bg } },
+    { "TelescopeBorder", { fg = colors.keyword2 } },
+    { "TelescopePromptBorder", { fg = colors.keyword2 } },
+    { "TelescopeResultsBorder", { fg = colors.keyword } },
+    { "TelescopePreviewBorder", { fg = colors.info } },
+
     { "TelescopeSelection", { bg = colors.bg2, bold = bold } },
 
     { "GitSignsAdd", { fg = colors.success, bg = colors.none } },
