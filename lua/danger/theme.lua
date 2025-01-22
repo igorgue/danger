@@ -624,8 +624,9 @@ function M.load(colors, opts)
     { "BlinkCmpLabelDeprecated", { fg = colors.none, bg = colors.none, strikethrough = true } },
     { "BlinkCmpLabelMatch", { fg = colors.type, bold = bold } },
     { "BlinkCmpSignatureHelpActiveParameter", { fg = colors.type, bold = bold } },
+    { "BlinkCmpGhostText", { link = "CopilotSuggestion" } },
 
-    -- git conflict
+    -- git conflight highlights
     { "GitConflictCurrent", { bg = colors.info_bg } },
     { "GitConflictCurrentLabel", { bg = colors.info, fg = colors.info_bg, bold = bold } },
     { "GitConflictIncoming", { bg = colors.success_bg } },
