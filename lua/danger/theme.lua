@@ -611,6 +611,7 @@ function M.load(colors, opts)
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
     { "SnacksPickerDir", { link = "Normal" } },
     { "SnacksPickerDir", { bg = colors.none } },
+    { "SnacksPickerCol", { bg = colors.none } },
     { "SnacksPickerBufFlags", { link = "Normal" } },
     { "SnacksPickerBufFlags", { bg = colors.none, fg = colors.fg4 } },
 
