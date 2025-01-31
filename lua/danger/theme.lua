@@ -637,6 +637,9 @@ function M.load(colors, opts)
     { "GitConflictIncomingLabel", { bg = colors.success, fg = colors.success_bg, bold = bold } },
     { "GitConflictAncestor", { bg = colors.warning_bg } },
     { "GitConflictAncestorLabel", { bg = colors.warning_bg, fg = colors.warning, bold = bold } },
+
+    -- trouble
+    { "TroubleIndentFoldOpen", { bg = colors.none } },
   }
 
   for _, highlight in ipairs(highlights) do
