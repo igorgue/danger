@@ -639,7 +639,16 @@ function M.load(colors, opts)
     { "GitConflictAncestorLabel", { bg = colors.warning_bg, fg = colors.warning, bold = bold } },
 
     -- trouble
+    { "TroubleIndent", { link = "Normal" } },
+    { "TroubleIndent", { bg = colors.none } },
+    { "TroubleIndentFoldOpen", { link = "Normal" } },
     { "TroubleIndentFoldOpen", { bg = colors.none } },
+    { "TroubleIndentLast", { link = "Normal" } },
+    { "TroubleIndentLast", { bg = colors.none } },
+    { "TroubleIndentMiddle", { link = "Normal" } },
+    { "TroubleIndentMiddle", { bg = colors.none } },
+    { "TroubleIndentWs", { link = "Normal" } },
+    { "TroubleIndentWs", { bg = colors.none } },
   }
 
   for _, highlight in ipairs(highlights) do
