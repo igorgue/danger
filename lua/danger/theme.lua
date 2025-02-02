@@ -608,6 +608,7 @@ function M.load(colors, opts)
     { "RenderMarkdownCode", { bg = colors.bg } },
 
     -- snacks
+    { "SnacksBackdrop", { bg = colors.bg } },
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
     { "SnacksPickerDir", { link = "Normal" } },
     { "SnacksPickerDir", { bg = colors.none } },
