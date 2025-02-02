@@ -53,7 +53,7 @@ function M.load(colors, opts)
     { "CursorLineNr", { fg = colors.keyword2, bg = colors.bg2 } },
     { "CursorColumn", { fg = colors.type, bg = colors.bg2 } },
     { "ColorColumn", { bg = colors.bg2 } },
-    { "LineNr", { fg = colors.fg5, bg = colors.bg } },
+    { "LineNr", { fg = colors.fg5, bg = colors.none } },
     { "VertSplit", { fg = colors.keyword2, bg = colors.bg } },
     { "WinSeparator", { fg = colors.keyword2, bg = colors.bg } },
     { "WinBar", { bg = colors.bg } },
