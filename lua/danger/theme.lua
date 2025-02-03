@@ -618,6 +618,7 @@ function M.load(colors, opts)
     { "SnacksPickerIndent", { bg = colors.none, fg = colors.fg5 } },
     { "SnacksPickerBufFlags", { link = "Normal" } },
     { "SnacksPickerBufFlags", { bg = colors.none, fg = colors.fg4 } },
+    { "SnacksPickerGitStatusUntracked", { bg = colors.none } },
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
