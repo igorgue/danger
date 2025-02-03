@@ -618,7 +618,10 @@ function M.load(colors, opts)
     { "SnacksPickerIndent", { bg = colors.none, fg = colors.fg5 } },
     { "SnacksPickerBufFlags", { link = "Normal" } },
     { "SnacksPickerBufFlags", { bg = colors.none, fg = colors.fg4 } },
-    { "SnacksPickerGitStatusUntracked", { bg = colors.none } },
+    { "SnacksPickerGitStatusUntracked", { link = "Normal" } },
+    { "SnacksPickerGitStatusUntracked", { bg = colors.none, fg = colors.fg4 } },
+    { "SnacksPickerGitStatusIgnored", { link = "Normal" } },
+    { "SnacksPickerGitStatusIgnored", { bg = colors.none, fg = colors.info } },
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
