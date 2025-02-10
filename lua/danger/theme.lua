@@ -609,6 +609,7 @@ function M.load(colors, opts)
     -- markdown
     { "CodeBlock", { bg = colors.bg } },
     { "RenderMarkdownCode", { bg = colors.bg } },
+    { "RenderMarkdownCodeInline", { bg = colors.info_bg, fg = colors.fg2 } },
 
     -- snacks
     { "SnacksBackdrop", { bg = colors.bg } },
