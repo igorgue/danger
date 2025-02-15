@@ -630,6 +630,8 @@ function M.load(colors, opts)
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
+    { "PmenuKind", { bg = colors.none } },
+    { "BlinkCmpKind", { fg = colors.keyword, bg = colors.none } },
     { "BlinkCmpMenuBorder", { link = "FloatBorder" } },
     { "BlinkCmpDocBorder", { link = "FloatBorder" } },
     { "BlinkCmpSignatureHelpBorder", { link = "FloatBorder" } },
