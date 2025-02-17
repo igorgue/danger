@@ -617,7 +617,7 @@ function M.load(colors, opts)
     -- snacks
     { "SnacksBackdrop", { bg = colors.bg } },
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
-    { "SnacksPickerDimmed", { link = "Transparent"} },
+    { "SnacksPickerDimmed", { link = "Transparent", fg = colors.fg2 } },
     { "SnacksPickerDir", { link = "Normal" } },
     { "SnacksPickerDir", { bg = colors.none } },
     { "SnacksPickerCol", { link = "Normal" } },
