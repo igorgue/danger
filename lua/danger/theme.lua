@@ -42,6 +42,8 @@ function M.load(colors, opts)
   local highlights = {
     -- Spec format:
     -- { "HighlightGroup", { fg = colors.fg, bg = colors.bg, underline = false, bold = false, italic = false, reverse = false, special = false, blend = 0 } },
+    -- Utils
+    { "Transparent", { bg = colors.none, fg = colors.none } },
 
     -- Core highlight groups
     { "Normal", { fg = colors.fg, bg = colors.bg } },
@@ -615,7 +617,7 @@ function M.load(colors, opts)
     -- snacks
     { "SnacksBackdrop", { bg = colors.bg } },
     { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
-    { "SnacksPickerDimmed", { bg = colors.none } },
+    { "SnacksPickerDimmed", { link = "Transparent"} },
     { "SnacksPickerDir", { link = "Normal" } },
     { "SnacksPickerDir", { bg = colors.none } },
     { "SnacksPickerCol", { link = "Normal" } },
