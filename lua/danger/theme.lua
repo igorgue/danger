@@ -616,20 +616,20 @@ function M.load(colors, opts)
 
     -- snacks
     { "SnacksBackdrop", { bg = colors.bg } },
-    { "SnacksIndent", { bg = colors.none, fg = colors.bg } },
-    { "SnacksPickerDimmed", { link = "Transparent", fg = colors.fg2 } },
-    { "SnacksPickerDir", { link = "Normal" } },
-    { "SnacksPickerDir", { bg = colors.none } },
-    { "SnacksPickerCol", { link = "Normal" } },
-    { "SnacksPickerCol", { bg = colors.none, fg = colors.fg4 } },
-    { "SnacksPickerIndent", { link = "Normal" } },
-    { "SnacksPickerIndent", { bg = colors.none, fg = colors.fg5 } },
-    { "SnacksPickerBufFlags", { link = "Normal" } },
-    { "SnacksPickerBufFlags", { bg = colors.none, fg = colors.fg4 } },
-    { "SnacksPickerGitStatusUntracked", { link = "Normal" } },
-    { "SnacksPickerGitStatusUntracked", { bg = colors.none, fg = colors.fg4 } },
-    { "SnacksPickerGitStatusIgnored", { link = "Normal" } },
-    { "SnacksPickerGitStatusIgnored", { bg = colors.none, fg = colors.info } },
+    { "SnacksIndent", { link = "Transparent" } },
+    { "SnacksPickerDimmed", { link = "Transparent" } },
+    { "SnacksPickerDimmed", { fg = colors.fg4 } },
+    { "SnacksPickerDir", { link = "Transparent" } },
+    { "SnacksPickerCol", { link = "Transparent" } },
+    { "SnacksPickerCol", { fg = colors.fg4 } },
+    { "SnacksPickerIndent", { link = "Transparent" } },
+    { "SnacksPickerIndent", { fg = colors.fg5 } },
+    { "SnacksPickerBufFlags", { link = "Transparent" } },
+    { "SnacksPickerBufFlags", { fg = colors.fg4 } },
+    { "SnacksPickerGitStatusUntracked", { link = "Transparent" } },
+    { "SnacksPickerGitStatusUntracked", { fg = colors.fg4 } },
+    { "SnacksPickerGitStatusIgnored", { link = "Transparent" } },
+    { "SnacksPickerGitStatusIgnored", { fg = colors.info } },
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
@@ -654,16 +654,11 @@ function M.load(colors, opts)
     { "GitConflictAncestorLabel", { bg = colors.warning_bg, fg = colors.warning, bold = bold } },
 
     -- trouble
-    { "TroubleIndent", { link = "Normal" } },
-    { "TroubleIndent", { bg = colors.none } },
-    { "TroubleIndentFoldOpen", { link = "Normal" } },
-    { "TroubleIndentFoldOpen", { bg = colors.none } },
-    { "TroubleIndentLast", { link = "Normal" } },
-    { "TroubleIndentLast", { bg = colors.none } },
-    { "TroubleIndentMiddle", { link = "Normal" } },
-    { "TroubleIndentMiddle", { bg = colors.none } },
-    { "TroubleIndentWs", { link = "Normal" } },
-    { "TroubleIndentWs", { bg = colors.none } },
+    { "TroubleIndent", { link = "Transparent" } },
+    { "TroubleIndentFoldOpen", { link = "Transparent" } },
+    { "TroubleIndentLast", { link = "Transparent" } },
+    { "TroubleIndentMiddle", { link = "Transparent" } },
+    { "TroubleIndentWs", { link = "Transparent" } },
   }
 
   for _, highlight in ipairs(highlights) do
