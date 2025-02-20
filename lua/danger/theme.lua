@@ -98,7 +98,7 @@ function M.load(colors, opts)
     { "Include", { fg = colors.keyword, italic = italic } },
     { "Keyword", { fg = colors.keyword, bold = bold } },
     { "Label", { fg = colors.fg3 } },
-    { "NonText", { fg = colors.bg4, bg = colors.bg } },
+    { "NonText", { fg = colors.bg4, bg = colors.none } },
     { "Number", { fg = colors.const } },
     { "Operator", { fg = colors.keyword } },
     { "PreProc", { fg = colors.keyword, italic = italic } },
