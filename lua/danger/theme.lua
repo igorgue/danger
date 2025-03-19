@@ -630,6 +630,7 @@ function M.load(colors, opts)
     { "SnacksPickerGitStatusUntracked", { fg = colors.fg4 } },
     { "SnacksPickerGitStatusIgnored", { link = "Transparent" } },
     { "SnacksPickerGitStatusIgnored", { fg = colors.info } },
+    { "SnacksPickerPathHidden", { fg = colors.fg4 } },
 
     -- blink.cmp
     { "BlinkCmpMenu", { bg = colors.bg } },
