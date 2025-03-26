@@ -662,6 +662,9 @@ function M.load(colors, opts)
     { "TroubleIndentLast", { link = "Transparent" } },
     { "TroubleIndentMiddle", { link = "Transparent" } },
     { "TroubleIndentWs", { link = "Transparent" } },
+
+    -- avante
+    { "AvanteSidebarWinSeparator", { fg = colors.keyword } },
   }
 
   for _, highlight in ipairs(highlights) do
