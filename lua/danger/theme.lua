@@ -13,13 +13,12 @@ function M.load(colors, opts)
     vim.opt.background = "light"
   end
 
-  if vim.g.colors_name ~= colorsheme_name then
+  if vim.g.colors_name then
     vim.cmd("hi clear")
-
-    vim.g.colors_name = colorsheme_name
   end
 
   vim.o.termguicolors = true
+  vim.g.colors_name = colorsheme_name
 
   -- neovim terminal colors
   vim.g.terminal_color_0 = colors.comment
@@ -610,9 +609,17 @@ function M.load(colors, opts)
 
     -- markdown
     { "CodeBlock", { bg = colors.bg } },
+
     { "RenderMarkdownCode", { bg = colors.bg } },
     { "RenderMarkdownCodeInline", { bg = colors.bg2, fg = colors.fg2 } },
     { "RenderMarkdownInlineHighlight", { bg = colors.none, fg = colors.bg } },
+
+    { "RenderMarkdownH1Bg", { bg = colors.success_bg, fg = colors.success } },
+    { "RenderMarkdownH2Bg", { bg = colors.info_bg, fg = colors.info } },
+    { "RenderMarkdownH3Bg", { bg = colors.bg, fg = colors.success } },
+    { "RenderMarkdownH4Bg", { bg = colors.bg, fg = colors.info } },
+    { "RenderMarkdownH5Bg", { bg = colors.bg, fg = colors.fg5 } },
+    { "RenderMarkdownH6Bg", { bg = colors.bg, fg = colors.fg6 } },
 
     -- snacks
     { "SnacksBackdrop", { bg = colors.bg } },
