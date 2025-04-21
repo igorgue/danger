@@ -495,6 +495,7 @@ function M.load(colors, opts)
     { "@lsp.type.type", { link = "@type" } },
     { "@lsp.type.variable", { link = "@variable" } },
     { "@lsp.type.string.swift", {} },
+    { "@lsp.type.keyword.swift", {} },
 
     -- rust specific
     { "@lsp.type.variable.rust", { link = "@lsp.type.variable" } },
