@@ -440,6 +440,9 @@ function M.load(colors, opts)
     { "@variable.member.python", { link = "@property" } },
     { "@variable.parameter.python", { fg = colors.fg2 } },
 
+    -- ts changes for swift
+    { "@string.escape.swift", { link = "Constant" } },
+
     -- markid plugin
     { "markid1", { fg = colors.extra1 } },
     { "markid2", { fg = colors.extra2 } },
@@ -491,6 +494,7 @@ function M.load(colors, opts)
     { "@lsp.type.struct", { link = "@structure" } },
     { "@lsp.type.type", { link = "@type" } },
     { "@lsp.type.variable", { link = "@variable" } },
+    { "@lsp.type.string.swift", {} },
 
     -- rust specific
     { "@lsp.type.variable.rust", { link = "@lsp.type.variable" } },
