@@ -483,7 +483,7 @@ function M.load(colors, opts)
     { "@lsp.type.enumMember", { link = "@constant" } },
     { "@lsp.type.function", { link = "@function" } },
     { "@lsp.type.interface", { link = "@type" } },
-    { "@lsp.type.keyword", { fg = colors.keyword, italic = italic } },
+    { "@lsp.type.keyword", { fg = colors.keyword2, italic = italic } },
     { "@lsp.type.macro", { link = "@macro" } },
     { "@lsp.type.method", { link = "@method" } },
     { "@lsp.typemod.variable.defaultLibrary", { fg = colors.builtin } },
