@@ -352,6 +352,15 @@ function M.load(colors, opts)
     { "DashboardDesc", { fg = colors.fg } },
     { "DashboardIcon", { fg = colors.const, italic = italic } },
 
+    -- snacks dashboard
+    { "SnacksDashboardIcon", { link = "Type" } },
+    { "SnacksDashboardHeader", { fg = colors.keyword2, bold = bold } },
+    { "SnacksDashboardTerminal", { fg = colors.keyword2 } },
+    { "SnacksDashboardSpecial", { fg = colors.keyword2 } },
+    { "SnacksDashboardDir", { fg = colors.keyword2 } },
+    { "SnacksDashboardTitle", { fg = colors.keyword2 } },
+    { "SnacksDashboardFile", { fg = colors.keyword2 } },
+
     { "MiniIndentscopeSymbol", { fg = colors.type, bold = bold } },
 
     -- treesitter
