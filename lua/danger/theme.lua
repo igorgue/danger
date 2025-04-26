@@ -24,19 +24,19 @@ function M.load(colors, opts)
   vim.g.terminal_color_0 = colors.comment
   vim.g.terminal_color_1 = colors.warning
   vim.g.terminal_color_2 = colors.builtin
-  vim.g.terminal_color_3 = colors.const
+  vim.g.terminal_color_3 = colors.func
   vim.g.terminal_color_4 = colors.keyword
   vim.g.terminal_color_5 = colors.keyword2
-  vim.g.terminal_color_6 = colors.fg3
-  vim.g.terminal_color_7 = colors.builtin
-  vim.g.terminal_color_8 = colors.keyword
+  vim.g.terminal_color_6 = colors.fg4
+  vim.g.terminal_color_7 = colors.fg
+  vim.g.terminal_color_8 = colors.hint
   vim.g.terminal_color_9 = colors.error
-  vim.g.terminal_color_10 = colors.fg2
-  vim.g.terminal_color_11 = colors.var
-  vim.g.terminal_color_12 = colors.const
-  vim.g.terminal_color_13 = colors.keyword
-  vim.g.terminal_color_14 = colors.fg4
-  vim.g.terminal_color_15 = colors.success
+  vim.g.terminal_color_10 = colors.success
+  vim.g.terminal_color_11 = colors.const
+  vim.g.terminal_color_12 = colors.str
+  vim.g.terminal_color_13 = colors.type
+  vim.g.terminal_color_14 = colors.extra1
+  vim.g.terminal_color_15 = colors.fg2
 
   local highlights = {
     -- Spec format:
