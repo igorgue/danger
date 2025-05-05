@@ -452,6 +452,8 @@ function M.load(colors, opts)
     -- ts changes for swift
     { "@string.escape.swift", { link = "Constant" } },
     { "@attribute.swift", { link = "Type" } },
+    { "@function.call.swift", { link = "Function" } },
+    { "@variable.member.swift", { link = "Label" } },
 
     -- markid plugin
     { "markid1", { fg = colors.extra1 } },
