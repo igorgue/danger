@@ -90,7 +90,7 @@ function M.load(colors, opts)
     { "ErrorMsg", { fg = colors.warning, bg = colors.bg2, bold = bold } },
     { "WarningMsg", { fg = is_dark and colors.fg or colors.bg, bg = colors.warning_bg } },
     { "Float", { fg = colors.const } },
-    { "NormalFloat", { bg = colors.bg } },
+    { "NormalFloat", { bg = colors.bg2 } },
     { "FloatBorder", { fg = colors.keyword2 } },
     { "Function", { fg = colors.func } },
     { "Identifier", { fg = colors.fg2 } },
