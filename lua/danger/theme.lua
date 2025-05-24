@@ -643,6 +643,8 @@ function M.load(colors, opts)
     { "RenderMarkdownH6Bg", { bg = colors.bg, fg = colors.fg6 } },
 
     -- snacks
+    { "SnacksPicker", { bg = colors.bg } },
+    { "SnacksBackdrop", { bg = colors.bg } },
     { "SnacksBackdrop", { bg = colors.bg } },
     { "SnacksIndent", { link = "Transparent" } },
     { "SnacksPickerDimmed", { link = "Transparent" } },
@@ -688,6 +690,7 @@ function M.load(colors, opts)
     { "GitConflictAncestorLabel", { bg = colors.warning_bg, fg = colors.warning, bold = bold } },
 
     -- trouble
+    { "TroubleNormal", { bg = colors.bg } },
     { "TroubleIndent", { link = "Transparent" } },
     { "TroubleIndentFoldOpen", { link = "Transparent" } },
     { "TroubleIndentLast", { link = "Transparent" } },
