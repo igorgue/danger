@@ -361,6 +361,9 @@ function M.load(colors, opts)
     { "SnacksDashboardTitle", { fg = colors.keyword2 } },
     { "SnacksDashboardFile", { fg = colors.keyword2 } },
 
+    -- snacks notifier
+    { "SnacksNotifierMinimal", { bg = colors.info_bg } },
+
     { "MiniIndentscopeSymbol", { fg = colors.type, bold = bold } },
 
     -- treesitter
@@ -658,15 +661,18 @@ function M.load(colors, opts)
     { "SnacksPickerPathHidden", { fg = colors.fg4 } },
 
     -- blink.cmp
-    { "BlinkCmpMenu", { bg = colors.bg } },
+    -- { "BlinkCmpMenu", { bg = colors.bg } },
     { "PmenuKind", { bg = colors.none } },
-    { "BlinkCmpSource", { link = "Transparent" } },
+    -- { "BlinkCmpSource", { link = "Transparent" } },
     { "BlinkCmpSource", { fg = colors.fg5 } },
+    { "BlinkCmpDoc", { bg = colors.bg2 } },
     { "BlinkCmpKind", { fg = colors.keyword, bg = colors.none } },
     { "BlinkCmpMenuBorder", { link = "FloatBorder" } },
     { "BlinkCmpDocBorder", { link = "FloatBorder" } },
     { "BlinkCmpSignatureHelpBorder", { link = "FloatBorder" } },
     { "BlinkCmpDocSeparator", { fg = colors.keyword } },
+
+
     { "BlinkCmpMenuSelection", { fg = colors.none, bg = colors.bg5 } },
     { "BlinkCmpLabelDeprecated", { fg = colors.none, bg = colors.none, strikethrough = true } },
     { "BlinkCmpLabelMatch", { fg = colors.type, bold = bold } },
