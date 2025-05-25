@@ -699,6 +699,14 @@ function M.load(colors, opts)
 
     -- avante
     { "AvanteSidebarWinSeparator", { fg = colors.keyword } },
+
+    -- Lazy
+    { "Lazy", { bg = colors.bg } },
+    { "LazyNormal", { bg = colors.bg } },
+
+    -- Mason
+    { "Mason", { bg = colors.bg } },
+    { "MasonNormal", { bg = colors.bg } },
   }
 
   for _, highlight in ipairs(highlights) do
