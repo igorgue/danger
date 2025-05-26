@@ -17,7 +17,7 @@ M.dark = {
   bg4 = "#394174",
   bg5 = "#344069",
   bg6 = "#2b2b4c",
-  bg7 = "#22223b",
+  bg7 = "#0c0f1b",
 
   keyword = "#8787d7",
   keyword2 = "#875fff",
