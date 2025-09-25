@@ -241,6 +241,7 @@ function M.load(colors, opts)
 
     { "CopilotSuggestion", { link = "LspInlayHint" } },
     { "CopilotAnnotation", { fg = colors.keyword, italic = italic } },
+    { "ComplHint", { link = "CopilotSuggestion" } },
 
     { "TabbyCompletion", { link = "CopilotSuggestion" } },
     { "TabbyCompletionReplaceRange", { fg = colors.keyword, italic = italic } },
@@ -673,7 +674,6 @@ function M.load(colors, opts)
     { "BlinkCmpDocBorder", { link = "FloatBorder" } },
     { "BlinkCmpSignatureHelpBorder", { link = "FloatBorder" } },
     { "BlinkCmpDocSeparator", { fg = colors.keyword } },
-
 
     { "BlinkCmpMenuSelection", { fg = colors.none, bg = colors.bg5 } },
     { "BlinkCmpLabelDeprecated", { fg = colors.none, bg = colors.none, strikethrough = true } },
