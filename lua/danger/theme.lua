@@ -83,11 +83,11 @@ function M.load(colors, opts)
     { "Constant", { fg = colors.const } },
     { "Define", { fg = colors.keyword, italic = italic } },
     { "Error", { fg = colors.error, special = colors.error, undercurl = true } },
-    { "DiffAdd", { fg = colors.success, bg = colors.bg, bold = bold } },
-    { "DiffDelete", { fg = colors.warning, bold = bold } },
-    { "DiffChange", { fg = colors.warning, bg = colors.bg } },
-    { "DiffText", { fg = colors.const, bg = colors.bg, bold = bold } },
-    { "ErrorMsg", { fg = colors.warning, bg = colors.bg2, bold = bold } },
+    { "DiffAdd", { bg = colors.success_bg } },
+    { "DiffDelete", { bg = colors.error_bg, fg = colors.warning } },
+    { "DiffChange", { bg = colors.bg6 } },
+    { "DiffText", { bg = colors.change_bg } },
+    { "ErrorMsg", { bg = colors.error } },
     { "WarningMsg", { fg = is_dark and colors.fg or colors.bg, bg = colors.warning_bg } },
     { "Float", { fg = colors.const } },
     { "NormalFloat", { bg = colors.bg7 } },
@@ -699,6 +699,11 @@ function M.load(colors, opts)
 
     -- avante
     { "AvanteSidebarWinSeparator", { fg = colors.keyword } },
+
+    -- sidekick
+    { "SidekickSignAdd", { fg = colors.success } },
+    { "SidekickSignChange", { fg = colors.warning } },
+    { "SidekickSignDelete", { fg = colors.error } },
 
     -- Lazy
     { "Lazy", { bg = colors.bg } },

@@ -28,11 +28,12 @@ M.dark = {
   warning = "#fa7878",
   error = "#ff0d03",
 
-  success_bg = "#022507",
+  success_bg = "#024807",
   hint_bg = "#1c1c1c",
   info_bg = "#1d1d41",
   warning_bg = "#2e0a14",
   error_bg = "#230311",
+  change_bg = "#aa3700",
 
   type = "#ffd7ff",
   type2 = "#ffd7d7",
