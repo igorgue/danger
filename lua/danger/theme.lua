@@ -88,7 +88,6 @@ function M.load(colors, opts)
     { "DiffChange", { fg = colors.warning, bg = colors.bg } },
     { "DiffText", { fg = colors.const, bg = colors.bg, bold = bold } },
     { "ErrorMsg", { fg = colors.warning, bg = colors.bg2, bold = bold } },
-    { "ErrorMsg", { bg = colors.error } },
     { "WarningMsg", { fg = is_dark and colors.fg or colors.bg, bg = colors.warning_bg } },
     { "Float", { fg = colors.const } },
     { "NormalFloat", { bg = colors.bg7 } },
