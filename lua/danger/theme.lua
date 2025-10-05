@@ -708,6 +708,11 @@ function M.load(colors, opts)
     { "SidekickDiffAdd", { bg = colors.success_bg } },
     { "SidekickDiffDelete", { bg = colors.error_bg, fg = colors.warning } },
 
+    -- undotree
+    { "UndotreeDiffAdded", { link = "DiffAdd" } },
+    { "UndotreeDiffRemoved", { link = "DiffDelete" } },
+    { "UndotreeDiffLine", { link = "LineNr" } },
+
     -- Lazy
     { "Lazy", { bg = colors.bg } },
     { "LazyNormal", { bg = colors.bg } },
