@@ -691,6 +691,7 @@ function M.load(colors, opts)
 
     -- trouble
     { "TroubleNormal", { bg = colors.bg } },
+    { "TroubleNormalNC", { bg = colors.bg } },
     { "TroubleIndent", { link = "Transparent" } },
     { "TroubleIndentFoldOpen", { link = "Transparent" } },
     { "TroubleIndentLast", { link = "Transparent" } },
