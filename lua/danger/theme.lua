@@ -634,6 +634,7 @@ function M.load(colors, opts)
 
     { "RenderMarkdownCode", { bg = colors.bg } },
     { "RenderMarkdownCodeInline", { bg = colors.bg2, fg = colors.fg2 } },
+    { "RenderMarkdownTableFill", { bg = colors.bg } },
     { "RenderMarkdownInlineHighlight", { bg = colors.none, fg = colors.bg } },
 
     { "RenderMarkdownH1Bg", { bg = colors.success_bg, fg = colors.success } },
