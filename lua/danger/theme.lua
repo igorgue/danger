@@ -722,6 +722,11 @@ function M.load(colors, opts)
     -- Mason
     { "Mason", { bg = colors.bg } },
     { "MasonNormal", { bg = colors.bg } },
+
+    -- cc
+    { "CodeCompanionChatVariable", { fg = colors.success } },
+    { "CodeCompanionChatTool", { fg = colors.func } },
+    { "CodeCompanionChatToolGroup", { fg = colors.const } },
   }
 
   for _, highlight in ipairs(highlights) do
