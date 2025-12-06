@@ -638,12 +638,12 @@ function M.load(colors, opts)
     { "RenderMarkdownTableFill", { bg = colors.bg } },
     { "RenderMarkdownInlineHighlight", { bg = colors.none, fg = colors.bg } },
 
-    { "RenderMarkdownH1Bg", { bg = colors.success_bg, fg = colors.success } },
+    { "RenderMarkdownH1Bg", { bg = colors.info_bg, fg = colors.success } },
     { "RenderMarkdownH2Bg", { bg = colors.info_bg, fg = colors.info } },
-    { "RenderMarkdownH3Bg", { bg = colors.bg, fg = colors.success } },
-    { "RenderMarkdownH4Bg", { bg = colors.bg, fg = colors.info } },
-    { "RenderMarkdownH5Bg", { bg = colors.bg, fg = colors.fg5 } },
-    { "RenderMarkdownH6Bg", { bg = colors.bg, fg = colors.fg6 } },
+    { "RenderMarkdownH3Bg", { bg = colors.info_bg, fg = colors.info } },
+    { "RenderMarkdownH4Bg", { bg = colors.info_bg, fg = colors.info } },
+    { "RenderMarkdownH5Bg", { bg = colors.info_bg, fg = colors.fg5 } },
+    { "RenderMarkdownH6Bg", { bg = colors.info_bg, fg = colors.fg6 } },
 
     -- snacks
     { "SnacksPicker", { bg = colors.bg } },
