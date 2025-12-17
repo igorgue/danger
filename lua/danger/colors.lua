@@ -115,6 +115,7 @@ M.light = {
 }
 
 -- red and black theme
+
 M.red_and_black = vim.deepcopy(M.dark)
 
 M.red_and_black.bg = "#000000"
@@ -138,6 +139,57 @@ M.red_and_black.hint = "#808080"
 M.red_and_black.info = "#8b4541"
 M.red_and_black.warning = "#fa7878"
 M.red_and_black.error = "#ff0d03"
+
+-- white on black theme
+
+M.white_on_black = vim.deepcopy(M.dark)
+
+M.white_on_black.bg = "#000000"
+M.white_on_black.fg = "#ffffff"
+
+M.white_on_black.fg2 = "#e0e0e0"
+M.white_on_black.fg3 = "#b0b0b0"
+M.white_on_black.fg4 = "#787878"
+M.white_on_black.fg5 = "#505050"
+
+M.white_on_black.bg2 = "#000000"
+M.white_on_black.bg3 = "#181818"
+M.white_on_black.bg4 = "#303030"
+M.white_on_black.bg5 = "#484848"
+
+M.white_on_black.keyword = "#ffffff"
+M.white_on_black.keyword2 = "#e0e0e0"
+
+M.white_on_black.success = "#00ff99"    -- Accent, feel free to customize
+M.white_on_black.hint = "#b0b0b0"
+M.white_on_black.info = "#80cfff"
+M.white_on_black.warning = "#ffeb3b"
+M.white_on_black.error = "#ff3333"
+
+-- white on black theme
+M.white_on_black = vim.deepcopy(M.dark)
+
+M.white_on_black.bg = "#000000"
+M.white_on_black.fg = "#ffffff"
+
+M.white_on_black.fg2 = "#f0f0f0"
+M.white_on_black.fg3 = "#e0e0e0"
+M.white_on_black.fg4 = "#b0b0b0"
+M.white_on_black.fg5 = "#909090"
+
+M.white_on_black.bg2 = "#000000"
+M.white_on_black.bg3 = "#181818"
+M.white_on_black.bg4 = "#383838"
+M.white_on_black.bg5 = "#585858"
+
+M.white_on_black.keyword = "#ffffff"
+M.white_on_black.keyword2 = "#e0e0e0"
+
+M.white_on_black.success = "#ffffff"
+M.white_on_black.hint = "#bbbbbb"
+M.white_on_black.info = "#d1d1d1"
+M.white_on_black.warning = "#ffff88"
+M.white_on_black.error = "#ff6666"
 
 M.red_and_black.success_bg = "#3e0707"
 M.red_and_black.hint_bg = "#441c1c"
